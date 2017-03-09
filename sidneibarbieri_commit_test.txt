@@ -1,1 +1,1 @@
-Este arquivo foi modificado após chavearmos para o ramo1.
+Este arquivo foi modificado novamente, antes do commit sobre o resultado do ramo1.
