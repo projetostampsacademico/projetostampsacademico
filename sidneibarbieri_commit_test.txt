@@ -1,1 +1,1 @@
-Este arquivo foi modificado no branch master, simultaneamente com o ramo2.
+Este arquivo foi modificado a partir do ramo2.
