@@ -1,3 +1,0 @@
-Primeiro commit
-linha alterada
-Editando para criar conflito
