@@ -13,6 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from django.conf import settings
+from django.conf.urls.static import static
 from django.conf.urls import include, url
 from django.contrib import admin
 from register import urls
@@ -22,4 +24,4 @@ default_urls  = [
     url(r'^$', views.index),
     url(r'^admin/', admin.site.urls)
 ]
-urlpatterns = default_urls + urls.register_urls
+urlpatterns = default_urls + urls.register_urls + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

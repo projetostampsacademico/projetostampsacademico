@@ -18,6 +18,7 @@ Tutorial
 Na raiz do projeto Django, temos os arquivos:
 - **requirements.txt** são as dependências (libraries externas) do projeto
 - **manage.py** interface do projeto Django, usada para rodar o servidor, realizar migrações, etc
+- **static** é a pasta de todos os arquivos estáticos (imagens, js, css)
 
 Temos também duas pastas, ou módulos. A pasta com nome do projeto (web) é o núcleo da aplicação:
 - **settings.py** são as configurações gerais (mexer com cautela)
