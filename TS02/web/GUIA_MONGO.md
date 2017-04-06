@@ -40,5 +40,5 @@ Guia do Mongodb
 5. Copiar a pasta `django` do repositório para a pasta lib do Python instalado,
 
   ```bash
-  Copiar a pasta **django-nonrel/django** para **C:\Python27\Lib**
+  Copiar a pasta "django-nonrel/django" para "C:\Python27\Lib"
   ```
