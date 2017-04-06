@@ -8,6 +8,6 @@ python-decouple==2.3
 pytz==2015.4
 scipy>=0.9
 scikit-learn>=0.18.0
-git+https://github.com/django-nonrel/django
-djangotoolbox
-git+https://github.com/django-nonrel/mongodb-engine
+git+https://github.com/django-nonrel/django-nonrel@master
+git+https://github.com/django-nonrel/djangotoolbox@master
+git+https://github.com/django-nonrel/mongodb-engine@master

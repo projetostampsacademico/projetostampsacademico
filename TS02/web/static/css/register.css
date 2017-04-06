@@ -1,3 +1,7 @@
 body > .container {
   text-align: center;
 }
+
+.well {
+  display: inline-block;
+}
