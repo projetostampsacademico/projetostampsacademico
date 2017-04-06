@@ -6,7 +6,14 @@ Para ler o guia de projeto Django, clique [aqui](GUIA.md)
 Instalação
 ------------
 
-1 - Certifique-se de ter baixado a versão mais recente do Python e Pip.
+1 - Certifique-se de ter baixado a versão Python 2.7 e Pip.
+
+```bash
+Python mastigado para Windows: https://www.howtogeek.com/197947/how-to-install-python-on-windows/
+
+Pip: https://packaging.python.org/installing/
+```
+
 2 - Clone o repositório:
 
 ```bash
