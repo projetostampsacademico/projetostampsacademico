@@ -1,29 +1,31 @@
 Projeto STAMPS - TS#02 Segmento Médico
 =======================================
 
-Installation
+Para ler o guia de projeto Django, clique [aqui](GUIA.md)
+
+Instalação
 ------------
 
-1 - Make sure to have the most recent Python version and Pip installed.
-2 - Clone our repo:
+1 - Certifique-se de ter baixado a versão mais recente do Python e Pip.
+2 - Clone o repositório:
 
 ```bash
 git clone https://github.com/projetostampsacademico/projetostampsacademico.git
 ```
 
-3 - Install the project mentioned dependencies:
+3 - Instale as dependências do projeto usando o pip:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4 - Run the application:
+4 - Execute a aplicação:
 
 ```bash
 python manage.py runserver
 ```
 
-5 - Go to the browser and access on:
+5 - Acesse no navegador a url:
 
 ```bash
 http://localhost:8000/
