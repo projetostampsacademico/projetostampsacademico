@@ -9,6 +9,7 @@ Instalação
 1 - Certifique-se de ter baixado a versão Python 2.7 e Pip.
 
 Python mastigado para Windows: https://www.howtogeek.com/197947/how-to-install-python-on-windows/
+
 Pip: https://packaging.python.org/installing/
 
 2 - Clone o repositório:
