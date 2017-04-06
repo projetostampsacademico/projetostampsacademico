@@ -7,6 +7,7 @@ Instalação
 ------------
 
 1 - Certifique-se de ter baixado a versão mais recente do Python e Pip.
+
 2 - Clone o repositório:
 
 ```bash
