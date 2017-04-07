@@ -11,7 +11,7 @@ Instalação
 ```bash
 Python mastigado para Windows: https://www.howtogeek.com/197947/how-to-install-python-on-windows/
 
-Pip: https://packaging.python.org/installing/
+Pip: https://pip.pypa.io/en/stable/installing/#do-i-need-to-install-pip
 ```
 
 2 - Clone o repositório:
