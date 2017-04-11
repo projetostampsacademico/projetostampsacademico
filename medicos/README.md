@@ -1,2 +1,1 @@
 # medicos
-Segmento Médicos

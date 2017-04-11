@@ -1,2 +1,1 @@
 # fornecedores
-Segmento Fornecedores

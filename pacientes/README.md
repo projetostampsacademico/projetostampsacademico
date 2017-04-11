@@ -1,5 +1,4 @@
 # pacientes
-Segmento Pacientes
 
 Para desenvolver:
 ```bash
