@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "jquery-ui": "^1.12.1",
+    "bootstrap": "^3.3.7"
+  }
+}
