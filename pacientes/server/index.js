@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 
 var config = {
-  port: 3000
+  port: 8080
 }
 
 app.get('/', function (req, res) {
