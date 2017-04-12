@@ -24,7 +24,7 @@ Guia do Mongodb
   Conectar-se no mongodb e executar os comandos o item 3:
 
   ```bash
-  "C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe
+  "C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe"
   ```
 
 3. Crie um novo banco de dados [banco de dados](https://www.tutorialspoint.com/mongodb/mongodb_create_database.htm)
@@ -41,4 +41,10 @@ Guia do Mongodb
 
   ```bash
   Copiar a pasta "django-nonrel/django" para "C:\Python27\Lib"
+  ```
+
+6. Obs: Para executar o mongodb nas próximas vezes, basta rodar o comando:
+
+  ```bash
+  "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --dbpath d:\stamps
   ```
