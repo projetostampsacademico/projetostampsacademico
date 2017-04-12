@@ -21,7 +21,7 @@ SERVER=$( dialog --stdout --title 'Qual Servidor'        \
         --menu '\nQual servidor esta instalando?\n\n'  \
         0 0 0                                    \
         API_WEB        'SERVIDOR 1 - API + WEB'  \
-        BANCO_DADOS    'SERVIDOR 2 - BANCO DE DADOS' \
+        BANCO_DADOS    'SERVIDOR 2 - BANCO DE DADOS' \ )
 
 users=$( dialog --stdout --separate-output --title 'Criar Usuários'        \
    	--checklist '\nQuais Usuários deseja criar?\n\n'  \
@@ -29,7 +29,7 @@ users=$( dialog --stdout --separate-output --title 'Criar Usuários'        \
    	1  'Time Scrum 01 - ts01'      off    \
 	2  'Time Scrum 02 - ts02'      off    \
 	3  'Time Scrum 03 - ts03'      off    \
-	4  'Time Scrum 04 - ts04'      off    \
+	4  'Time Scrum 04 - ts04'      off    \ )
 
 echo "$users" | while read USERID
 do
@@ -77,10 +77,12 @@ if [ $SERVER = "BANCO_DADOS" ];then
 	service mongodb start
 fi
 
-if [ $SEVER = "API_WEB" ];then
+if [ $SERVER = "API_WEB" ];then
 	clear
 	echo "instalando python"
-	aptitude install python-software-properties python-setuptools
+	aptitude install python-software-properties python-setuptools python-pip
+	pip install --upgrade pip
+	pip install virtualenv
 fi
 
 
