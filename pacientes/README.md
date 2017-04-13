@@ -14,7 +14,7 @@ docker-compose logs -f server
 ```
 
 
-# Sugestão de inicialização de ambiente de desenvolvimento na núvem
+# Inicialização de ambiente de desenvolvimento na nuvem (Sugestão)
 
 1 - Criar conta no Cloud9 (http://c9.io) - Apesar de precisar do cartão de crédito no cadastro, é gratuito, já uso a quase 2 anos e é bastante confiável;
 
