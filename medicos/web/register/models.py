@@ -1,9 +1,16 @@
 from __future__ import unicode_literals
-from datetime import datetime
+
 from django.db import models
 
+from djangotoolbox.fields import ListField
 
-# Create your models here.
+from datetime import datetime
+
+class Patient(models.Model):
+    name = models.CharField(max_length=64)
+    age = models.IntegerField()
+    biography = models.TextField()
+    symptom = ListField()
 
 
 MARITAL_STATUS = (

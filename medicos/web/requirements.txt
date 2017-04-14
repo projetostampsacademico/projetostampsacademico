@@ -4,10 +4,13 @@ dj-database-url==0.3.0
 django-extensions==1.5.5
 requests==2.7.0
 pandas==0.19.1
+gunicorn==19.4.5
+whitenoise==2.0.6
 python-decouple==2.3
+dj-static==0.0.6
 pytz==2015.4
 scipy>=0.9
 scikit-learn>=0.18.0
-git+https://github.com/django-nonrel/django
-djangotoolbox
+git+https://github.com/django-nonrel/django@nonrel-1.5
+git+https://github.com/django-nonrel/djangotoolbox
 git+https://github.com/django-nonrel/mongodb-engine

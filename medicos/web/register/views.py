@@ -1,16 +1,24 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render, render_to_response, redirect, get_object_or_404
 from django.template import RequestContext
-from django.shortcuts import render, redirect, get_object_or_404
+
+from register.models import Patient
+
 from django.forms import ModelForm
+
 from register.models import STAMPS
-
-
 
 
 def index(request):
     """Index page."""
+    patient = Patient.objects.create(
+        name='Novo paciente',
+        age=32,
+        biography='',
+        symptom=['febre', 'dor']
+    )
+    patient.save
     return render_to_response(
-        'register/index.html', context_instance=RequestContext(request))
+        'register/index.html', { "patient": patient }, context_instance=RequestContext(request))
 
 
 class DoctorForm(ModelForm):
@@ -45,3 +53,4 @@ def doctor_delete(request, pk, template_name='register/doctor_confirm_delete.htm
         doctor.delete()
         return redirect('doctor_list')
     return render(request, template_name, {'object':doctor})
+

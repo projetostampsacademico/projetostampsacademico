@@ -1,7 +1,9 @@
 Projeto STAMPS - TS#02 Segmento Médico
 =======================================
 
-Para ler o guia de projeto Django, clique [aqui](GUIA.md)
+Para ler o guia de projeto Django, clique [aqui](GUIA_DJANGO.md)
+
+Para o setup do Mongodb, clique [aqui](GUIA_MONGO.md)
 
 Instalação
 ------------
