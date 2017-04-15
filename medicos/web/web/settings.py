@@ -87,6 +87,9 @@ DATABASES = {
 # Enable Heroku DATABASE
 if 'SOURCE_VERSION' in os.environ or 'WEB_CONCURRENCY' in os.environ:
     # Parse database configuration from $DATABASE_URL
+    import dj_database_url
+
+    #DATABASES['default'] = dj_database_url.config() 
     pprint("HEEEEEEEEEEEEEEEEREEEEEEEEEEEEEEEEEEE")
     pprint("HEEEEEEEEEEEEEEEEREEEEEEEEEEEEEEEEEEE")
     pprint("HEEEEEEEEEEEEEEEEREEEEEEEEEEEEEEEEEEE")
