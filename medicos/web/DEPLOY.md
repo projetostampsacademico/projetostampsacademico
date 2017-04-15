@@ -15,3 +15,21 @@ heroku login
 ```bash
 git subtree push --prefix medicos/web heroku master
 ```
+
+3. Se tiver migrações no banco:
+
+(Localmente antes do deploy)
+
+```bash
+python manage.py makemigrations [módulo]
+```
+
+(No Heroku depois do deploy)
+
+```bash
+heroku run bash
+```
+
+```bash
+python manage.py migrate
+```
