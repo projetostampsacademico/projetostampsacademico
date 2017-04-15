@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+from pprint import pprint
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -82,6 +83,15 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# Enable Heroku DATABASE
+if 'SOURCE_VERSION' in os.environ or 'WEB_CONCURRENCY' in os.environ:
+    # Parse database configuration from $DATABASE_URL
+    import dj_database_url
+
+    pprint("DATABASE:")
+    pprint(dj_database_url.config())
+    DATABASES['default'] = dj_database_url.config()
 
 
 # Password validation
