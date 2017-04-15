@@ -1,54 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'register/base.html' %}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-    <title>Register</title>
-    <!-- Bootstrap core CSS -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/css/register.css" rel="stylesheet">
-
-</head>
-
-<body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">STAMPS</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/register">Register</a></li>
-          <li><a href="#">Diagnostic</a></li>
-          <li><a href="/admin">Login</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container">
-        <a href="{% url "doctor_new" %}" class="btn btn-success pull-right" >New Doctor</a>
-        <h1>List of Doctor's</h1>
-        <table class="table table-striped">
+{% block content %}
+    <a href="{% url "doctor_new" %}" class="btn btn-success pull-right" >New Doctor</a>
+    <h1>List of Doctor's</h1>
+    <table class="table table-striped">
         {% for doctor in object_list %}
-            <tr>
-                <td>{{ doctor.name }}</td>
-                <td><a class="btn btn-primary" href="{% url "doctor_edit" doctor.id %}">Editar</a></td>
-                <td><a class="btn btn-danger" href="{% url "doctor_delete" doctor.id %}">Delete</a></td>
-            </tr>
+        <tr>
+            <td>{{ doctor.doc_name }}</td>
+            <td><a class="btn btn-primary" href="{% url "doctor_edit" doctor.id %}">Edit</a></td>
+            <td><a class="btn btn-danger" href="{% url "doctor_delete" doctor.id %}">Delete</a></td>
+        </tr>
         {% endfor %}
-        </table>
-    </div>
-    <!-- /.container -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-    window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"><\/script>')
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+    </table>
+{% endblock content %}
