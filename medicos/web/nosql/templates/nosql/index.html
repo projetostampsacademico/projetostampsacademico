@@ -1,0 +1,25 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+    <link href="/static/css/nosql.css" rel="stylesheet">
+    <h1>MLab mongodb panel</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Data</h3>
+            <pre id="json">{{ data }}</pre>
+        </div>
+        <div class="col-md-6">
+            <h3>Collections</h3>
+            <pre id="json">{{ collections }}</pre>
+        </div>
+        <div class="col-md-6 well">
+          <h3>MongoDb</h3>
+          <b>Connection: </b><div style="overflow: auto;">mongodb://heroku_6c04n1s3:eg0rtjdqtmf8ukmmo3pfflqdbe@ds161630.mlab.com:61630/heroku_6c04n1s3</div>
+          <b>Database: </b><div>heroku_6c04n1s3</div>
+          <b>Collection: </b><div>stamps</div>
+        </div>
+    </div>
+    <div>
+      <a class="btn btn-success" href="https://www.mlab.com/databases/heroku_6c04n1s3">Access Database</a>
+    </div>
+{% endblock content %}
