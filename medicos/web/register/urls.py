@@ -19,8 +19,12 @@ from django.conf.urls import patterns, include, url
 
 register_urls = [
     url(r'^register', views.index),
-    url(r'^list', views.doctor_list, name='doctor_list'),
-    url(r'^new$', views.doctor_create, name='doctor_new'),
-    url(r'^edit/(?P<pk>\d+)$', views.doctor_update, name='doctor_edit'),
-    url(r'^delete/(?P<pk>\d+)$', views.doctor_delete, name='doctor_delete'),
+    url(r'^list_doc', views.doctor_list, name='doctor_list'),
+    url(r'^new_doc$', views.doctor_create, name='doctor_new'),
+    url(r'^edit_doc/(?P<pk>\d+)$', views.doctor_update, name='doctor_edit'),
+    url(r'^delete_doc/(?P<pk>\d+)$', views.doctor_delete, name='doctor_delete'),
+    url(r'^list_spec', views.specialty_list, name='specialty_list'),
+    url(r'^new_spec$', views.specialty_create, name='specialty_new'),
+    url(r'^edit_spec/(?P<pk>\d+)$', views.specialty_update, name='specialty_edit'),
+    url(r'^delete_spec/(?P<pk>\d+)$', views.specialty_delete, name='specialty_delete'),
 ]
