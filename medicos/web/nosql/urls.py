@@ -18,9 +18,5 @@ from . import views
 from django.conf.urls import patterns, include, url
 
 urls = [
-    url(r'^register', views.index),
-    url(r'^list', views.doctor_list, name='doctor_list'),
-    url(r'^new$', views.doctor_create, name='doctor_new'),
-    url(r'^edit/(?P<pk>\d+)$', views.doctor_update, name='doctor_edit'),
-    url(r'^delete/(?P<pk>\d+)$', views.doctor_delete, name='doctor_delete'),
+    url(r'^nosql', views.index),
 ]
