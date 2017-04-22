@@ -24,19 +24,18 @@ def READ_FILE(_file, _table):
             else:
                 j = {}
                 for field in header:
-                    if len(field)> 0: 
+                    if len(field) > 0:
                         idx = header.index(field)
-                        row[idx]=item[idx]
-                        #j[field]=item[idx]
-                        j[field]=unidecode(item[idx])
-                
+                        row[idx] = item[idx]
+                        # j[field]=item[idx]
+                        j[field] = unidecode(item[idx])
                 lst.append(j)
-                #jj = json.loads(json.dumps(j, separators=(',',':')))
-                #st.INSERT_MONGO('CAPITULOS', jj)
+                # jj = json.loads(json.dumps(j, separators=(',',':')))
+                # st.INSERT_MONGO('CAPITULOS', jj)
 
-        SEED_DATA = json.loads(json.dumps(lst, separators=(',',':')))
+        SEED_DATA = json.loads(json.dumps(lst, separators=(',', ':')))
         st.BULK_INSERT_MONGO(_table, SEED_DATA)
-        #data = bson.BSON.encode(SEED_DATA)
+        # data = bson.BSON.encode(SEED_DATA)
 
 
 myPath = sys.path[0] + str('\CID')
@@ -53,14 +52,10 @@ for x in os.walk(myPath):
 
     for arquivo in arquivos:
         if arquivo.upper().endswith('.CSV'):
-            tableName = str(arquivo.upper().replace('.CSV',''))
+            tableName = str(arquivo.upper().replace('.CSV', ''))
             _fileAddress = str(corrente) + str("/") + str(arquivo)
             READ_FILE(_fileAddress, tableName)
 
 
-    
 _file = sys.path[0] + str('\CID\CID-10-CAPITULOS.csv')
-print ('======> ' + _file)
-
-
-
+print('======> ' + _file)

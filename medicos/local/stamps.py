@@ -31,5 +31,5 @@ def BULK_INSERT_MONGO(table, seed):
     ref = db[table]
     ref.insert_many(seed)
 
-print('funciona')
+# print('funciona')
 # DB_TEST()
