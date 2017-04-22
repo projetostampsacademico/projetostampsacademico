@@ -2,3 +2,4 @@ pymongo
 pandas
 urllib3
 unidecode
+goslate
