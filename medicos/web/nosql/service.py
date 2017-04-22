@@ -1,6 +1,9 @@
 from pymongo import MongoClient
+from singleton import Singleton
+from pprint import pprint
+from bson.json_util import dumps
 
-
+@Singleton
 class MongoService:
 
     def __init__(self):
@@ -8,7 +11,10 @@ class MongoService:
         self.db = client.heroku_6c04n1s3
 
     def collection_names(self):
-        self.db.collection_names()
+        return self.db.collection_names()
 
-    def fetch_data(self):
-        [doc for doc in self.db.stamps.find()]
+    def fetch_data(self, collection):
+        return dumps(self.db[collection].find())
+
+    def convert(self, data):
+        return dict([(str(k), str(v)) for k, v in data.items()])
