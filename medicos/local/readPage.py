@@ -1,9 +1,9 @@
 __author__ = 'fkfouri'
 
+import urllib
 import urllib.request as rq
 from lxml import html
 import json
-import stampsTranslate as tr
 
 
 def readICD(ICD):
@@ -12,11 +12,13 @@ def readICD(ICD):
     def formatICD(ICD):
         ''' responsavel por normaliar o ICD'''
         if '.' not in ICD:
-            part1 = ICD[:3]
-            part2 = ICD[3:]
-            return '{}.{}'.format(part1, part2)
+            return '{}.{}'.format(ICD[:3], ICD[3:])
         else:
             return ICD
+
+    def stampsICD(ICD):
+        ''' responsavel por normaliar o ICD/CID do Stamps'''
+        return str(ICD).replace('.','')
 
     '''
     proxy_handler = rq.ProxyHandler({"http": "http://login:pwd@lnx237in.sjk.emb:9090"})
@@ -35,18 +37,22 @@ def readICD(ICD):
     # p[@class="NLMattribution"]
     # info5 = tree.xpath('//p[@class="NLMalsoCalled"]/../p[not(preceding-sibling::ul)]/text()')
 
-
+    out["CID"] = stampsICD(ICD)
     out["symptoms"] = tree.xpath('//p[@class="NLMalsoCalled"]/../ul[1]/li/text()')
     info = '\n'.join(tree.xpath('//p[@class="NLMalsoCalled"]/../p/text()|//p[@class="NLMalsoCalled"]/../ul/li/text()'))
-    out["info"] = tr.Translate(info)
-    out["CID"] = ICD
+    try:
+        import stampsTranslate as tr
+        out["info"] = tr.Translate(info)
+        out["done"] = 'OK'
+    except urllib.error.HTTPError as err:
+        out["info"] = info
+        out["done"] = 'NOK'
 
     return json.loads(json.dumps(out, separators=(',', ':')))
 
-
-resp = readICD("A98.4")
+'''
+resp = readICD("A984")
 #print(resp)
 print(resp['info'])
-'''
 print(tr.translate(resp['info']))
 '''

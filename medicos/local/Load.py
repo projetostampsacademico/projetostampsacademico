@@ -2,7 +2,7 @@ __author__ = 'fkfouri'
 
 import sys
 import csv
-import stamps as st
+import stampsBD as st
 import json
 from unidecode import unidecode
 import os
