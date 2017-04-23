@@ -64,11 +64,12 @@ class Doctor(models.Model):
                                choices=SEX,
                                default='0')
     doc_email = models.CharField("E-mail", max_length=50)
+    doc_state = models.ForeignKey('State', verbose_name='Estado')
     doc_city = models.ForeignKey('City', verbose_name='Cidade')
     doc_street = models.CharField("Logradouro", max_length=50)
     doc_cep = models.CharField("CEP", max_length=50)
     doc_num_street = models.CharField("Número", max_length=50)
-    doc_compl = models.CharField("Complemento", max_length=50)
+    #doc_compl = models.CharField("Complemento", max_length=50, blank=True, null=True)
     doc_paramedic = models.BooleanField("Paramédico", default=False)
     doc_medical_specialty = models.ForeignKey('Medical_Specialty', verbose_name='Especialidade Médica')
 

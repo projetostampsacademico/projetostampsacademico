@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    <form method="post">{% csrf_token %}
-        Are you sure you want to delete "{{ object }}" ?
-        <input type="submit" value="Submit" />
-    </form>
-</body>
-</html>
+{% extends 'web/base.html' %}
+
+	{% block content %}
+	    <form method="post">{% csrf_token %}
+	       <h4> Deseja remover <b>"{{ object }}" </b> ? </h4> <br>
+	        <button type="submit" class="btn btn-success">Sim </button>
+	        <a type="submit" href="/list_doc" class="btn btn-primary">Não</a>
+	    </form>
+    {% endblock content %}
