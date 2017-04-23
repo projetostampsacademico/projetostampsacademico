@@ -2,7 +2,7 @@ __author__ = 'fkfouri'
 
 import sys
 import csv
-import stampsBD as st
+import stampsBD as bd
 import json
 from unidecode import unidecode
 import os
@@ -35,7 +35,7 @@ def READ_FILE(_file, _table):
                 #st.INSERT_MONGO('CAPITULOS', jj)
 
         SEED_DATA = json.loads(json.dumps(lst, separators=(',',':')))
-        st.BULK_INSERT_MONGO(_table, SEED_DATA)
+        bd.BULK_INSERT_MONGO(_table, SEED_DATA)
         #data = bson.BSON.encode(SEED_DATA)
 
 
