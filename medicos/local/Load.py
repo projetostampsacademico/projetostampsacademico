@@ -2,7 +2,7 @@ __author__ = 'fkfouri'
 
 import sys
 import csv
-import stamps as st
+import stampsBD as bd
 import json
 from unidecode import unidecode
 import os
@@ -35,7 +35,7 @@ def READ_FILE(_file, _table):
                 #st.INSERT_MONGO('CAPITULOS', jj)
 
         SEED_DATA = json.loads(json.dumps(lst, separators=(',',':')))
-        st.BULK_INSERT_MONGO(_table, SEED_DATA)
+        bd.BULK_INSERT_MONGO(_table, SEED_DATA)
         #data = bson.BSON.encode(SEED_DATA)
 
 
@@ -55,12 +55,7 @@ for x in os.walk(myPath):
         if arquivo.upper().endswith('.CSV'):
             tableName = str(arquivo.upper().replace('.CSV',''))
             _fileAddress = str(corrente) + str("/") + str(arquivo)
+            print ('======> ' + _fileAddress)
             READ_FILE(_fileAddress, tableName)
-
-
-    
-_file = sys.path[0] + str('\CID\CID-10-CAPITULOS.csv')
-print ('======> ' + _file)
-
 
 
