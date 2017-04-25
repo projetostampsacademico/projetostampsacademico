@@ -1,0 +1,19 @@
+{% extends 'web/base.html' %}
+    {% block content %}
+    <link href="/static/css/register.css" rel="stylesheet">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading"><b>Nova Triagem</b></div>
+                <div class="panel-body">
+                    <form method="post">{% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

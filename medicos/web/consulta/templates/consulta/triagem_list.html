@@ -1,0 +1,15 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+    <a href="{% url "triagem_new" %}" class="btn btn-success pull-right" > Nova Triagem</a>
+    <h1>Lista de Triagens Antigas</h1>
+    <table class="table table-striped">
+        {% for triagem in object_list %}
+        <tr>
+            <td>{{ triagem.tri_problem }}</td>
+            <td><a class="btn btn-primary" href="{% url "triagem_edit" triagem.id %}">Edit</a></td>
+            <td><a class="btn btn-danger" href="{% url "triagem_delete" triagem.id %}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}
