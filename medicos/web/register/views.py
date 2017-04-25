@@ -61,15 +61,15 @@ def specialty_create(request, template_name='register/specialty_form.html'):
     return render(request, template_name, {'form':form})
 
 def specialty_update(request, pk, template_name='register/specialty_form.html'):
-    doctor = get_object_or_404(Doctor, pk=pk)
-    form = MedicalSpecialtyForm(request.POST or None, instance=doctor)
+    specialty = get_object_or_404(Medical_Specialty, pk=pk)
+    form = MedicalSpecialtyForm(request.POST or None, instance=specialty)
     if form.is_valid():
         form.save()
         return redirect('specialty_list')
     return render(request, template_name, {'form':form})
 
 def specialty_delete(request, pk, template_name='register/specialty_confirm_delete.html'):
-    specialty = get_object_or_404(Doctor, pk=pk)
+    specialty = get_object_or_404(Medical_Specialty, pk=pk)
     if request.method=='POST':
         specialty.delete()
         return redirect('specialty_list')
