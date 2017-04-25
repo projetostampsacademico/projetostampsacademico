@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="HospitalER" id="2159F395-1476-5F23-DD08-F766FE7F7275" version="3.5">
-<createdBy>sidneibarbieri</createdBy>
-<createdTime>2017-04-22 22:36:12 UTC</createdTime>
-<ownerDesignName>HospitalER</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>2159F395-1476-5F23-DD08-F766FE7F7275</designId>
-</OSDM_Design>
