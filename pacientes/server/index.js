@@ -15,12 +15,13 @@ var session      = require('express-session');
 var configDB = require('./config/database.js');
 
 // configuration ===============================================================
-mongoose.connect(configDB.url, function(error){
-    if(error) console.log(error);
-    console.log("connection successful");
-}); // connect to our database
 
- require('./config/passport')(passport); // pass passport for configuration
+console.log(mongoose.connect(configDB.url));//, function(error){
+//    if(error) console.log(error);
+//    console.log("connection successful");
+//}); // connect to our database
+mongoose.set('debug', true);
+require('./config/passport')(passport); // pass passport for configuration
 
 // set up our express application
 app.use(morgan('dev')); // log every request to the console
@@ -37,6 +38,12 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
 require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+
+app.get('/users', function(req,res){
+    mongoose.model('User').find(function(err, users) {
+        res.send(users);
+    })
+});
 
 // launch ======================================================================
 app.listen(port);
