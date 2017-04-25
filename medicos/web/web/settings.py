@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'register',
+    'consulta',
     'nosql',
     'web',
 ]
