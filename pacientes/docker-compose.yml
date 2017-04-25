@@ -1,0 +1,13 @@
+server:
+  build: ./server
+  command: npm start
+  links:
+    - mongodb
+  ports:
+    - "8080:3000"
+  volumes:
+    - ./server:/var/www/pacientes
+  environment:
+    - DB=mongodb://mongodb/pacientes
+mongodb:
+  image: mongo

@@ -1,0 +1,15 @@
+{% extends 'register/base.html' %}
+
+{% block content %}
+    <a href="{% url "doctor_new" %}" class="btn btn-success pull-right" >New Doctor</a>
+    <h1>List of Doctor's</h1>
+    <table class="table table-striped">
+        {% for doctor in object_list %}
+        <tr>
+            <td>{{ doctor.doc_name }}</td>
+            <td><a class="btn btn-primary" href="{% url "doctor_edit" doctor.id %}">Edit</a></td>
+            <td><a class="btn btn-danger" href="{% url "doctor_delete" doctor.id %}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}
