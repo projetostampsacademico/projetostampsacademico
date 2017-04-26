@@ -5,6 +5,7 @@ import urllib.request as rq
 from lxml import html
 import json
 import stampsBD as bd
+import datetime
 
 
 def readICD(ICD):
@@ -49,6 +50,11 @@ def readICD(ICD):
 
     out["symptoms"] = tree.xpath(str(refXpath) + '/../ul[1]/li/text()')
     info = '\n'.join(tree.xpath(str(refXpath) + '/../p/text()|' + str(refXpath) + '/../ul/li/text()'))
+
+    out["info"] = info
+    out["done"] = 'NOK'
+
+    '''
     try:
         import stampsTranslate as tr
         out["info"] = tr.Translate(info)
@@ -56,6 +62,7 @@ def readICD(ICD):
     except urllib.error.HTTPError as err:
         out["info"] = info
         out["done"] = 'NOK'
+    '''
 
     return json.loads(json.dumps(out, separators=(',', ':')))
 
@@ -77,7 +84,7 @@ for item in ref:
         ICD = list(set().union(check['ICD'], readSite['ICD']))
         bd.UPDATE_DETAIL(check['_id'], CID_STAMPS, ICD)
 
-    print('------')
+    print('------' + str(datetime.datetime.now().time()))
 
 
 '''
