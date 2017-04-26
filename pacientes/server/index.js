@@ -13,7 +13,8 @@ var Strategy = require('passport-facebook').Strategy;
 passport.use(new Strategy({
     clientID: '251768885289067',
     clientSecret: '69803b262211015ea714b2593e690e26',
-    callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return'
+    callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
+    profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)']
   },
   function(accessToken, refreshToken, profile, cb) {
     // In this example, the user's Facebook profile is supplied as the user
@@ -86,7 +87,9 @@ app.get('/login/facebook/return',
 app.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
-    res.render('profile', { user: req.user });
+    console.log(req.user);
+    res.render('profile', { user: req.user}
+      );
   });
 
 var config = {
