@@ -61,8 +61,8 @@ def triagem_create(request, template_name='consulta/triagem_form.html'):
     return render(request, template_name, {'form':form})
 
 def triagem_update(request, pk, template_name='consulta/triagem_form.html'):
-    consulta = get_object_or_404(Consulta, pk=pk)
-    form = Triagem(request.POST or None, instance=consulta)
+    triagem = get_object_or_404(Triagem,pk=pk)
+    form = TriagemForm(request.POST or None, instance=triagem)
     if form.is_valid():
         form.save()
         return redirect('triagem_list')
