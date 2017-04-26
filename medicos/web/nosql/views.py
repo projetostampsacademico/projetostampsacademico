@@ -31,7 +31,12 @@ def list(request, template_name='disease/list.html'):
     return render(request, template_name, {'collection': collection, 'data': data})
 
 
-def query(request, template_name='disease/list.html'):
-    """Query disease list page."""
-    disease_code = request.GET['code']
-    return redirect("http://apps.who.int/classifications/icd10/browse/2016/en#/" + disease_code)
+def diseases(request, template_name='disease/diseases.html'):
+    """Collection list page."""
+    service = MongoService.Instance()
+    disease_code = request.GET.get('code')
+    if disease_code is None:
+        diseases_list = service.fetch_data('CID-10-CATEGORIAS', 'list')
+    else:
+        diseases_list = service.query_data('CID-10-CATEGORIAS', 'DESCRABREV', disease_code, 'list')
+    return render(request, template_name, {'diseases_list': diseases_list})

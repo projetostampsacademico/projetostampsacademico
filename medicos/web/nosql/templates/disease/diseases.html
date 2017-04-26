@@ -13,18 +13,25 @@
     <div class="row">
 
         <div class="col-md-8 col-md-offset-2">
-          <h1>Listagem de {{collection}}</h1>
+          <h1>Listagem de Doenças</h1>
         </div>
 
         <div class="col-md-2">
           <a class="btn btn-success" href="/disease">Voltar</a>
         </div>
 
+        {% include 'disease/query.html' %}
+
         <div class="col-md-8 col-md-offset-2">
-          <pre>
-            <h3>Data</h3>
-            <div id="data">{{ data }}</div>
-          </pre>
+          <h4>Total de <b>{{diseases_list|length }}</b> doenças</h4>
+          <ul class="list-group">
+          {% for disease in diseases_list %}
+            <li class="list-group-item">
+              <h3>{{ disease.CAT }} - {{ disease.DESCRICAO }}</h3>
+              <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.CAT }}">Ref. Externa</a>
+            </li>
+          {% endfor %}
+          </ul>
         </div>
 
     </div>

@@ -21,5 +21,5 @@ urls = [
     url(r'^disease$', views.index),
     url(r'^disease/list$', views.list),
     url(r'^disease/database$', views.database),
-    url(r'^disease/query$', views.query),
+    url(r'^disease/diseases$', views.diseases),
 ]
