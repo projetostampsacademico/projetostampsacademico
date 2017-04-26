@@ -38,8 +38,21 @@ def GET_CID_10_SUBCATEGORIAS():
     collection = db['CID-10-SUBCATEGORIAS'].find({})
     i, lst = 0, []
     for document in collection:
+
+        CID_STAMPS = document['SUBCAT']
+        tst = CID_STAMPS[1:-1]
+        tst2 = CID_STAMPS[:1]
+
+        if CID_STAMPS[:1] not in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N']:
+            lst.append(document)
+        elif CID_STAMPS[:1] == 'N' and int(CID_STAMPS[1:-1]) > 7:
+            lst.append(document)
+
+        i += 1
+        '''
         lst.append(document)
         i += 1
+        '''
         # if i>10:
         #    break
     return lst
@@ -63,6 +76,10 @@ def UPDATE_DETAIL(_id, CID_STAMPS, ICD):
 '''
 db = START_CONN()
 ref = db['CID-10-SUBCATEGORIAS']
-print()
+
+
+ref = GET_CID_10_SUBCATEGORIAS()
+print(ref)
 '''
 #DB_TEST()
+
