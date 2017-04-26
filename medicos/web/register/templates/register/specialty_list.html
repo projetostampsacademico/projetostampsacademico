@@ -1,0 +1,15 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+    <a href="{% url "specialty_new" %}" class="btn btn-success pull-right" > Inserir Especialidade</a>
+    <h1>Lista de Especialidade</h1>
+    <table class="table table-striped">
+        {% for specialty in object_list %}
+        <tr>
+            <td>{{ specialty.med_spec_name }}</td>
+            <td><a class="btn btn-primary" href="{% url "specialty_edit" specialty.id %}">Edit</a></td>
+            <td><a class="btn btn-danger" href="{% url "specialty_delete" specialty.id %}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}

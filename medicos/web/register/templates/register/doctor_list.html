@@ -1,8 +1,8 @@
-{% extends 'register/base.html' %}
+{% extends 'web/base.html' %}
 
 {% block content %}
-    <a href="{% url "doctor_new" %}" class="btn btn-success pull-right" >New Doctor</a>
-    <h1>List of Doctor's</h1>
+    <a href="{% url "doctor_new" %}" class="btn btn-success pull-right" >Inserir Médico</a>
+    <h1>Lista de Médicos</h1>
     <table class="table table-striped">
         {% for doctor in object_list %}
         <tr>

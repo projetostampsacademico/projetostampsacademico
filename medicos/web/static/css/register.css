@@ -1,8 +1,13 @@
+body > .container {
+  text-align: left;
+}
+
+
 label{
     text-align:left;
 }
 
-input, select {
+input[type=text], select {
     width: 100%;
     background-color: #fff;
     border: 1px solid #ccc;
