@@ -18,6 +18,8 @@ from . import views
 from django.conf.urls import patterns, include, url
 
 urls = [
-    url(r'^nosql$', views.index),
-    url(r'^nosql/list$', views.list),
+    url(r'^disease$', views.index),
+    url(r'^disease/list$', views.list),
+    url(r'^disease/database$', views.database),
+    url(r'^disease/query$', views.query),
 ]
