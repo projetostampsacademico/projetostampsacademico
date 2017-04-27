@@ -48,4 +48,3 @@ bower_components
 **/.idea/**
 
 /pacientes/server/data
-/pacientes/server/config/database.js

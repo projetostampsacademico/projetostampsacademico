@@ -34,8 +34,15 @@ $ npm install -g bower
 $ bower -v
 $ bower install
 ```
+5 - Configure o MongoDB de acordo com o seguinte link:
+https://community.c9.io/t/setting-up-mongodb/1717
 
-5 - Rodar o servidor: Na área inferior direita, clicar no '+' (nova aba), e selecionar a opção "New run configuration", na nova janela aberta, no campo "Command:" colocar:
+6 - Antes de rodar o NodeJS, rode o MongoDB no terminal:
+```sh
+$ ./mongod
+```
+
+6 - Rodar o servidor: Na área inferior direita, clicar no '+' (nova aba), e selecionar a opção "New run configuration", na nova janela aberta, no campo "Command:" colocar:
 ```bash
 ./pacientes/server/index.js
 ```
