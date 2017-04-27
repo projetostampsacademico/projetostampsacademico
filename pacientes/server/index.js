@@ -1,8 +1,11 @@
 var express = require('express');
 var passport = require('passport');
 var Strategy = require('passport-facebook').Strategy;
+var User = require('./models/user');
+var mongoose = require('mongoose');
+var configDB = require('./config/database.js');
 
-
+mongoose.connect(configDB.url);
 // Configure the Facebook strategy for use by Passport.
 //
 // OAuth 2.0-based strategies require a `verify` function which receives the
@@ -10,18 +13,45 @@ var Strategy = require('passport-facebook').Strategy;
 // behalf, along with the user's profile.  The function must invoke `cb`
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
+
 passport.use(new Strategy({
     clientID: '251768885289067',
     clientSecret: '69803b262211015ea714b2593e690e26',
-    callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return'
+    callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
+    profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)']
   },
   function(accessToken, refreshToken, profile, cb) {
+    process.nextTick(function() {
+      User.findOne({ 'facebook.id': profile.id }, function(err, user) {
+        if (err)
+          return cb(err);
+        if (user) {
+          return cb(null, user);
+        } else {
+          var newUser = new User();
+          newUser.facebook.id = profile.id;
+          newUser.facebook.token = accessToken;
+          newUser.facebook.displayName = profile.displayName;
+          if (profile.emails) { 
+            newUser.facebook.email = (profile.emails[0].value || '').toLowerCase();
+          }
+          if (profile.photos) { 
+            newUser.facebook.photo = profile.photos[0].value;
+          }
+          newUser.save(function(err) {
+            if (err)
+              throw err;
+            return cb(null, newUser);
+          });
+        }
+      });
+    });
     // In this example, the user's Facebook profile is supplied as the user
     // record.  In a production-quality application, the Facebook profile should
     // be associated with a user record in the application's database, which
     // allows for account linking and authentication with other identity
     // providers.
-    return cb(null, profile);
+    //return cb(null, profile);
   }));
 
 
@@ -86,7 +116,9 @@ app.get('/login/facebook/return',
 app.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
-    res.render('profile', { user: req.user });
+    console.log(req.user);
+    res.render('profile', { user: req.user}
+      );
   });
 
 var config = {

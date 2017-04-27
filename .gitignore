@@ -45,5 +45,10 @@ Thumbs.db
 ###############
 node_modules
 bower_components
+
 .idea
 .vscode
+**/.idea/**
+
+## MongoDB data
+/pacientes/server/data

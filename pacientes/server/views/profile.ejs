@@ -1,8 +1,10 @@
 <p>
-ID: <%= user.id %><br/>
-Username: <%= user.username %><br/>
-Name: <%= user.displayName %><br/>
-<% if (user.emails) { %>
-Email: <%= user.emails[0].value %><br/>
+<% if (user.facebook.photo) { %>
+<img src="<%= user.facebook.photo %>"></br>
+<% } %>
+ID: <%= user.facebook.id %><br/>
+Nome: <%= user.facebook.displayName %><br/>
+<% if (user.facebook.emails) { %>
+Email: <%= user.facebook.emails[0].value %><br/>
 <% } %>
 </p>
