@@ -11,6 +11,10 @@ class Consulta(models.Model):
     con_hospital_id = models.ForeignKey('Hospital', verbose_name = "Hospital")
     con_doctor_crm = models.ForeignKey('register.Doctor', verbose_name = "Médico Responsável")
     con_triagem_id = models.ForeignKey('Triagem', verbose_name ="Triagem")
+    con_diagnostico = models.CharField("Diagnóstico", max_length = 256)
+    con_prescricao = models.CharField("Prescrição", max_length = 256)
+    con_tratamento = models.CharField("Tratamento", max_length = 256)
+    con_evolucao = models.CharField("Evolução", max_length = 256)
     con_entry_time =   models.DateField(("Date"), default=date.today)
     
     class Meta:
