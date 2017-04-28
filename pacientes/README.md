@@ -1,9 +1,14 @@
 # Pacientes
 
+# Para utilizar Docker
+
 Para desenvolver:
 ```bash
 docker-compose build
-docker-compose run -p 8080:3000 server bash
+docker-compose run -p 8080:8080 server bash
+npm install
+bower install --allow-root
+npm start
 ```
 
 Para colocar em produção:
@@ -13,8 +18,7 @@ docker-compose up -d
 docker-compose logs -f server
 ```
 
-
-# Inicialização de ambiente de desenvolvimento na nuvem (Sugestão)
+# Inicialização de ambiente de desenvolvimento na nuvem (Cloud9)
 
 1 - Criar conta no Cloud9 (http://c9.io) - Apesar de precisar do cartão de crédito no cadastro, é gratuito, já uso a quase 2 anos e é bastante confiável;
 
