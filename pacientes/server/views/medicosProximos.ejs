@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load("upcoming", {packages:["map"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Lat', 'Long', 'Name'],
+	  [-23.20389472,-45.90955491,"Clínica São João"],
+	  [-23.21759643,-45.89215258,"Clínica Unimed"],
+	  [-23.19365066,-45.89892191,"Clínica São José"],
+        ]);
+
+        var map = new google.visualization.Map(document.getElementById('map_div'));
+        map.draw(data, {
+          showTooltip: true,
+          showInfoWindow: true,
+          useMapTypeControl: true,
+          mapType: 'normal'
+        });
+      }
+
+    </script>
+     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt-pZ7J-sohE0afwBbCZtxua_hK3wgB6Y&callback=drawChart"></script>
+  </head>
+
+  <body>
+    <div id="map_div" style="height: 100%"></div>
+  </body>
+</html>

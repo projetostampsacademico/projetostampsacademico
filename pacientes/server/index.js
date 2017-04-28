@@ -4,6 +4,7 @@ var Strategy = require('passport-facebook').Strategy;
 var User = require('./models/user');
 var mongoose = require('mongoose');
 var configDB = require('./config/database.js');
+var path = require('path');
 
 mongoose.connect(configDB.url);
 // Configure the Facebook strategy for use by Passport.
@@ -13,11 +14,13 @@ mongoose.connect(configDB.url);
 // behalf, along with the user's profile.  The function must invoke `cb`
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
-
+// ****
+// configure o nome stampsacademico.com no host apontando para localhost.
+// ****
 passport.use(new Strategy({
     clientID: '251768885289067',
     clientSecret: '69803b262211015ea714b2593e690e26',
-    callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
+    callbackURL: 'http://stampsacademico.com:8080/login/facebook/return',
     profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)']
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -92,6 +95,7 @@ app.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveU
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Define routes.
 app.get('/',
@@ -111,6 +115,20 @@ app.get('/login/facebook/return',
   passport.authenticate('facebook', { failureRedirect: '/login' }),
   function(req, res) {
     res.redirect('/');
+  });
+
+app.get('/medicosProximos',
+  require('connect-ensure-login').ensureLoggedIn(),
+  function(req, res){
+    res.render('medicosProximos', { user: req.user}
+      );
+  });
+
+app.get('/paProximos',
+  require('connect-ensure-login').ensureLoggedIn(),
+  function(req, res){
+    res.render('paProximos', { user: req.user}
+      );
   });
 
 app.get('/profile',
