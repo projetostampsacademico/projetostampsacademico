@@ -20,7 +20,7 @@ mongoose.connect(configDB.url);
 passport.use(new Strategy({
     clientID: '251768885289067',
     clientSecret: '69803b262211015ea714b2593e690e26',
-    callbackURL: 'http://stampsacademico.com:8080/login/facebook/return',
+    callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
     profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)']
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -130,6 +130,14 @@ app.get('/paProximos',
     res.render('paProximos', { user: req.user}
       );
   });
+
+app.get('/sintomasForm',
+  require('connect-ensure-login').ensureLoggedIn(),
+  function(req, res){
+    res.render('sintomasForm', { user: req.user}
+      );
+  });
+
 
 app.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
