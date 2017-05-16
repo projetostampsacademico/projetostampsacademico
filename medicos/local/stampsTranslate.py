@@ -10,8 +10,13 @@ def Translate(text):
     proxy_opener = rq.build_opener(proxy_handler)
     gs = goslate.Goslate(opener=proxy_opener)
     '''
+
+
     gs = goslate.Goslate()
     return gs.translate(text, 'pt-br')
 
 
-# print(Translate("that's a good idea"))
+    #return  str(text)
+
+
+#print(Translate("that's a good idea"))
