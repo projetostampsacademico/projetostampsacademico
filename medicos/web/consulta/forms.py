@@ -9,7 +9,7 @@ __author__ = 'luckeciano'
 class ConsultaForm(ModelForm):
     class Meta:
         model = Consulta
-        fields = ['con_patient_number', 'con_hospital_id',  'con_doctor_crm', 'con_triagem_id', 'con_entry_time']
+        fields = ['con_patient_number', 'con_hospital_id',  'con_doctor_crm', 'con_triagem_id', 'con_entry_time', 'con_diagnostico', 'con_prescricao', 'con_tratamento', 'con_evolucao']
         
 class TriagemForm(ModelForm):
     class Meta:
