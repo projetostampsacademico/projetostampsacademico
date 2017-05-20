@@ -1,23 +1,23 @@
-NUMCAP;CATINIC;CATFIM;DESCRICAO;DESCRABREV;
-1;A00;B99;Capítulo I - Algumas doenças infecciosas e parasitárias;I.   Algumas doenças infecciosas e parasitárias;
-2;C00;D48;Capítulo II - Neoplasias [tumores];II.  Neoplasias (tumores);
-3;D50;D89;Capítulo III  - Doenças do sangue e dos órgãos hematopoéticos e alguns transtornos imunitários;III. Doenças sangue órgãos hemat e transt imunitár;
-4;E00;E90;Capítulo IV - Doenças endócrinas, nutricionais e metabólicas;IV.  Doenças endócrinas nutricionais e metabólicas;
-5;F00;F99;Capítulo V - Transtornos mentais e comportamentais;V.   Transtornos mentais e comportamentais;
-6;G00;G99;Capítulo VI - Doenças do sistema nervoso;VI.  Doenças do sistema nervoso;
-7;H00;H59;Capítulo VII - Doenças do olho e anexos;VII. Doenças do olho e anexos;
-8;H60;H95;Capítulo VIII - Doenças do ouvido e da apófise mastóide;VIII.Doenças do ouvido e da apófise mastóide;
-9;I00;I99;Capítulo IX - Doenças do aparelho circulatório;IX.  Doenças do aparelho circulatório;
-10;J00;J99;Capítulo X - Doenças do aparelho respiratório;X.   Doenças do aparelho respiratório;
-11;K00;K93;Capítulo XI - Doenças do aparelho digestivo;XI.  Doenças do aparelho digestivo;
-12;L00;L99;Capítulo XII - Doenças da pele e do tecido subcutâneo;XII. Doenças da pele e do tecido subcutâneo;
-13;M00;M99;Capítulo XIII - Doenças do sistema osteomuscular e do tecido conjuntivo;XIII.Doenças sist osteomuscular e tec conjuntivo;
-14;N00;N99;Capítulo XIV - Doenças do aparelho geniturinário;XIV. Doenças do aparelho geniturinário;
-15;O00;O99;Capítulo XV - Gravidez, parto e puerpério;XV.  Gravidez parto e puerpério;
-16;P00;P96;Capítulo XVI - Algumas afecções originadas no período perinatal;XVI. Algumas afec originadas no período perinatal;
-17;Q00;Q99;Capítulo XVII - Malformações congênitas, deformidades e anomalias cromossômicas;XVII.Malf cong deformid e anomalias cromossômicas;
-18;R00;R99;Capítulo XVIII - Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte;XVIII.Sint sinais e achad anorm ex clín e laborat;
-19;S00;T98;Capítulo XIX - Lesões, envenenamento e algumas outras conseqüências de causas externas;XIX. Lesões enven e alg out conseq causas externas;
-20;V01;Y98;Capítulo XX - Causas externas de morbidade e de mortalidade;XX.  Causas externas de morbidade e mortalidade;
-21;Z00;Z99;Capítulo XXI - Fatores que influenciam o estado de saúde e o contato com os serviços de saúde;XXI. Contatos com serviços de saúde;
-22;U04;U99;Capítulo XXII - Códigos para propósitos especiais;XXII.Códigos para propósitos especiais;
+NUMCAP;CATINIC;CATFIM;DESCRICAO;DESCRABREV
+1;A00;B99;Chapter I - Certain infectious and parasitic diseases;I. Certain infectious and parasitic diseases
+2;C00;D48;Chapter II - neoplasms [tumors];II. Neoplasms (tumors)
+3;D50;D89;Chapter III - Diseases of the blood and blood-forming organs and certain immune disorders;III. blood diseases and disorders of the immune organs hemat
+4;E00;E90;Chapter IV - Endocrine, nutritional and metabolic diseases;IV. nutritional and metabolic endocrine diseases
+5;F00;F99;Chapter V - Mental and behavioral disorders;V. Mental and behavioral disorders
+6;G00;G99;Chapter VI - Nervous system disorders;SAW. Nervous system disorders
+7;H00;H59;Chapter VII - Diseases of the eye and attachments;VII. Eye diseases and attachments
+8;H60;H95;Chapter VIII - Diseases of the ear and mastoid process;VIII.Doen�as the ear and mastoid process
+9;I00;I99;Chapter IX - Diseases of the circulatory system;IX. Diseases of the circulatory system
+10;J00;J99;Chapter X - Diseases of the respiratory system;Respiratory diseases X.
+11;K00;K93;Chapter XI - Diseases of the digestive system;XI. Digestive diseases
+12;L00;L99;Chapter XII - Diseases of the skin and subcutaneous tissue;XII. Skin and subcutaneous tissue
+13;M00;M99;Chapter XIII - Diseases of the musculoskeletal system and connective tissue;Musculoskeletal and connective XIII.Doen�as syst tec
+14;N00;N99;Chapter XIV - Diseases of the genitourinary;XIV. Diseases of the genitourinary
+15;O00;O99;Chapter XV - Pregnancy, childbirth and postpartum;XV. Pregnancy childbirth and the
+16;P00;P96;Chapter XVI - Certain conditions originating in the perinatal period;XVI. Some affections originating in the perinatal period
+17;Q00;Q99;Chapter XVII - Congenital malformations, deformations and chromosomal abnormalities;XVII.Malf cong deformities and chromosomal abnormalities
+18;R00;R99;Chapter XVIII - Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified;XVIII.Sint signs and achad abnorm ex cl�n and lab
+19;S00;T98;Chapter XIX - Injury, poisoning and certain other consequences of external causes;XIX. enven injuries and alg October conseq external causes
+20;V01;Y98;Chapter XX - External causes of morbidity and mortality;XX. External causes of morbidity and mortality
+21;Z00;Z99;Chapter XXI - Factors influencing health status and contact with health services;XXI. Contact with health services
+22;U04;U99;Chapter XXII - Codes for special purposes;XXII.C�digos for special purposes

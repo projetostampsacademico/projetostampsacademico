@@ -1,817 +1,817 @@
-CAT;DESCRICAO;REFER;
-M8000/0;Neoplasia benigna;;
-M8000/1;Neoplasia de comportamento incerto se benigno ou maligno;;
-M8000/3;Neoplasia maligna;;
-M8000/6;Neoplasia metastática;;
-M8001/0;Células tumorais, benignas;;
-M8001/1;Células tumorais, incerto se benignas ou malignas;;
-M8001/3;Células tumorais malignas;;
-M8002/3;Tumor maligno, tipo de células pequenas;;
-M8003/3;Tumor maligno, tipo de células gigantes;;
-M8004/3;Tumor maligno, tipo de células fusiformes;;
-M8010/0;Tumor epitelial benigno;;
-M8010/2;Carcinoma in situ SOE;;
-M8010/3;Carcinoma SOE;;
-M8010/6;Carcinoma metastático SOE;;
-M8011/0;Epitelioma benigno;;
-M8011/3;Epitelioma maligno;;
-M8012/3;Carcinomas de células grandes SOE;;
-M8020/3;Carcinoma indiferenciado SOE;;
-M8021/3;Carcinoma anaplásico SOE;;
-M8022/3;Carcinoma pleomórfico;;
-M8030/3;Carcinoma de células gigantes e de células fusiformes;;
-M8031/3;Carcinoma de células gigantes;;
-M8032/3;Carcinoma de células fusiformes;;
-M8033/3;Carcinoma pseudossarcomatoso;;
-M8034/3;Carcinoma de células poligonais;;
-M8040/1;"Tumorlet";;
-M8041/3;Carcinoma de células pequenas SOE;;
-M8042/3;Carcinoma "oat cell";C34.-;
-M8043/3;Carcinoma de células pequenas, fusiformes;C34.-;
-M8044/3;Carcinoma de células pequenas, intermediárias;C34.-;
-M8045/3;Carcinoma de células pequenas e de células grandes;C34.-;
-M8050/0;Papiloma SOE (exceto Papiloma de bexiga M8120/1);;
-M8050/2;Carcinoma papilar in situ;;
-M8050/3;Carcinoma papilar SOE;;
-M8051/0;Papiloma verrucoso;;
-M8051/3;Carcinoma verrucoso SOE;;
-M8052/0;Papiloma de células escamosas;;
-M8052/3;Carcinoma papilar de células escamosas;;
-M8053/0;Papiloma invertido;;
-M8060/0;Papilomatose SOE;;
-M8070/2;Carcinoma in situ de células escamosas, SOE;;
-M8070/3;Carcinoma de células escamosas SOE;;
-M8070/6;Carcinoma de células escamosas, metastático, SOE;;
-M8071/3;Carcinoma de células escamosas, queratinizado, SOE;;
-M8072/3;Carcinoma de células escamosas, de células grandes, não queratinizado;;
-M8073/3;Carcinoma de células escamosas, de células pequenas, não queratinizado;;
-M8074/3;Carcinoma de células escamosas, de células fusiformes;;
-M8075/3;Carcinoma de células escamosas adenóides;;
-M8076/2;Carcinoma in situ de células escamosas com invasão questionável do estroma;C53.-;
-M8076/3;Carcinoma de células escamosas, microinvasivo;C53.-;
-M8077/2;Neoplasia intra-epitelial, grau III, de colo uterino, vulva e vagina;;
-M8080/2;Eritroplasia de Queyrat;;
-M8081/2;Doença de Bowen;C44.-;
-M8082/3;Carcinoma linfoepitelial;;
-M8090/1;Tumor de células basais;D48.5;
-M8090/3;Carcinoma de células basais SOE;C44.-;
-M8091/3;Carcinoma de células basais, multicêntrico;C44.-;
-M8092/3;Carcinoma de células basais, tipo morféia;C44.-;
-M8093/3;Carcinoma de células basais, fibroepitelial;C44.-;
-M8094/3;Carcinoma basoescamoso;C44.-;
-M8095/3;Carcinoma metatípico;C44.-;
-M8096/0;Epitelioma intra-epidérmico de Jadassohn;D23.-;
-M8100/0;Tricoepitelioma;D23.-;
-M8101/0;Tricofoliculoma;D23.-;
-M8102/0;Tricolemoma;D23.-;
-M8110/0;Pilomatrixoma SOE;D23.-;
-M8110/3;Carcinoma da pilomátrix;C44.-;
-M8120/0;Papiloma de células de transição, SOE;;
-M8120/1;Papiloma urotelial;;
-M8120/2;Carcinoma in situ de células transicionais;;
-M8120/3;Carcinoma de células transicionais SOE;;
-M8121/0;Papiloma schneideriano;;
-M8121/1;Papiloma de células transicionais, tipo invertido;;
-M8121/3;Carcinoma schneideriano;;
-M8122/3;Carcinoma de células transicionais, tipo células fusiformas;;
-M8123/3;Carcinoma basalóide;C21.1;
-M8124/3;Carcinoma cloacogênico;C21.2;
-M8130/3;Carcinoma papilar de células transicionais;;
-M8140/0;Adenoma SOE;;
-M8140/1;Adenoma brônquico SOE;D38.1;
-M8140/2;Adenocarcinoma in situ SOE;;
-M8140/3;Adenocarcinoma SOE;;
-M8140/6;Adenocarcinoma metastático SOE;;
-M8141/3;Adenocarcinoma esquirroso;;
-M8142/3;Linite plástica;C16.-;
-M8143/3;Adenocarcinoma de propagação superficial;;
-M8144/3;Adenocarcionama, tipo intestinal;C16.-;
-M8145/3;Carcinoma, tipo difuso;C16.-;
-M8146/0;Adenoma monomórfico;;
-M8147/0;Adenoma de células basais;D11.-;
-M8147/3;Adenocarcinoma de células basais;C07.-,C08.-;
-M8150/0;Adenoma de células das ilhotas;D13.7;
-M8150/3;Carcinoma de células das ilhotas;C25.4;
-M8151/0;Insulinoma SOE;D13.7;
-M8151/3;Insulinoma maligno;C25.4;
-M8152/0;Glucagonoma SOE;D13.7;
-M8152/3;Glucagonoma maligno;C25.4;
-M8153/1;Gastrinoma SOE;;
-M8153/3;Gastrinoma maligno;;
-M8154/3;Adenocarcinoma misto, das ilhotas e exócrino;C25.-;
-M8155/3;Vipoma;;
-M8160/0;Adenoma de duto biliar;D13.4,D13.5;
-M8160/3;Colangiocarcinoma;C22.1;
-M8161/0;Cistadenoma de dutos biliares;;
-M8161/3;Cistadenocarcinoma de dutos biliares;;
-M8162/3;Tumor de Klatskin;C22.1;
-M8170/0;Adenoma de células hepáticas;D13.4;
-M8170/3;Carcinoma hepatocelular SOE;C22.0;
-M8171/3;Carcinoma hepatocelular fibrolamelar;C22.0;
-M8180/3;Carcinoma hepatocelular e colangiocarcinoma combinados;C22.0;
-M8190/0;Adenoma trabecular;;
-M8190/3;Adenocarcinoma trabecular;;
-M8191/0;Adenoma embrionário;;
-M8200/0;Cilindroma dérmico écrino;D23.-;
-M8200/3;Carcinoma cístico adenóide;;
-M8201/3;Carcinoma cribriforme;;
-M8202/0;Adenoma microcístico;D13.7;
-M8210/0;Pólipo adenomatoso SOE;;
-M8210/2;Adenocarcinoma in situ em pólipo adenomatoso;;
-M8210/3;Adenocarcinoma em pólipo adenomatoso;;
-M8211/0;Adenoma tubular SOE;;
-M8211/3;Adenocarcinoma tubular;;
-M8220/0;Polipose adenomatosa do cólon;D12.-;
-M8220/3;Adenocarcinoma em polipose adenomatosa do cólon;C18.-;
-M8221/0;Pólipos adenomatosos múltiplos;;
-M8221/3;Adenocarcinoma em pólipos adenomatosos múltiplos;;
-M8230/3;Carcinoma sólido SOE;;
-M8231/3;Carcinoma simples;;
-M8240/1;Tumor carcinóide SOE da apêndice;D37.7;
-M8240/3;Tumor carcinóide SOE (exceto do apêndice M8240/1);;
-M8241/1;Tumor carcinóide argentafínico SOE;;
-M8241/3;Tumor carcinóide argentafínico maligno;;
-M8243/3;Carcinoma de células caliciformes;C18.1;
-M8244/3;Carcinóide composto;;
-M8245/3;Tumor adenocarcinóide;;
-M8246/3;Carcinoma neuroendócrino;;
-M8247/3;Carcinoma de células de Merkel;C44.-;
-M8248/1;Apudoma;;
-M8250/1;Adenomatose pulmonar;D38.1;
-M8250/3;Adenocarcinoma bronquíolo-alveolar;C34.-;
-M8251/0;Adenoma alveolar;D14.3;
-M8251/3;Adenocarcinoma alveolar;C34.-;
-M8260/0;Adenoma papilar SOE;;
-M8260/3;Adenocarcinoma papilar SOE;;
-M8261/1;Adenoma viloso SOE;;
-M8261/2;Adenocarcinoma in situ em adenoma viloso;;
-M8261/3;Adenocarcinoma em adenoma viloso;;
-M8262/3;Adenocarcinoma viloso;;
-M8263/0;Adenoma tubuloviloso SOE;;
-M8263/2;Adenocarcinoma in situ em adenoma tubuloviloso;;
-M8263/3;Adenocarcinoma em adenoma tubuloviloso;;
-M8270/0;Adenoma cromófobo;D35.2;
-M8270/3;Carcinoma cromófobo;C75.1;
-M8271/0;Prolactinoma;D35.2;
-M8280/0;Adenoma acidófilo;D35.2;
-M8280/3;Carcinoma acidófilo;C75.1;
-M8281/0;Adenoma misto acidófilo-basófilo;D35.2;
-M8281/3;Carcinoma misto acidófilo-basófilo;C75.1;
-M8290/0;Adenoma oxifílico;;
-M8290/3;Adenocarcinoma oxifílico;;
-M8300/0;Adenoma basófilo;C75.1;
-M8300/3;Carcinoma basófilo;D35.2;
-M8310/0;Adenoma de células claras;;
-M8310/3;Adenocarcinoma de células claras SOE;;
-M8311/1;Tumor hipernefróide;;
-M8312/3;Carcinoma de células renais;C64;
-M8313/0;Adenofibroma de células claras;;
-M8314/3;Carcinoma rico em lípides;C50.-;
-M8315/3;Carcinoma rico em glicogênio;C50.-;
-M8320/3;Carcinoma de células granulares;;
-M8321/0;Adenoma de células principais;D35.1;
-M8322/0;Adenoma de células claras (water-clear cell);D35.1;
-M8322/3;Adenocarcinoma de células claras (water-clear cell);C75.0;
-M8323/0;Adenoma de células mistas;;
-M8323/3;Adenocarcinoma de células mistas;;
-M8324/0;Lipoadenoma;;
-M8330/0;Adenoma folicular;D34;
-M8330/3;Adenocarcinoma folicular SOE;C73;
-M8331/3;Adenocarcinoma folicular bem diferenciado;C73;
-M8332/3;Adenocarcinoma folicular trabecular;C73;
-M8333/0;Adenoma microfolicular;C73;
-M8334/0;Adenoma macrofolicular;D34;
-M8340/3;Carcinoma papilar, variante folicular;C73;
-M8350/3;Carcinoma esclerosante não-encapsulado;C73;
-M8360/1;Adenomas endócrinos múltiplos;;
-M8361/1;Tumor justaglomerular;D41.0;
-M8370/0;Adenoma de córtex supra-renal SOE;D35.0;
-M8370/3;Carcinoma de córtex supra-renal;C74.0;
-M8371/0;Adenoma de córtex supra-renal de células compactas;D35.0;
-M8372/0;Adenoma de córtex supra-renal, variante densamente pigmentada;D35.0;
-M8373/0;Adenoma de córtex supra-renal, de células claras;D35.0;
-M8374/0;Adenoma de córtex supra-renal, de células glomerulosas;D35.0;
-M8375/0;Adenoma de córtex supra-renal, de células mistas;D35.0;
-M8380/0;Adenoma endometrióide SOE;D27;
-M8380/1;Adenoma endometrióide "borderline";D39.1;
-M8380/3;Carcinoma endometrióide;C56;
-M8381/0;Adenofibroma endometrióide SOE;D27;
-M8381/1;Adenofibroma endometrióide "borderline";D39.1;
-M8381/3;Adenofibroma endometróide maligno;C56;
-M8390/0;Adenoma de apêndice cutâneo;D23.-;
-M8390/3;Carcinoma de apêndice cutâneo;C44.-;
-M8400/0;Adenoma de glândula sudorípara;D23.-;
-M8400/1;Tumor de glândula sudorípara SOE;D48.5;
-M8400/3;Adenocarcinoma de glândula sudorípara;C44.-;
-M8401/0;Adenoma apócrino;;
-M8401/3;Adenocarcinoma apócrino;;
-M8402/0;Acrospiroma écrino;D23.-;
-M8403/0;Espiradenoma écrino;D23.-;
-M8404/0;Hidrocistoma;D23.-;
-M8405/0;Hidradenoma papilar;D23.-;
-M8406/0;Siringadenoma papilar;D23.-;
-M8407/0;Siringoma SOE;D23.-;
-M8408/0;Adenoma papilar écrino;C44.-;
-M8410/0;Adenoma sebáceo;D23.-;
-M8410/3;Adenocarcinoma sebáceo;C44.-;
-M8420/0;Adenoma ceruminoso;D23.2;
-M8420/3;Adenocarcinoma ceruminoso;C44.2;
-M8430/1;Tumor mucoepidermóide;;
-M8430/3;Carcinoma mucoepidermóide;;
-M8440/0;Cistadenoma SOE;;
-M8440/3;Cistadenocarcinoma SOE;;
-M8441/0;Cistadenoma seroso SOE;D27;
-M8441/3;Cistadenocarcinoma seroso SOE;C56;
-M8442/3;Cistadenoma seroso "borderline";C56;
-M8450/0;Cistadenoma papilar SOE;D27;
-M8450/3;Cistadenocarcinoma papilar SOE;C56;
-M8451/3;Cistadenoma papilar "borderline";C56;
-M8452/1;Tumor cístico papilar;D37.7;
-M8460/0;Cistadenoma seroso papilar SOE;D27;
-M8460/3;Cistadenocarcinoma seroso papilar;C56;
-M8461/0;Papiloma seroso superficial;D27;
-M8461/3;Carcinoma papilar seroso superficial;C56;
-M8462/3;Cistadenoma seroso papilar "borderline";C56;
-M8470/0;Cistadenoma mucinoso SOE;D27;
-M8470/3;Cistadenocarcinoma mucinoso;C56;
-M8471/0;Cistadenoma mucinoso papilar SOE;D27;
-M8471/3;Cistadenocarcinoma mucinoso papilar;C56;
-M8472/3;Cistadenoma mucinoso "borderline";C56;
-M8473/3;Cistadenoma mucinoso papilar "borderline";C56;
-M8480/0;Adenoma mucinoso;;
-M8480/3;Adenocarcinoma mucinoso;;
-M8480/6;Pseudomixoma de peritônio;C78.6;
-M8481/3;Adenocarcinoma produtor de mucina;;
-M8490/3;Carcinoma de células em anel de sinete;;
-M8490/6;Carcinoma metastático de células em anel de sinete;;
-M8500/2;Carcinoma intraductal não infiltrante SOE;;
-M8500/3;Carcinoma de dutos infiltrante;C50.-;
-M8501/2;Comedocarcinoma não infiltrante;D05.-;
-M8501/3;Comedocarcinoma SOE;C50.-;
-M8502/3;Carcinoma juvenil da mama;C50.-;
-M8503/0;Papiloma intraductal;;
-M8503/2;Adenocarcinoma papilar intraductal não infiltrante;D05.-;
-M8503/3;Adenocarcinoma papilar intraductal com invasão;C50.-;
-M8504/0;Adenoma papilar intracístico;;
-M8504/2;Carcinoma intracístico não infiltrante;;
-M8504/3;Carcinoma intracístico SOE;;
-M8505/0;Papilomatose intraductal SOE;;
-M8506/0;Adenoma do mamilo;D24;
-M8510/3;Carcinoma medular SOE;;
-M8511/3;Carcinoma medular com estroma amilóide;C73;
-M8512/3;Carcinoma medular com estroma linfóide;C50.-;
-M8520/2;Carcinoma lobular in situ;D05.0;
-M8520/3;Carcinoma lobular SOE;C50.-;
-M8521/3;Carcinoma ductular infiltrante;C50.-;
-M8522/2;Carcinoma intraductel e carcinoma lobular in situ;D05.7;
-M8522/3;Carcinoma infiltrante de dutos e lobular;C50.-;
-M8530/3;Carcinoma inflamatório;C50.-;
-M8540/3;Doença mamária de Paget;C50.-;
-M8541/3;Doença de Paget e carcinoma de dutos infiltrante da mama;C50.-;
-M8542/3;Doença de Paget extramamária (exceto doença de Paget do osso);;
-M8543/3;Doença de Paget e carcinoma intraductal da mama;C50.-;
-M8550/0;Adenoma de células acinares;;
-M8550/1;Tumor de células acinares;;
-M8551/0;Carcinoma de células acinares;;
-M8560/3;Carcinoma adenoescamoso;;
-M8561/0;Adenolinfoma;D11.-;
-M8562/3;Carcinoma epitelial-mioepitelial;;
-M8570/3;Adenocarcinoma com metaplasia escamosa;;
-M8571/3;Adenocarcinoma com metaplasia cartilaginosa e óssea;;
-M8572/3;Adenocarcinoma com metaplasia de células fusiformes;;
-M8573/3;Adenocarcinoma com metaplasia apócrina;;
-M8580/0;Timoma benigno;D15.0;
-M8580/3;Timoma maligno;C37;
-M8590/1;Tumor dos cordões sexuais e estroma;;
-M8600/0;Tecoma SOE;D27;
-M8600/3;Tecoma maligno;C56;
-M8601/3;Tecoma luteinizado;D27;
-M8602/0;Tumor esclerosante do estroma;D27;
-M8610/0;Luteoma SOE;D27;
-M8620/1;Tumor de células da granulosa SOE;D39.1;
-M8620/3;Tumor maligno de células da granulosa;C56;
-M8621/1;Tumor de células da granulosa e células da teca;D39.1;
-M8622/1;Tumor juvenil de células da granulosa;D39.1;
-M8623/1;Tumor dos cordões sexuais com túbulos anulares;D39.1;
-M8630/0;Androblastoma benigno;;
-M8630/1;Androblastoma SOE;;
-M8630/3;Androblastoma maligno;;
-M8631/0;Tumor de células de Sertoli-Leydig;;
-M8632/1;Ginandroblastoma;D39.1;
-M8640/0;Tumor de células de Sertoli SOE;;
-M8640/3;Carcinoma de células de Sertoli;C62.-;
-M8641/0;Tumor de células de Sertoli com depósito de lípides;D27;
-M8650/0;Tumor benigno de células de Leydig;D29.2;
-M8650/1;Tumor de células de Leydig SOE;D40.1;
-M8650/3;Tumor maligno de células de Leydig;C62.-;
-M8660/0;Tumor de células do hilo;D27;
-M8670/0;Tumor de células lipídicas do ovário;D27;
-M8671/0;Tumor de supra-renal acessório [resto adrenal];;
-M8680/1;Paraganglioma SOE;;
-M8680/3;Paraganglioma maligno;;
-M8681/1;Paraganglioma simpático;;
-M8682/1;Paraganglioma parassimpático;;
-M8683/0;Paraganglioma gangliocítico;D13.2;
-M8690/1;Tumor do glomo jugular;D44.7;
-M8691/1;Tumor do corpo aórtico;D44.7;
-M8692/1;Tumor do corpo carotídeo;D44.6;
-M8693/1;Paraganglioma extra-supra-renal SOE;;
-M8693/3;Paraganglioma extra-supra-renal maligno;;
-M8700/0;Feocromocitoma SOE;D35.0;
-M8700/3;Feocromocitoma maligno;C74.1;
-M8710/3;Glomangiossarcoma;;
-M8711/0;Tumor de glomo;;
-M8712/3;Glomangioma;;
-M8713/0;Glomangiomioma;;
-M8720/0;Nevo pigmentado SOE;D22.-;
-M8720/2;Melanoma in situ;D03.-;
-M8720/3;Melanoma maligno SOE;D22.-;
-M8721/3;Melanoma nodular;C43.-;
-M8722/0;Nevo de células baloniformes;C43.-;
-M8722/3;Melanoma de células baloniformes;C43.-;
-M8723/0;Halo nevo;D22.-;
-M8723/3;Melanoma maligno em regressão;C43.-;
-M8724/0;Pápula fibrosa do nariz;D22.3;
-M8725/0;Neuronevo;D22.-;
-M8726/0;Nevo magnocelular;D31.4;
-M8727/0;Nevo displásico;D22.-;
-M8730/0;Nevo não pigmentado;D22.-;
-M8730/3;Melanoma amelanótico;C43.-;
-M8740/0;Nevo juncional SOE;D22.-;
-M8740/3;Melanoma maligno em nevo juncional;C43.-;
-M8741/2;Melanose pré-cancerosa SOE;D03.-;
-M8741/3;Melanoma maligno em melanose pré-cancerosa;D03.-;
-M8742/2;Sarda melanótica de Hutchinson SOE;C43.-;
-M8742/3;Melanoma maligno em sarda melanótica de Hutchinson;C43.-;
-M8743/3;Melanoma de propagação superficial;C43.-;
-M8744/3;Melanoma lentiginoso maligno das extremidades periféricas;C43.-;
-M8745/3;Melanoma desmoplástico maligno;C43.-;
-M8750/0;Nevo intradérmico;D22.-;
-M8760/0;Nevo composto;D22.-;
-M8761/1;Nevo pigmentado gigante SOE;D48.5;
-M8761/3;Melanoma maligno em nevo pigmentado gigante;C43.-;
-M8770/0;Nevo epitelióide e de células fusiformes;D22.-;
-M8770/3;Melanoma misto epitelióide e de células fusiformes;;
-M8771/0;Nevo de células epitelióides;D22.-;
-M8771/3;Melanoma de células epitelióides;;
-M8772/0;Nevo de células fusiformes;D22.-;
-M8772/3;Melanoma de células fusiformes SOE;;
-M8773/3;Melanoma de células fusiformes, tipo A;C69.4;
-M8774/3;Melanoma de células fusiformes, tipo B;C69.4;
-M8780/0;Nevo azul SOE;D22.-;
-M8780/3;Nevo azul maligno;C43.-;
-M8790/0;Nevo azul celular;D22.-;
-M8800/0;Tumor benigno de tecidos moles;;
-M8800/3;Sarcoma SOE;;
-M8800/6;Sarcomatose SOE;;
-M8801/3;Sarcoma de células fusiformes;;
-M8802/3;Sarcoma de células gigantes (exceto de osso M9250/3);;
-M8803/3;Sarcoma de células pequenas;;
-M8804/3;Sarcoma epitelióide;;
-M8810/0;Fibroma SOE;;
-M8810/3;Fibrossarcoma SOE;;
-M8811/0;Fibromixoma SOE;;
-M8811/3;Firbromixossarcoma;;
-M8812/0;Fibroma periostal;D16;
-M8812/3;Fibrossarcoma periostal;C40.-,C41.-;
-M8813/0;Fibroma de fáscia;;
-M8813/3;Fibrossarcoma de fáscia;;
-M8814/3;Fibrossarcoma infantil;;
-M8820/0;Elastofibroma;;
-M8821/1;Fibromatose agressiva;;
-M8822/1;Fibromatose abdominal;;
-M8823/1;Fibroma desmoplástico;;
-M8824/1;Miofibromatose;;
-M8830/0;Histiocitoma fibroso SOE;;
-M8830/1;Histiocitoma fibroso atípico;;
-M8830/3;Histiocitoma fibroso maligno;;
-M8832/0;Dermatofibroma SOE;D23.-;
-M8832/3;Dermatofibrossarcoma SOE;C44.-;
-M8833/3;Dermatofibrossarcoma protuberante pigmentado;;
-M8840/0;Mixoma SOE;;
-M8840/3;Mixossarcoma;;
-M8841/1;Angiomixoma;;
-M8850/0;Lipoma SOE;D17.-;
-M8850/3;Lipossarcoma SOE;;
-M8851/0;Fibrolipoma;D17.-;
-M8851/3;Lipossarcoma bem diferenciado;;
-M8852/0;Fibromixolipoma;D17.-;
-M8852/3;Lipossarcoma mixóide;;
-M8853/3;Lipossarcoma de células redondas;;
-M8854/0;Lipoma pleomórfico;D17.-;
-M8854/3;Lipossarcoma pleomórfico;;
-M8855/3;Lipossarcoma misto;;
-M8856/0;Lipoma intramuscular;D17.-;
-M8857/0;Lipoma de células fusiformes;D17.-;
-M8858/3;Lipossarcoma desdiferenciado;;
-M8860/0;Angiomiolipoma;D17.-;
-M8861/0;Angiolipoma SOE;D17.-;
-M8870/0;Mielolipoma;D17.-;
-M8880/0;Hibernoma;D17.-;
-M8881/0;Lipoblastomatose;D17.-;
-M8890/0;Leiomioma SOE;;
-M8890/1;Leiomiomatose SOE;;
-M8890/3;Leiomiossarcoma SOE;;
-M8891/0;Leiomioma epitelióide;;
-M8892/0;Leiomioma celular;;
-M8893/0;Leiomioma bizarro;;
-M8894/0;Angiomioma;;
-M8894/3;Angiomiossarcoma;;
-M8895/0;Mioma;;
-M8895/3;Miossarcoma;;
-M8896/3;Leiomiossarcoma mixóide;;
-M8897/1;Tumor de músculo liso SOE;;
-M8900/0;Rabdomioma SOE;;
-M8900/3;Rabdomiossarcoma SOE;;
-M8901/3;Rabdomiossarcoma pleomórfico;;
-M8902/3;Rabdomiossarcoma tipo misto;;
-M8903/0;Rabdomioma fetal;;
-M8904/0;Rabdomioma adulto;;
-M8910/3;Rabdomiossarcoma embrionário;;
-M8920/3;Rabdomiossarcoma alveolar;;
-M8930/0;Nódulo do estroma endometrial;D26.1;
-M8930/3;Sarcoma do estroma endometrial;C54.-;
-M8931/1;Miose endolinfático do estroma;D39.0;
-M8932/0;Adenomioma;;
-M8933/3;Adenossarcoma;;
-M8940/0;Adenoma pleomórfico;;
-M8940/3;Tumor misto maligno SOE;;
-M8941/3;Carcinoma em adenoma pleomórfico;C07,C08.-;
-M8950/3;Tumor mulleriano misto;C54.-;
-M8951/3;Tumor mesodérmico misto;;
-M8960/1;Nefroma mesoblástico;;
-M8960/3;Nefroblastoma SOE;C64;
-M8963/3;Sarcoma rabdóide;;
-M8964/3;Sarcoma de células claras do rim;C64;
-M8970/3;Hepatoblastoma;C22.0;
-M8971/3;Pancreatoblastoma;C25.-;
-M8972/3;Blastoma pulmonar;C34.-;
-M8980/3;Carcinossarcoma SOE;;
-M8981/3;Carcinossarcoma embrionário;;
-M8982/0;Mioepitelioma;;
-M8990/0;Mesenquimoma benigno;;
-M8990/1;Mesenquimoma SOE;;
-M8990/3;Mesenquimoma maligno;;
-M8991/3;Sarcoma embrionário;;
-M9000/0;Tumor de Brenner SOE;D27;
-M9000/1;Tumor de Brenner "borderline";D39.1;
-M9000/3;Tumor de Brenner maligno;C56;
-M9010/0;Fibroadenoma SOE;D24;
-M9011/0;Fibroadenoma intracanalicular;D24;
-M9012/0;Fibroadenoma pericanalicular;D24;
-M9013/0;Adenofibroma SOE;D27;
-M9014/0;Adenofibroma seroso;D27;
-M9015/0;Adenofibroma mucinoso;D27;
-M9016/0;Fibroadenoma gigante;D27;
-M9020/0;Tumor filodes benigno;D24;
-M9020/1;Tumor filodes SOE;D48.6;
-M9020/3;Tumor filodes maligno;C50.-;
-M9030/3;Fibroadenoma juvenil;D24;
-M9040/0;Sinovioma benigno;;
-M9040/3;Sarcoma sinovial SOE;;
-M9041/3;Sarcoma sinovial de células fusiformes;;
-M9042/3;Sarcoma sinovial de células epitelióides;;
-M9043/3;Sarcoma sinovial bifásico;;
-M9044/3;Sarcoma de células claras (exceto rim M8964/3);;
-M9050/0;Mesotelioma benigno;D19.-;
-M9050/3;Mesotelioma maligno;C45.-;
-M9051/0;Mesotelioma fibroso benigno;D19.-;
-M9051/3;Mesotelioma fibroso maligno;C45.-;
-M9052/0;Mesotelioma epitelióide benigno;D19.-;
-M9052/3;Mesotelioma epitelióide maligno;C45.-;
-M9053/0;Mesotelioma bifásico benigno;D19.-;
-M9053/3;Mesotelioma bifásico maligno;C45.-;
-M9054/0;Tumor adenomatóide SOE;D19.-;
-M9055/1;Mesotelioma cístico;;
-M9060/3;Disgerminoma;;
-M9061/3;Seminoma SOE;C62.-;
-M9062/3;Seminoma anaplástico;C62.-;
-M9063/3;Seminoma espermatocítico;C62.-;
-M9064/3;Germinoma;;
-M9070/3;Carcinoma embrionário SOE;;
-M9071/3;Tumor de seio endodérmico;;
-M9072/3;Poliembrioma;;
-M9073/1;Gonadoblastoma;;
-M9080/0;Teratoma benigno;;
-M9080/1;Teratoma SOE;;
-M9080/3;Teratoma maligno SOE;;
-M9081/3;Teratocarcinoma;;
-M9082/3;Teratoma maligno não diferenciado;;
-M9083/3;Teratoma maligno intemediário;;
-M9084/0;Cisto dermóide SOE;;
-M9084/3;Teratoma com transformação maligna;;
-M9085/3;Tumor misto de células germinativas;;
-M9090/0;Estruma ovariana SOE;D27;
-M9090/3;Estruma ovariana maligna;C56;
-M9091/1;Carcinóide estrumal;D39.1;
-M9100/0;Mola hidatiforme SOE;O01.9;
-M9100/1;Mola hidatiforma invasiva;D39.2;
-M9100/3;Coriocarcinoma SOE;;
-M9101/3;Coriocarcinoma combinado com outros elementos de células germinativas;;
-M9102/3;Teratoma maligno trofoblástico;C62.-;
-M9103/0;Mola hidatiforme parcial;O01.1;
-M9104/1;Tumor trofoblástico do sítio placentário;D39.2;
-M9110/0;Mesomefroma benigno;;
-M9110/1;Tumor mesonéfrico;;
-M9110/3;Mesomefroma maligno;;
-M9120/0;Hemangioma SOE;D18.0;
-M9120/3;Hemangiossarcoma;;
-M9121/0;Hemangioma cavernoso;D18.0;
-M9122/0;Hemangioma venoso;D18.0;
-M9123/0;Hemangioma racemoso;D18.0;
-M9124/3;Sarcoma das células de Kupfer;C22.3;
-M9125/0;Hemangioma epitelióde;D18.0;
-M9126/0;Hemangioma histiocitóide;D18.0;
-M9130/0;Hemangioendotelioma benigno;D18.0;
-M9130/1;Hemangioendotelioma SOE;;
-M9130/3;Hemangioendotelioma maligno;;
-M9131/0;Hemangioma capilar;D18.0;
-M9132/0;Hemangioma intramuscular;D18.0;
-M9133/1;Hemangioendotelioma epitelióide SOE;;
-M9133/3;Hemangioendotelioma epitelióide maligno;;
-M9134/1;Tumor alveolar brônquio intravascular;D38.1;
-M9140/3;Sarcoma de Kaposi;C46.-;
-M9141/0;Angioqueratoma;;
-M9142/0;Hemangioma queratótico verrucoso;D18.0;
-M9150/0;Hemangiopericitoma benigno;;
-M9150/1;Hemangiopericitoma SOE;;
-M9150/3;Hemangiopericitoma maligno;;
-M9160/0;Angiofibroma SOE;;
-M9161/1;Hemangioblastoma;;
-M9170/0;Linfangioma SOE;D18.1;
-M9170/3;Linfangiossarcoma;;
-M9171/0;Linfangioma capilar;D18.1;
-M9172/0;Linfangioma cavernoso;D18.1;
-M9173/0;Linfangioma cístico;D18.1;
-M9174/0;Linfangiomioma;D18.1;
-M9174/1;Linfangiomiomatose;;
-M9175/0;Hemolinfangioma;D18.1;
-M9180/0;Osteoma SOE;D16.-;
-M9180/3;Osteossarcoma SOE;C40.-,C41.-;
-M9181/3;Osteossarcoma condroblástico;C40.-,C41.-;
-M9182/3;Osteossarcoma fibroblástico;C40.-,C41.-;
-M9183/3;Osteossarcoma telangiectásico;C40.-,C41.-;
-M9184/3;Osteossarcoma em doença de Paget do osso;C40.-,C41.-;
-M9185/3;Osteossarcoma de células pequenas;C40.-,C41.-;
-M9190/3;Osteossarcoma justacortical;C40.-,C41.-;
-M9191/0;Osteoma osteóide SOE;D16.-;
-M9200/0;Osteoblastoma SOE;D16.-;
-M9200/1;Osteoblastoma agressivo;D48.0;
-M9210/0;Osteocondroma;D16.-;
-M9210/1;Osteocondromatose SOE;D48.0;
-M9220/0;Condroma SOE;D16.-;
-M9220/1;Condromatose SOE;;
-M9220/3;Condrossarcoma SOE;C40.-,C41.-;
-M9221/0;Condroma justacortical;D16.-;
-M9221/3;Condrossarcoma justacortical;C40.-,C41.-;
-M9230/0;Condroblastoma SOE;D16.-;
-M9230/3;Condroblastoma maligno;C40.-,C41.-;
-M9231/3;Condrossarcoma mixóide;;
-M9240/3;Condrossarcoma mesenquimal;;
-M9241/0;Fibrossarcoma condromixóide;D16.-;
-M9250/1;Tumor de células gigantes do osso, SOE;D48.0;
-M9250/3;Tumor maligno de células gigantes do osso;C40.-,C41.-;
-M9251/1;Tumor de células gigantes de partes moles, SOE;;
-M9251/3;Tumor maligno de células gigantes de partes moles;;
-M9260/3;Sarcoma de Ewing;C40.-,C41.-;
-M9261/3;Adamantinoma de ossos longos;C40.-;
-M9262/0;Fibroma ossificante;D16.-;
-M9270/0;Tumor odontogênico benigno;D16.4,D16.5;
-M9270/1;Tumor odontogênico SOE;D48.0;
-M9270/3;Tumor odontogênico maligno;C41.0,C41.1;
-M9271/0;Dentinoma;D16.4,D16.5;
-M9272/0;Cementoma SOE;D16.4,D16.5;
-M9273/0;Cementoblastoma benigno;D16.4,D16.5;
-M9274/0;Fibroma cementificante;D16.4,D16.5;
-M9275/0;Cementoma gigantiforme;D16.4,D16.5;
-M9280/0;Odontoma SOE;D16.4,D16.5;
-M9281/0;Odontoma composto;D16.4,D16.5;
-M9282/0;Odontoma complexo;D16.4,D16.5;
-M9290/0;Fibro-odontoma ameloblástico;D16.4,D16.5;
-M9290/3;Odontossarcoma ameloblástico;C41.0,C41.1;
-M9300/0;Tumor odontogênico adenomatóide;D16.4,D16.5;
-M9301/0;Cisto odontogênico calcificante;D16.4,D16.5;
-M9302/0;Tumor odontogênico de células fantasma;D16.4,D16.5;
-M9310/0;Ameloblastoma SOE;D16.4,D16.5;
-M9310/3;Ameloblastoma maligno;C41.0,C41.1;
-M9311/0;Odontoameloblastoma;D16.4,D16.5;
-M9312/0;Tumor odontogênico escamoso;D16.4,D16.5;
-M9320/0;Mixoma odontogênico;D16.4,D16.5;
-M9321/0;Fibroma odontogênico central;D16.4,D16.5;
-M9322/0;Fibroma odontogênico periférico;D16.4,D16.5;
-M9330/0;Fibroma ameloblástico;D16.4,D16.5;
-M9330/3;Fibrossarcoma ameloblástico;C41.0,C41.1;
-M9340/3;Tumor odontogênico epitelial calcificante;D16.4,D16.5;
-M9350/1;Craniofaringioma;D44.3,D44.4;
-M9360/1;Pinealoma;D44.5;
-M9361/1;Pineocitoma;D44.5;
-M9362/3;Pineoblastoma;C75.3;
-M9363/0;Tumor neuroectodérmico melanótico;;
-M9364/3;Tumor neuroectodérmico periférico;;
-M9370/0;Cordoma;;
-M9380/3;Glioma maligno;C71.-;
-M9381/3;Gliomatose cerebral;C71.-;
-M9382/3;Glioma misto;C71.-;
-M9383/1;Glioma subependimal;D43.-;
-M9384/1;Astrocitoma subependimal de células gigantes;D43.-;
-M9390/0;Papiloma de plexo coróide, SOE;D33.0;
-M9390/3;Papiloma maligno de plexo coróide;C71.5;
-M9391/3;Ependimoma SOE;C71.-;
-M9392/3;Ependimoma anaplástico;C71.-;
-M9393/1;Ependimoma papilar;D43.-;
-M9394/1;Ependimoma mixopapilar;D43.-;
-M9400/3;Astrocitoma SOE;C71.-;
-M9401/3;Astrocitoma anaplástico;C71.-;
-M9410/3;Astrocitoma protoplásmico;C71.-;
-M9411/3;Astrocitoma gemistocítico;C71.-;
-M9420/3;Astrocitoma fibrilar;C71.-;
-M9421/3;Astrocitoma pilocítico;C71.-;
-M9422/3;Espongioblastoma SOE;C71.-;
-M9423/3;Espongioblastoma polar;C71.-;
-M9424/3;Xantoastrocitoma pleomórfico;C71.-;
-M9430/0;Astroblastoma;C71.-;
-M9440/3;Glioblastoma SOE;C71.-;
-M9441/3;Glioblastoma de células gigantes;C71.-;
-M9442/3;Gliossarcoma;C71.-;
-M9443/3;Espongioblastoma polar primitivo;C71.-;
-M9450/3;Oligodendroglioma SOE;C71.-;
-M9451/3;Oligodendroglioma anaplástico;C71.-;
-M9460/3;Oligodendroblastoma;C71.-;
-M9470/3;Meduloblastoma SOE;C71.6;
-M9471/3;Meduloblastoma desmoplástico;C71.6;
-M9472/3;Medulomioblastoma;C71.6;
-M9473/3;Tumor neuroectodérmico primitivo;C71.-;
-M9480/3;Sarcoma cerebelar SOE;C71.6;
-M9481/3;Sarcoma monstrocelular;C71.-;
-M9490/0;Ganglioneuroma;;
-M9490/3;Ganglioneuroblastoma;;
-M9491/3;Ganglioneuromatose;;
-M9500/3;Neuroblastoma SOE;;
-M9501/3;Meduloepitelioma SOE;;
-M9502/3;Meduloepitelioma teratóide;;
-M9503/3;Neuroepitelioma SOE;;
-M9504/3;Espongioneuroblastoma;;
-M9505/1;Ganglioglioma;;
-M9506/0;Neurocitoma;;
-M9507/0;Tumor paciniano;;
-M9510/3;Retinoblastoma SOE;C69.2;
-M9511/3;Retinoblastoma diferenciado;C69.2;
-M9512/3;Retinoblastoma não-diferenciado;C69.2;
-M9520/3;Tumor neurogênico olfatório;;
-M9521/3;Estesioneurocitoma;C30.0;
-M9522/3;Estesioneuroblastoma;C30.0;
-M9523/3;Estesioneuroepitelioma;C30.0;
-M9530/0;Meningioma SOE;D32.-;
-M9530/1;Meningiomatose SOE;D42.-;
-M9530/3;Meningioma maligno;C70.-;
-M9531/0;Meningioma meningoteliomatoso;D32.-;
-M9532/0;Meningioma fibroso;D32.-;
-M9533/0;Meningioma psamomatoso;D32.-;
-M9534/0;Meningioma angiomatoso;D32.-;
-M9535/0;Meningioma hemangioblástico;D32.-;
-M9536/0;Meningioma hemangiopericítico;D32.-;
-M9537/0;Meningioma transicional;D32.-;
-M9538/1;Meningioma papilar;D42.-;
-M9539/3;Sarcomatose meníngea;C70.-;
-M9540/0;Neurofibroma SOE;Q85.0;
-M9540/1;Neurofibromatose SOE;;
-M9540/3;Neurofibrossarcoma;;
-M9541/0;Neurofibroma melanótico;;
-M9550/0;Neurofibroma plexiforme;;
-M9560/0;Neurilemoma SOE;;
-M9560/1;Neurinomatose;;
-M9560/3;Neurilemoma maligno;;
-M9561/3;Tumor tritão maligno;;
-M9562/0;Neurotequeoma;;
-M9570/0;Neuroma SOE;;
-M9580/0;Tumores de células granulares SOE;;
-M9580/3;Tumor maligno de células granulares;;
-M9581/3;Sarcoma alveolar de partes moles;;
-M9590/3;Linfoma maligno SOE;C84.5,C85.9;
-M9591/3;Linfoma maligno não-Hodgkin SOE;C85.9;
-M9592/3;Linfossarcoma SOE;C85.0;
-M9593/3;Reticulossarcoma SOE;C83.3,C83.9;
-M9594/3;Microglioma;C85.7;
-M9595/3;Linfoma maligno difuso SOE;C83.9;
-M9650/3;Doença de Hodgkin SOE;C81.9;
-M9652/3;Doença de Hodgkin de celularidade mista SOE;C81.2;
-M9653/3;Doença de Hodgkin, de depleção linfocítica, SOE;C81.3;
-M9654/3;Doença de Hodgkin, de depleção linfocítica, com fibrose difusa;C81.3;
-M9655/3;Doença de Hodgkin, de depleção linfocítica, reticular;C81.3;
-M9657/3;Doença de Hodgkin, com predominância linfocítica, SOE;C81.0;
-M9658/3;Doença de Hodgkin, com predominância linfocítica, difusa;C81.0;
-M9659/3;Doença de Hodgkin, com predominância linfocítica, nodular;C81.0;
-M9660/3;Paragranuloma de Hodgkin SOE;C81.7;
-M9661/3;Granuloma de Hodgkin;C81.7;
-M9662/3;Sarcoma de Hodgkin;C81.7;
-M9663/3;Doença de Hodgkin, esclerose nodular, SOE;C81.1;
-M9664/3;Doença de Hodgkin, esclerose nodular, fase celular;C81.1;
-M9665/3;Doença de Hodgkin, esclerose nodular, predominância linfocítica;C81.1;
-M9666/3;Doença de Hodgkin, esclerose nodular, celularidade mista;C81.1;
-M9667/3;Doença de Hodgkin, esclerose nodular, depleção linfocítica;C81.1;
-M9670/3;Linfoma maligno, linfócitos pequenos, SOE;C83.0;
-M9671/3;Linfoma maligno, linfoplasmocítico;C83.8;
-M9672/3;Linfoma maligno de pequenas células clivadas, difuso;C83.1;
-M9673/3;Linfoma maligna linfocítico, diferenciação intermediária, difuso;C83.8;
-M9674/3;Linfoma maligno centrocítico;C83.8;
-M9675/3;Linfoma maligno, misto de células pequenas e grandes, difuso;C83.2;
-M9676/3;Linfoma maligno, centroblástico-centrocítico, difuso;C83.8;
-M9677/3;Polipose linfomatosa maligna;C83.8;
-M9680/3;Linfoma maligno de células grandes, difuso, SOE;C83.3;
-M9681/3;Linfoma maligno, de células grandes, clivadas, difuso;C83.3;
-M9682/3;Linfoma maligno, de células grandes, não clivadas, difuso;C83.3;
-M9683/3;Linfoma maligno, centroblástico, difuso;C83.8;
-M9684/3;Linfoma maligno imunoblástico SOE;C83.4;
-M9685/3;Linfoma maligno linfoblástico;C83.5;
-M9686/3;Linfoma maligno, de células pequenas não clivadas, difuso;C83.0,C83.6;
-M9687/3;Linfoma de Burkitt SOE;C83.7;
-M9690/3;Linfoma maligno folicular SOE;C82.9;
-M9691/3;Linfoma maligno, misto de células pequenas clivadas e células grandes, folicular;C82.1;
-M9692/3;Linfoma maligno, centroblástico-centrocítico, folicular;C82.7;
-M9693/3;Linfoma maligno, linfocítico, bem diferenciado, nodular;C82.7;
-M9694/3;Linfoma maligno, linfocítico, diferenciação intermediária, nodular;C82.7;
-M9695/3;Linfoma maligno de células pequenas clivadas, folicular;C82.0;
-M9696/3;Linfoma maligno linfocítico, pouco diferenciado, nodular;C82.7;
-M9697/3;Linfoma maligno centroblástico folicular;C82.7;
-M9698/3;Linfoma maligno de células grandes, folicular, SOE;;
-M9700/3;Micose fungóide;C84.0;
-M9701/3;Doença de Sézary;C84.1;
-M9702/3;Linfoma de células T periférico SOE;C84.4;
-M9703/3;Linfoma de zona T;C84.2;
-M9704/3;Linfoma linfoepitelóide;C84.3;
-M9705/3;Linfoma de células T periféricos (linfadenopatia angio-imunoblástica com disproteinemia);C84.4;
-M9706/3;Linfoma de células T, periférico, de células pequenas pleomórficas;C84.4;
-M9707/3;Linfoma de células T, periférico, pleomórfico de células médias e grandes;C84.4;
-M9709/3;Linfoma cutâneo;C84.5;
-M9711/3;Linfoma de células B monocitóides;C85.7;
-M9712/3;Angioendoteliomatose;C85.7;
-M9713/3;Linfoma de células T angiocêntrico;C85.7;
-M9714/3;Linfoma de células grandes (Ki-1+);C85.7;
-M9720/3;Histiocitose maligna;C96.1;
-M9722/3;Doença de Letterer-Siwe;C96.0;
-M9723/3;Linfoma histiocítico verdadeiro;C96.3;
-M9731/3;Plasmocitoma SOE;C90.2;
-M9732/3;Mieloma múltiplo;C90.0;
-M9740/1;Mastocitoma SOE;D47.0;
-M9740/3;Sarcoma de mastócitos;C96.2;
-M9741/3;Mastocitose maligna;C96.2;
-M9760/3;Doença imunoproliferativa SOE;C88.9;
-M9761/3;Macroglobulinemia de Waldenström;C88.0;
-M9762/3;Doença da cadeia pesada alfa;C88.1;
-M9763/3;Doença da cadeia pesada gama;C88.2;
-M9764/3;Doença imunoproliferativa do intestino delgado;C88.3;
-M9765/1;Gamopatia monoclonal;D47.2;
-M9766/1;Lesão imunoproliferativa angiocêntrica;D47.7;
-M9767/1;Linfadenopatia angioimunoblástica;D47.7;
-M9768/1;Doença linfoproliferativa T-gama;D47.7;
-M9800/3;Leucemia SOE;C95.9;
-M9801/3;Leucemia aguda SOE;C95.0;
-M9802/3;Leucemia subaguda SOE;C95.2;
-M9803/3;Leucemia crônica SOE;C95.1;
-M9804/3;Leucemia aleucêmica SOE;C95.7;
-M9820/3;Leucemia linfóide SOE;C91.9;
-M9821/3;Leucemia linfoblástica aguda SOE;C91.0;
-M9822/3;Leucemia linfóide subaguda;C91.2;
-M9823/3;Leucemia linfocítica crônica;C91.1;
-M9824/3;Leucemia linfóide aleucêmica;C91.7;
-M9825/3;Leucemia prolinfocítica;C91.3;
-M9826/3;Leucemia de células de Burkitt;C91.7;
-M9827/3;Leucemia /linfoma de células T adultas;C91.5;
-M9830/3;Leucemia de plasmócitos;C90.1;
-M9840/3;Eritroleucemia;C94.0;
-M9841/3;Eritremia aguda;C94.0;
-M9842/3;Eritremia crônica;C94.1;
-M9850/3;Leucemia de células de linfossarcoma;C94.0;
-M9860/3;Leucemia mielóide SOE;C92.9;
-M9861/3;Leucemia mielóide aguda;C92.0;
-M9862/3;Leucemia mielóide subaguda;C92.2;
-M9863/3;Leucemia mielóide crônica;C92.1;
-M9864/3;Leucemia mielóide aleucêmica;C92.7;
-M9866/3;Leucemia promielocítica aguda;C92.4;
-M9867/3;Leucemia mielomonocítica aguda;C92.5;
-M9868/3;Leucemia mielomonocítica crônica;C92.7;
-M9870/3;Leucemia basófila;C92.-;
-M9880/3;Leucemia eosinofílica;C92.-;
-M9890/3;Leucemia monocítica SOE;C93.9;
-M9891/3;Leucemia monocítica aguda;C93.0;
-M9892/3;Leucemia monocítica subaguda;C93.2;
-M9893/3;Leucemia monocítica crônica;C93.1;
-M9894/3;Leucemia monocítica aleucêmica;C93.7;
-M9900/3;Leucemia de mastócitos;C94.3;
-M9910/3;Leucemia megacarioblástica aguda;C94.2;
-M9930/3;Sarcoma mielóide;C92.3;
-M9931/3;Panmielose aguda;C94.4;
-M9932/3;Mielofibrose aguda;C94.5;
-M9940/3;Leucemia "hairy cell";C91.4;
-M9941/3;Reticuloendoteliose leucêmica;C91.4;
-M9950/1;Policitemia vera;D45;
-M9960/1;Doença mieloproliferativa crônica;D47.1;
-M9961/3;Mieloesclerose com metaplasia mielóide;D47.1;
-M9962/1;Trombocitemia idiopática;D47.3;
-M9970/1;Doença linfoproliferativa SOE;D47.9;
-M9980/1;Anemia refratária SOE;D46.4;
-M9981/1;Anemia refratária sem sideroblastos;D46.0;
-M9982/1;Anemia refratária com sideroblastos;D46.1;
-M9983/1;Anemia refratária com excesso de blastos;D46.2;
-M9984/1;Anemia refratária com excesso de blastos com transformação;D46.3;
-M9989/1;Síndrome mielodisplásica SOE;D46.9;
+CAT;DESCRICAO;REFER
+M8000 / 0;benign neoplasm;
+M8000 / 1;Neoplasm of uncertain behavior is benign or malignant;
+M8000 / 3;malignant neoplasm;
+M8000 / 6;metastatic cancer;
+M8001 / 0;Tumor cells, benign;
+M8001 / 1;Tumor cells, uncertain whether benign or malignant;
+M8001 / 3;malignant tumor cells;
+M8002 / 3;malignant tumor, small cell type;
+M8003 / 3;Malignant neoplasm, giant cell type;
+M8004 / 3;Malignant neoplasm, spindle cell type;
+M8010 / 0;benign epithelial tumor;
+M8010 / 2;NOS carcinoma in situ;
+M8010 / 3;carcinoma NOS;
+M8010 / 6;metastatic carcinoma NOS;
+M8011 / 0;epithelioma benign;
+M8011 / 3;epithelioma malignant;
+M8012 / 3;Large cell carcinomas NOS;
+M8020 / 3;undifferentiated carcinoma NOS;
+M8021 / 3;Anaplastic carcinoma NOS;
+M8022 / 3;pleomorphic carcinoma;
+M8030 / 3;Carcinoma giant cells and spindle cells;
+M8031 / 3;Giant cell carcinoma;
+M8032 / 3;Spindle cell carcinoma;
+M8033 / 3;pseudossarcomatoso carcinoma;
+M8034 / 3;Polygonal cell carcinoma;
+M8040 / 1;Tumorlet;
+M8041 / 3;small cell carcinoma NOS;
+M8042 / 3;"Carcinoma ""oat cell""";C34.-
+M8043 / 3;Small cell carcinoma, spindle;C34.-
+M8044 / 3;Small cell carcinoma, intermediate;C34.-
+M8045 / 3;Small cell carcinoma and large cell;C34.-
+M8050 / 0;Papilloma NOS (except bladder papilloma M8120 / 1);
+M8050 / 2;papillary carcinoma in situ;
+M8050 / 3;papillary carcinoma NOS;
+M8051 / 0;warty papilloma;
+M8051 / 3;verrucous carcinoma NOS;
+M8052 / 0;Squamous cell papilloma;
+M8052 / 3;Squamous cell carcinoma papillary;
+M8053 / 0;inverted papilloma;
+M8060 / 0;papillomatosis SOE;
+M8070 / 2;Carcinoma in situ squamous cell carcinoma, NOS;
+M8070 / 3;Squamous cell carcinoma NOS;
+M8070 / 6;Squamous cell carcinoma, metastatic NOS;
+M8071 / 3;Squamous cells, keratinized, NOS;
+M8072 / 3;Squamous cell carcinoma, large cell, non-keratinized;
+M8073 / 3;Squamous cell carcinoma, small cell, non-keratinized;
+M8074 / 3;Squamous cell carcinoma, spindle cell;
+M8075 / 3;adenoid squamous cell carcinoma;
+M8076 / 2;Carcinoma in situ squamous cell with questionable invasion of stroma;C53.-
+M8076 / 3;Squamous cell carcinoma, microinvasive;C53.-
+M8077 / 2;Intraepithelial neoplasia, grade III cervical, vulvar and vaginal;
+M8080 / 2;Erythroplakia of Queyrat;
+M8081 / 2;Bowen's disease;C44.-
+M8082 / 3;lymphoepithelial carcinoma;
+M8090 / 1;Basal cell tumor;D48.5
+M8090 / 3;basal cell carcinoma NOS;C44.-
+M8091 / 3;Basal cell carcinoma, multicenter;C44.-
+M8092 / 3;Basal cell carcinoma, type morphea;C44.-
+M8093 / 3;Basal cell carcinoma, fibroepithelial;C44.-
+M8094 / 3;basosquamous carcinoma;C44.-
+M8095 / 3;metatypical carcinoma;C44.-
+M8096 / 0;intraepidermal epithelioma of Jadassohn;D23.-
+M8100 / 0;trichoepitheliomas;D23.-
+M8101 / 0;trichofoliculoma;D23.-
+M8102 / 0;tricholemmoma;D23.-
+M8110 / 0;pilomatrixoma SOE;D23.-
+M8110 / 3;Carcinoma pilom�trix;C44.-
+M8120 / 0;transitional cell papilloma, NOS;
+M8120 / 1;urothelial papilloma;
+M8120 / 2;Carcinoma in situ transitional cell;
+M8120 / 3;transitional cell carcinoma NOS;
+M8121 / 0;papilloma schneiderian;
+M8121 / 1;Transitional cell papilloma, inverted type;
+M8121 / 3;schneiderian carcinoma;
+M8122 / 3;Transitional cell carcinoma, cell type fusiformas;
+M8123 / 3;basaloid carcinoma;C21.1
+M8124 / 3;cloacog�nico carcinoma;C21.2
+M8130 / 3;papillary transitional cell carcinoma;
+M8140 / 0;adenoma SOE;
+M8140 / 1;Bronchial adenoma SOE;D38.1
+M8140 / 2;Adenocarcinoma in situ NOS;
+M8140 / 3;adenocarcinoma NOS;
+M8140 / 6;metastatic adenocarcinoma NOS;
+M8141 / 3;adenocarcinoma Schirrous;
+M8142 / 3;plastic Linite;C16.-
+M8143 / 3;Superficial spreading adenocarcinoma;
+M8144 / 3;Adenocarcionama, intestinal type;C16.-
+M8145 / 3;Carcinoma, diffuse type;C16.-
+M8146 / 0;monomorphic adenoma;
+M8147 / 0;Basal cell adenoma;D11.-
+M8147 / 3;Adenocarcinoma, basal cell;C07 .-, C08.-
+M8150 / 0;islet cell adenoma;D13.7
+M8150 / 3;Islet cell carcinoma;C25.4
+M8151 / 0;insulinoma SOE;D13.7
+M8151 / 3;insulinoma evil;C25.4
+M8152 / 0;glucagonoma SOE;D13.7
+M8152 / 3;glucagonoma evil;C25.4
+M8153 / 1;gastrinoma SOE;
+M8153 / 3;gastrinoma evil;
+M8154 / 3;mixed adenocarcinoma, the islets and exocrine;C25.-
+M8155 / 3;vipoma;
+M8160 / 0;Bile duct adenoma;D13.4, D13.5
+M8160 / 3;cholangiocarcinoma;C22.1
+M8161 / 0;Bile duct cystadenoma;
+M8161 / 3;Bile duct cystadenocarcinoma;
+M8162 / 3;Tumor Klatskin;C22.1
+M8170 / 0;Hepatic adenoma cells;D13.4
+M8170 / 3;Hepatocellular carcinoma NOS;C22.0
+M8171 / 3;Hepatocellular carcinoma fibrolamellar;C22.0
+M8180 / 3;combined hepatocellular carcinoma and cholangiocarcinoma;C22.0
+M8190 / 0;trabecular adenoma;
+M8190 / 3;adenocarcinoma trabecular;
+M8191 / 0;adenoma embryonic;
+M8200 / 0;Cylindroma dermal eccrine;D23.-
+M8200 / 3;Adenoid cystic carcinoma;
+M8201 / 3;cribriform carcinoma;
+M8202 / 0;adenoma microcystic;D13.7
+M8210 / 0;Adenomatous polyp SOE;
+M8210 / 2;Adenocarcinoma in adenomatous polyp situ;
+M8210 / 3;Adenocarcinoma in adenomatous polyp;
+M8211 / 0;Tubular Adenoma NOS;
+M8211 / 3;tubular adenocarcinoma;
+M8220 / 0;adenomatous polyposis colon;D12.-
+M8220 / 3;Adenocarcinoma in adenomatous polyposis colon;C18.-
+M8221 / 0;Adenomatous polyps multiple;
+M8221 / 3;Adenocarcinoma in multiple adenomatous polyps;
+M8230 / 3;Solid Carcinoma, NOS;
+M8231 / 3;simple carcinoma;
+M8240 / 1;SOE carcinoid tumor of the appendix;D37.7
+M8240 / 3;carcinoid tumor NOS (except Appendix M8240 / 1);
+M8241 / 1;Tumor argentaf�nico carcinoid SOE;
+M8241 / 3;Tumor malignant carcinoid argentaf�nico;
+M8243 / 3;Goblet cell carcinoma;C18.1
+M8244 / 3;Carcinoid compound;
+M8245 / 3;tumor adenocarcin�ide;
+M8246 / 3;neuroendocrine carcinoma;
+M8247 / 3;Merkel cell carcinoma;C44.-
+M8248 / 1;Apudoma;
+M8250 / 1;pulmonary adenomatosis;D38.1
+M8250 / 3;bronchioloalveolar adenocarcinoma;C34.-
+M8251 / 0;alveolar adenoma;D14.3
+M8251 / 3;adenocarcinoma alveolar;C34.-
+M8260 / 0;Adenoma papillary SOE;
+M8260 / 3;Papillary adenocarcinoma NOS;
+M8261 / 1;Villous adenoma SOE;
+M8261 / 2;Adenocarcinoma in situ villous adenoma;
+M8261 / 3;Adenocarcinoma in villous adenoma;
+M8262 / 3;adenocarcinoma villous;
+M8263 / 0;Tubulovillous adenoma SOE;
+M8263 / 2;Adenocarcinoma in situ tubulovillous adenoma;
+M8263 / 3;Adenocarcinoma in tubulovillous adenoma;
+M8270 / 0;adenoma chromophobe;D35.2
+M8270 / 3;chromophobe carcinoma;C75.1
+M8271 / 0;prolactinoma;D35.2
+M8280 / 0;adenoma acidophilus;D35.2
+M8280 / 3;acidophilus carcinoma;C75.1
+M8281 / 0;basophil adenoma mixed acidophilic-;D35.2
+M8281 / 3;basophil carcinoma mixed acidophilic-;C75.1
+M8290 / 0;adenoma oxif�lico;
+M8290 / 3;adenocarcinoma oxif�lico;
+M8300 / 0;basophil adenoma;C75.1
+M8300 / 3;basophil carcinoma;D35.2
+M8310 / 0;Clear cell adenoma;
+M8310 / 3;clear cell adenocarcinoma NOS;
+M8311 / 1;tumor hipernefr�ide;
+M8312 / 3;Renal cell carcinoma;C64
+M8313 / 0;Adenofibroma clear cell;
+M8314 / 3;rich in lipids carcinoma;C50.-
+M8315 / 3;Carcinoma rich in glycogen;C50.-
+M8320 / 3;Granular cell carcinoma;
+M8321 / 0;Adenoma main cells;D35.1
+M8322 / 0;Adenoma cells clear (water-clear cell);D35.1
+M8322 / 3;Clear cell adenocarcinoma (water-clear cell);C75.0
+M8323 / 0;Mixed cell adenoma;
+M8323 / 3;Mixed cell adenocarcinoma;
+M8324 / 0;Lipoadenoma;
+M8330 / 0;follicular adenoma;D34
+M8330 / 3;follicular adenocarcinoma NOS;C73
+M8331 / 3;well-differentiated follicular adenocarcinoma;C73
+M8332 / 3;follicular adenocarcinoma trabecular;C73
+M8333 / 0;adenoma microfollicular;C73
+M8334 / 0;adenoma macrofollicular;D34
+M8340 / 3;papillary carcinoma, follicular variant;C73
+M8350 / 3;Non-encapsulated sclerosing carcinoma;C73
+M8360 / 1;multiple endocrine adenomas;
+M8361 / 1;juxtaglomerular tumor;D41.0
+M8370 / 0;Adenoma of the adrenal cortex NOS;D35.0
+M8370 / 3;Carcinoma of adrenal cortex;C74.0
+M8371 / 0;Adenoma of the adrenal cortex of compact cells;D35.0
+M8372 / 0;Adenoma of the adrenal cortex, heavily pigmented variant;D35.0
+M8373 / 0;Adenoma of the adrenal cortex, clear cell;D35.0
+M8374 / 0;Adenoma, adrenal cortex cells of glomerulosas;D35.0
+M8375 / 0;Adenoma of the adrenal cortex, mixed cell;D35.0
+M8380 / 0;Endometrioid adenoma SOE;D27
+M8380 / 1;"Endometrioid adenoma ""borderline""";D39.1
+M8380 / 3;endometrioid carcinoma;C56
+M8381 / 0;Adenofibroma endometrioid SOE;D27
+M8381 / 1;"Adenofibroma endometrioid ""borderline""";D39.1
+M8381 / 3;Adenofibroma evil endometr�ide;C56
+M8390 / 0;Adenoma skin appendage;D23.-
+M8390 / 3;skin appendage carcinoma;C44.-
+M8400 / 0;Adenoma of sweat gland;D23.-
+M8400 / 1;sweat gland tumor NOS;D48.5
+M8400 / 3;Adenocarcinoma of sweat gland;C44.-
+M8401 / 0;apocrine adenoma;
+M8401 / 3;apocrine adenocarcinoma;
+M8402 / 0;Acrospiroma eccrine;D23.-
+M8403 / 0;Espiradenoma eccrine;D23.-
+M8404 / 0;hidrocystoma;D23.-
+M8405 / 0;hidradenoma papillary;D23.-
+M8406 / 0;Siringadenoma papillary;D23.-
+M8407 / 0;syringoma SOE;D23.-
+M8408 / 0;Adenoma papillary eccrine;C44.-
+M8410 / 0;sebaceous adenoma;D23.-
+M8410 / 3;adenocarcinoma sebaceous;C44.-
+M8420 / 0;adenoma ceruminous;D23.2
+M8420 / 3;adenocarcinoma ceruminous;C44.2
+M8430 / 1;mucoepidermoid tumor;
+M8430 / 3;mucoepidermoid carcinoma;
+M8440 / 0;cystadenoma SOE;
+M8440 / 3;cystadenocarcinoma SOE;
+M8441 / 0;Cystadenoma serous SOE;D27
+M8441 / 3;Serous cystadenocarcinoma SOE;C56
+M8442 / 3;"Serous cystadenoma ""borderline""";C56
+M8450 / 0;Papillary cystadenoma SOE;D27
+M8450 / 3;SOE papillary cystadenocarcinoma;C56
+M8451 / 3;"Papillary cystadenoma ""borderline""";C56
+M8452 / 1;Cystic papillary tumor;D37.7
+M8460 / 0;Papillary serous cystadenoma SOE;D27
+M8460 / 3;Papillary serous cystadenocarcinoma;C56
+M8461 / 0;serous papilloma surface;D27
+M8461 / 3;surface serous papillary carcinoma;C56
+M8462 / 3;"Papillary serous cystadenoma ""borderline""";C56
+M8470 / 0;Mucinous cystadenoma SOE;D27
+M8470 / 3;mucinous cystadenocarcinoma;C56
+M8471 / 0;Cystadenoma mucinous papillary SOE;D27
+M8471 / 3;Mucinous cystadenocarcinoma papillary;C56
+M8472 / 3;"Mucinous cystadenoma ""borderline""";C56
+M8473 / 3;"Cystadenoma mucinous papillary ""borderline""";C56
+M8480 / 0;mucinous adenoma;
+M8480 / 3;mucinous adenocarcinoma;
+M8480 / 6;Pseudomyxoma of peritoneum;C78.6
+M8481 / 3;Adenocarcinoma producer mucin;
+M8490 / 3;Carcinoma cells signet ring;
+M8490 / 6;Metastatic cells signet ring;
+M8500 / 2;intraductal carcinoma noninfiltrating SOE;
+M8500 / 3;Infiltrating duct carcinoma;C50.-
+M8501 / 2;Comedocarcinoma noninfiltrating;D05.-
+M8501 / 3;comedocarcinoma SOE;C50.-
+M8502 / 3;juvenile breast carcinoma;C50.-
+M8503 / 0;intraductal papilloma;
+M8503 / 2;intraductal papillary adenocarcinoma noninfiltrating;D05.-
+M8503 / 3;Papillary intraductal adenocarcinoma with invasion;C50.-
+M8504 / 0;Adenoma papillary intracystic;
+M8504 / 2;intracystic carcinoma noninfiltrating;
+M8504 / 3;intracystic carcinoma NOS;
+M8505 / 0;Intraductal papillomatosis SOE;
+M8506 / 0;Adenoma of the nipple;D24
+M8510 / 3;medullary carcinoma NOS;
+M8511 / 3;Medullary carcinoma with amyloid stroma;C73
+M8512 / 3;medullary carcinoma with lymphoid stroma;C50.-
+M8520 / 2;Lobular carcinoma in situ;D05.0
+M8520 / 3;lobular carcinoma NOS;C50.-
+M8521 / 3;ductular infiltrating carcinoma;C50.-
+M8522 / 2;intraductel carcinoma and lobular carcinoma in situ;D05.7
+M8522 / 3;infiltrating carcinoma and lobular ducts;C50.-
+M8530 / 3;inflammatory carcinoma;C50.-
+M8540 / 3;mammary Paget's disease;C50.-
+M8541 / 3;Paget's disease and infiltrating breast carcinoma ducts;C50.-
+M8542 / 3;Extramammary Paget's disease (except bone Paget's disease);
+M8543 / 3;Paget's disease and breast carcinoma, intraductal;C50.-
+M8550 / 0;Adenoma acinar cells;
+M8550 / 1;Tumor acinar cells;
+M8551 / 0;Acinar cell carcinoma;
+M8560 / 3;adenosquamous carcinoma;
+M8561 / 0;adenolymphoma;D11.-
+M8562 / 3;Epithelial-myoepithelial carcinoma;
+M8570 / 3;Adenocarcinoma with squamous metaplasia;
+M8571 / 3;Adenocarcinoma with cartilaginous and osseous metaplasia;
+M8572 / 3;Adenocarcinoma with spindle cell metaplasia;
+M8573 / 3;Adenocarcinoma with apocrine metaplasia;
+M8580 / 0;benign thymoma;D15.0
+M8580 / 3;thymoma evil;C37
+M8590 / 1;Tumor of sex cord and stroma;
+M8600 / 0;Tecoma SOE;D27
+M8600 / 3;Tecoma evil;C56
+M8601 / 3;Tecoma luteinized;D27
+M8602 / 0;Sclerosing tumor stroma;D27
+M8610 / 0;luteoma SOE;D27
+M8620 / 1;granulosa cell tumor NOS;D39.1
+M8620 / 3;Malignant neoplasm of granulosa cells;C56
+M8621 / 1;granulosa cell tumor and theca cells;D39.1
+M8622 / 1;juvenile granulosa cell tumor;D39.1
+M8623 / 1;Tumor sexual tubules with annular beads;D39.1
+M8630 / 0;androblastoma benign;
+M8630 / 1;androblastoma SOE;
+M8630 / 3;androblastoma evil;
+M8631 / 0;Sertoli-Leydig Cell Tumor;
+M8632 / 1;Ginandroblastoma;D39.1
+M8640 / 0;Tumor NOS Sertoli cells;
+M8640 / 3;Sertoli cell carcinoma;C62.-
+M8641 / 0;Sertoli cell tumor lipid deposit with;D27
+M8650 / 0;A benign tumor of Leydig cells;D29.2
+M8650 / 1;Leydig tumor cells NOS;D40.1
+M8650 / 3;Malignant neoplasm of Leydig cells;C62.-
+M8660 / 0;hilar cell tumor;D27
+M8670 / 0;lipid cell tumor of the ovary;D27
+M8671 / 0;accessory adrenal tumor [adrenal rest];
+M8680 / 1;paraganglioma SOE;
+M8680 / 3;paraganglioma evil;
+M8681 / 1;paraganglioma friendly;
+M8682 / 1;paraganglioma parasympathetic;
+M8683 / 0;paraganglioma ganglioc�tico;D13.2
+M8690 / 1;Jugular glomus tumor;D44.7
+M8691 / 1;Aortic body tumor;D44.7
+M8692 / 1;carotid body tumor;D44.6
+M8693 / 1;Paraganglioma extra-adrenal SOE;
+M8693 / 3;Paraganglioma extra-adrenal malignant;
+M8700 / 0;pheochromocytoma SOE;D35.0
+M8700 / 3;malignant pheochromocytoma;C74.1
+M8710 / 3;Glomangiossarcoma;
+M8711 / 0;Tumor glomo;
+M8712 / 3;glomangioma;
+M8713 / 0;glomangiomyoma;
+M8720 / 0;Pigmented nevus SOE;D22.-
+M8720 / 2;Melanoma in situ;D03.-
+M8720 / 3;Malignant melanoma SOE;D22.-
+M8721 / 3;nodular melanoma;C43.-
+M8722 / 0;Nevus cells ballooned;C43.-
+M8722 / 3;Melanoma cells ballooned;C43.-
+M8723 / 0;halo nevus;D22.-
+M8723 / 3;Malignant melanoma regression;C43.-
+M8724 / 0;fibrous papule of the nose;D22.3
+M8725 / 0;Neuronevo;D22.-
+M8726 / 0;Nevo magnocelular;D31.4
+M8727 / 0;dysplastic nevus;D22.-
+M8730 / 0;Nevo non-pigmented;D22.-
+M8730 / 3;melanoma amelanotic;C43.-
+M8740 / 0;Junctional nevus SOE;D22.-
+M8740 / 3;malignant melanoma in nevus junctional;C43.-
+M8741 / 2;NOS precancerous melanosis;D03.-
+M8741 / 3;malignant melanoma in precancerous melanosis;D03.-
+M8742 / 2;Melanotic freckle of Hutchinson SOE;C43.-
+M8742 / 3;malignant melanoma in melanotic freckle of Hutchinson;C43.-
+M8743 / 3;Superficial spreading melanoma;C43.-
+M8744 / 3;lentiginous malignant melanoma of the peripheral edges;C43.-
+M8745 / 3;Desmoplastic malignant melanoma;C43.-
+M8750 / 0;intradermal nevus;D22.-
+M8760 / 0;compound nevus;D22.-
+M8761 / 1;Pigmented nevus giant SOE;D48.5
+M8761 / 3;malignant melanoma in giant pigmented nevus;C43.-
+M8770 / 0;Nevo epithelioid and spindle cell;D22.-
+M8770 / 3;Melanoma mixed epithelioid and spindle cell;
+M8771 / 0;Epithelioid cell nevus;D22.-
+M8771 / 3;Epithelioid melanoma;
+M8772 / 0;Spindle cell nevus;D22.-
+M8772 / 3;Spindle cell melanoma NOS;
+M8773 / 3;Spindle cell melanoma, type A;C69.4
+M8774 / 3;Spindle cell melanoma, Type B;C69.4
+M8780 / 0;blue nevus SOE;D22.-
+M8780 / 3;Malignant blue nevus;C43.-
+M8790 / 0;Nevus cell blue;D22.-
+M8800 / 0;A benign tumor of soft tissue;
+M8800 / 3;sarcoma SOE;
+M8800 / 6;sarcomatosis SOE;
+M8801 / 3;Spindle cell sarcoma;
+M8802 / 3;Giant cell sarcoma (except bone M9250 / 3);
+M8803 / 3;Small Cell Sarcoma;
+M8804 / 3;epithelioid sarcoma;
+M8810 / 0;fibroma SOE;
+M8810 / 3;fibrosarcoma SOE;
+M8811 / 0;Fibromixoma SOE;
+M8811 / 3;Firbromixossarcoma;
+M8812 / 0;fibroma periosteal;D16
+M8812 / 3;fibrosarcoma periosteal;C40 .-, C41.-
+M8813 / 0;Fibroma fascia;
+M8813 / 3;Fibrosarcoma fascia;
+M8814 / 3;fibrosarcoma child;
+M8820 / 0;elastofibroma;
+M8821 / 1;aggressive fibromatosis;
+M8822 / 1;abdominal fibromatosis;
+M8823 / 1;desmoplastic fibroma;
+M8824 / 1;myofibromatosis;
+M8830 / 0;NOS fibrous histiocytoma;
+M8830 / 1;atypical fibrous histiocytoma;
+M8830 / 3;malignant fibrous histiocytoma;
+M8832 / 0;dermatofibroma SOE;D23.-
+M8832 / 3;dermatofibrosarcoma SOE;C44.-
+M8833 / 3;Dermatofibrosarcoma protuberans pigmented;
+M8840 / 0;myxoma SOE;
+M8840 / 3;myxosarcomas;
+M8841 / 1;angiomyxoma;
+M8850 / 0;lipoma NOS;D17.-
+M8850 / 3;liposarcoma SOE;
+M8851 / 0;fibrolipoma;D17.-
+M8851 / 3;Well-differentiated liposarcoma;
+M8852 / 0;Fibromixolipoma;D17.-
+M8852 / 3;myxoid liposarcoma;
+M8853 / 3;Round cell liposarcoma;
+M8854 / 0;pleomorphic lipoma;D17.-
+M8854 / 3;pleomorphic liposarcoma;
+M8855 / 3;liposarcoma mixed;
+M8856 / 0;intramuscular lipoma;D17.-
+M8857 / 0;Spindle cell lipoma;D17.-
+M8858 / 3;dedifferentiated liposarcoma;
+M8860 / 0;angiomyolipoma;D17.-
+M8861 / 0;angiolipoma SOE;D17.-
+M8870 / 0;myelolipoma;D17.-
+M8880 / 0;hibernoma;D17.-
+M8881 / 0;Lipoblastomatose;D17.-
+M8890 / 0;leiomyoma SOE;
+M8890 / 1;SOE leiomyomata;
+M8890 / 3;leiomyosarcoma SOE;
+M8891 / 0;epithelioid leiomyoma;
+M8892 / 0;leiomyoma cell;
+M8893 / 0;bizarre leiomyoma;
+M8894 / 0;angiomyoma;
+M8894 / 3;Angiomiossarcoma;
+M8895 / 0;myoma;
+M8895 / 3;myosarcoma;
+M8896 / 3;myxoid leiomyosarcoma;
+M8897 / 1;smooth muscle tumor NOS;
+M8900 / 0;rhabdomyoma SOE;
+M8900 / 3;rhabdomyosarcoma SOE;
+M8901 / 3;pleomorphic rhabdomyosarcoma;
+M8902 / 3;Rhabdomyosarcoma mixed type;
+M8903 / 0;fetal rhabdomyoma;
+M8904 / 0;rhabdomyoma adult;
+M8910 / 3;embryonal rhabdomyosarcoma;
+M8920 / 3;alveolar rhabdomyosarcoma;
+M8930 / 0;Nodule endometrial stromal;D26.1
+M8930 / 3;endometrial stromal sarcoma;C54.-
+M8931 / 1;Miosis endolymphatic stromal;D39.0
+M8932 / 0;adenomyoma;
+M8933 / 3;Adenosarcoma;
+M8940 / 0;pleomorphic adenoma;
+M8940 / 3;malignant mixed tumor NOS;
+M8941 / 3;Carcinoma in pleomorphic adenoma;C07, C08.-
+M8950 / 3;Mullerian mixed tumor;C54.-
+M8951 / 3;Mixed mesodermal tumor;
+M8960 / 1;mesoblastic nephroma;
+M8960 / 3;nefroblastoma SOE;C64
+M8963 / 3;rhabdoid sarcoma;
+M8964 / 3;Sarcoma Kidney clear cell;C64
+M8970 / 3;hepatoblastoma;C22.0
+M8971 / 3;pancreatoblastoma;C25.-
+M8972 / 3;pulmonary blastoma;C34.-
+M8980 / 3;carcinossarcoma SOE;
+M8981 / 3;carcinossarcoma embryonic;
+M8982 / 0;myoepithelioma;
+M8990 / 0;mesenchymoma benign;
+M8990 / 1;mesenchymoma SOE;
+M8990 / 3;mesenchymoma evil;
+M8991 / 3;embryonal sarcoma;
+M9000 / 0;Brenner tumor NOS;D27
+M9000 / 1;"Brenner tumor ""borderline""";D39.1
+M9000 / 3;malignant Brenner tumor;C56
+M9010 / 0;fibroadenoma SOE;D24
+M9011 / 0;fibroadenoma intracanalicular;D24
+M9012 / 0;fibroadenoma pericanalicular;D24
+M9013 / 0;adenofibroma SOE;D27
+M9014 / 0;adenofibroma serous;D27
+M9015 / 0;adenofibroma mucinous;D27
+M9016 / 0;giant fibroadenoma;D27
+M9020 / 0;Benign phyllodes tumor;D24
+M9020 / 1;Phyllodes tumor NOS;D48.6
+M9020 / 3;Tumor malignant phyllodes;C50.-
+M9030 / 3;fibroadenoma youth;D24
+M9040 / 0;synovioma benign;
+M9040 / 3;synovial sarcoma NOS;
+M9041 / 3;synovial sarcoma, spindle cell;
+M9042 / 3;synovial sarcoma epithelioid;
+M9043 / 3;biphasic synovial sarcoma;
+M9044 / 3;Clear cell sarcoma (except kidney M8964 / 3);
+M9050 / 0;benign mesothelioma;D19.-
+M9050 / 3;malignant mesothelioma;C45.-
+M9051 / 0;benign fibrous mesothelioma;D19.-
+M9051 / 3;malignant fibrous mesothelioma;C45.-
+M9052 / 0;Epithelioid mesothelioma benign;D19.-
+M9052 / 3;Epithelioid malignant mesothelioma;C45.-
+M9053 / 0;benign biphasic mesothelioma;D19.-
+M9053 / 3;biphasic malignant mesothelioma;C45.-
+M9054 / 0;Adenomatoid tumor NOS;D19.-
+M9055 / 1;cystic mesothelioma;
+M9060 / 3;disgerminoma;
+M9061 / 3;seminoma SOE;C62.-
+M9062 / 3;anaplastic seminoma;C62.-
+M9063 / 3;seminoma espermatoc�tico;C62.-
+M9064 / 3;germinoma;
+M9070 / 3;embryonal carcinoma NOS;
+M9071 / 3;endodermal sinus tumor;
+M9072 / 3;Poliembrioma;
+M9073 / 1;gonadoblastoma;
+M9080 / 0;benign teratoma;
+M9080 / 1;SOE teratoma;
+M9080 / 3;malignant teratoma SOE;
+M9081 / 3;teratocarcinoma;
+M9082 / 3;undifferentiated malignant teratoma;
+M9083 / 3;malignant teratoma intemedi�rio;
+M9084 / 0;Dermoid cyst NOS;
+M9084 / 3;Teratoma with malignant transformation;
+M9085 / 3;mixed germ cell tumor;
+M9090 / 0;ovarian Estruma SOE;D27
+M9090 / 3;Estruma malignant ovarian;C56
+M9091 / 1;carcinoid estrumal;D39.1
+M9100 / 0;hydatidiform SOE spring;O01.9
+M9100 / 1;Spring invasive hidatiforma;D39.2
+M9100 / 3;choriocarcinoma SOE;
+M9101 / 3;Choriocarcinoma combined with other elements germ cells;
+M9102 / 3;malignant teratoma trophoblastic;C62.-
+M9103 / 0;Spring partial hydatidiform;O01.1
+M9104 / 1;Trophoblastic tumor of placental site;D39.2
+M9110 / 0;Mesomefroma benign;
+M9110 / 1;mesonephric tumor;
+M9110 / 3;Mesomefroma evil;
+M9120 / 0;hemangioma SOE;D18.0
+M9120 / 3;hemangiosarcoma;
+M9121 / 0;hemangioma cavernous;D18.0
+M9122 / 0;venous hemangioma;D18.0
+M9123 / 0;hemangioma racemosa;D18.0
+M9124 / 3;Kupfer cells of Sarcoma;C22.3
+M9125 / 0;hemangioma epiteli�de;D18.0
+M9126 / 0;hemangioma histiocytic;D18.0
+M9130 / 0;benign hemangioendothelioma;D18.0
+M9130 / 1;hemangioendothelioma SOE;
+M9130 / 3;hemangioendothelioma evil;
+M9131 / 0;capillary Hemangioma;D18.0
+M9132 / 0;intramuscular hemangioma;D18.0
+M9133 / 1;Epithelioid hemangioendothelioma SOE;
+M9133 / 3;Epithelioid malignant hemangioendothelioma;
+M9134 / 1;Tumor alveolar intravascular bronchus;D38.1
+M9140 / 3;Kaposi's sarcoma;C46.-
+M9141 / 0;angiokeratoma;
+M9142 / 0;Hemangioma querat�tico warty;D18.0
+M9150 / 0;hemangiopericitoma benign;
+M9150 / 1;hemangiopericitoma SOE;
+M9150 / 3;hemangiopericitoma evil;
+M9160 / 0;angiofibroma SOE;
+M9161 / 1;hemangioblastoma;
+M9170 / 0;lymphangioma SOE;D18.1
+M9170 / 3;Lymphangiosarcoma;
+M9171 / 0;capillary lymphangioma;D18.1
+M9172 / 0;lymphangioma cavernosum;D18.1
+M9173 / 0;cystic lymphangioma;D18.1
+M9174 / 0;Lymphangiomyoma;D18.1
+M9174 / 1;lymphangiomyomatosis;
+M9175 / 0;Hemolinfangioma;D18.1
+M9180 / 0;osteoma SOE;D16.-
+M9180 / 3;osteosarcoma SOE;C40 .-, C41.-
+M9181 / 3;osteosarcoma chondroblastic;C40 .-, C41.-
+M9182 / 3;osteosarcoma fibroblast;C40 .-, C41.-
+M9183 / 3;osteosarcoma telangiectasic;C40 .-, C41.-
+M9184 / 3;Osteosarcoma in bone Paget's disease;C40 .-, C41.-
+M9185 / 3;Small cell osteosarcoma;C40 .-, C41.-
+M9190 / 3;osteosarcoma juxtacortical;C40 .-, C41.-
+M9191 / 0;Osteoid osteoma SOE;D16.-
+M9200 / 0;osteoblastomas SOE;D16.-
+M9200 / 1;osteoblastomas aggressive;D48.0
+M9210 / 0;osteochondroma;D16.-
+M9210 / 1;osteochondromatosis SOE;D48.0
+M9220 / 0;chondroma SOE;D16.-
+M9220 / 1;chondromatosis SOE;
+M9220 / 3;chondrosarcoma SOE;C40 .-, C41.-
+M9221 / 0;chondroma juxtacortical;D16.-
+M9221 / 3;chondrosarcoma juxtacortical;C40 .-, C41.-
+M9230 / 0;chondroblastoma SOE;D16.-
+M9230 / 3;chondroblastoma evil;C40 .-, C41.-
+M9231 / 3;myxoid chondrosarcoma;
+M9240 / 3;mesenchymal chondrosarcoma;
+M9241 / 0;fibrosarcoma chondromyxoid;D16.-
+M9250 / 1;giant cell tumor of bone, NOS;D48.0
+M9250 / 3;Malignant neoplasm of bone giant cells;C40 .-, C41.-
+M9251 / 1;Giant cell tumor of soft tissue, NOS;
+M9251 / 3;Malignant neoplasm of soft tissues giant cells;
+M9260 / 3;Ewing's sarcoma;C40 .-, C41.-
+M9261 / 3;Adamantinoma of long bones;C40.-
+M9262 / 0;ossifying fibroma;D16.-
+M9270 / 0;Tumor benign dental;D16.4, D16.5
+M9270 / 1;odontogenic tumor NOS;D48.0
+M9270 / 3;Tumor malignant odontogenic;C41.0, C41.1
+M9271 / 0;dentinoma;D16.4, D16.5
+M9272 / 0;cementoma SOE;D16.4, D16.5
+M9273 / 0;cementoblastoma benign;D16.4, D16.5
+M9274 / 0;fibroma cementifying;D16.4, D16.5
+M9275 / 0;cementoma gigantiform;D16.4, D16.5
+M9280 / 0;odontoma SOE;D16.4, D16.5
+M9281 / 0;odontoma compound;D16.4, D16.5
+M9282 / 0;complex odontoma;D16.4, D16.5
+M9290 / 0;Fibro-odontoma ameloblastic;D16.4, D16.5
+M9290 / 3;Odontossarcoma ameloblastic;C41.0, C41.1
+M9300 / 0;Adenomatoid odontogenic tumor;D16.4, D16.5
+M9301 / 0;Calcifying odontogenic cyst;D16.4, D16.5
+M9302 / 0;Odontogenic tumor ghost cells;D16.4, D16.5
+M9310 / 0;ameloblastoma SOE;D16.4, D16.5
+M9310 / 3;ameloblastoma evil;C41.0, C41.1
+M9311 / 0;Odontoameloblastoma;D16.4, D16.5
+M9312 / 0;Squamous odontogenic tumor;D16.4, D16.5
+M9320 / 0;odontogenic myxoma;D16.4, D16.5
+M9321 / 0;Central odontogenic fibroma;D16.4, D16.5
+M9322 / 0;Peripheral odontogenic fibroma;D16.4, D16.5
+M9330 / 0;fibroma ameloblastic;D16.4, D16.5
+M9330 / 3;fibrosarcoma ameloblastic;C41.0, C41.1
+M9340 / 3;Odontogenic epithelial tumor calcifying;D16.4, D16.5
+M9350 / 1;craniopharyngioma;D44.3, D44.4
+M9360 / 1;pinealoma;D44.5
+M9361 / 1;pineocytoma;D44.5
+M9362 / 3;pineoblastoma;C75.3
+M9363 / 0;melanotic neuroectodermal tumor;
+M9364 / 3;Peripheral neuroectodermal tumor;
+M9370 / 0;chordoma;
+M9380 / 3;malignant glioma;C71.-
+M9381 / 3;brain Gliomatosis;C71.-
+M9382 / 3;mixed glioma;C71.-
+M9383 / 1;glioma subependymal;D43.-
+M9384 / 1;Subependymal giant cell astrocytoma of;D43.-
+M9390 / 0;Choroid plexus papilloma, SOE;D33.0
+M9390 / 3;malignant choroid plexus papilloma;C71.5
+M9391 / 3;ependymoma SOE;C71.-
+M9392 / 3;anaplastic ependymoma;C71.-
+M9393 / 1;papillary ependymoma;D43.-
+M9394 / 1;ependymoma myxopapillary;D43.-
+M9400 / 3;astrocytoma SOE;C71.-
+M9401 / 3;anaplastic astrocytoma;C71.-
+M9410 / 3;protoplasmic astrocytoma;C71.-
+M9411 / 3;astrocytoma gemistoc�tico;C71.-
+M9420 / 3;fibrillary astrocytoma;C71.-
+M9421 / 3;pilocytic astrocytoma;C71.-
+M9422 / 3;Espongioblastoma SOE;C71.-
+M9423 / 3;Espongioblastoma polar;C71.-
+M9424 / 3;xanthoastrocytoma pleomorphic;C71.-
+M9430 / 0;astroblastoma;C71.-
+M9440 / 3;glioblastoma SOE;C71.-
+M9441 / 3;Giant cell glioblastoma;C71.-
+M9442 / 3;gliosarcoma;C71.-
+M9443 / 3;Primitive polar Espongioblastoma;C71.-
+M9450 / 3;oligodendroglioma SOE;C71.-
+M9451 / 3;anaplastic oligodendroglioma;C71.-
+M9460 / 3;Oligodendroblastoma;C71.-
+M9470 / 3;medulloblastoma SOE;C71.6
+M9471 / 3;desmoplastic medulloblastoma;C71.6
+M9472 / 3;Medulomioblastoma;C71.6
+M9473 / 3;Primitive neuroectodermal tumor;C71.-
+M9480 / 3;cerebellar sarcoma NOS;C71.6
+M9481 / 3;sarcoma monstrocelular;C71.-
+M9490 / 0;ganglioneuroma;
+M9490 / 3;ganglioneuroblastoma;
+M9491 / 3;neuromas;
+M9500 / 3;neuroblastoma SOE;
+M9501 / 3;medulloepithelioma SOE;
+M9502 / 3;medulloepithelioma teratoid;
+M9503 / 3;neuroepithelioma SOE;
+M9504 / 3;Espongioneuroblastoma;
+M9505 / 1;ganglioglioma;
+M9506 / 0;neurocytomas;
+M9507 / 0;tumor pacinian;
+M9510 / 3;retinoblastoma SOE;C69.2
+M9511 / 3;retinoblastoma differentiated;C69.2
+M9512 / 3;undifferentiated retinoblastoma;C69.2
+M9520 / 3;olfactory neurogenic tumor;
+M9521 / 3;Estesioneurocitoma;C30.0
+M9522 / 3;esthesioneuroblastoma;C30.0
+M9523 / 3;Estesioneuroepitelioma;C30.0
+M9530 / 0;meningioma NOS;D32.-
+M9530 / 1;Meningiomatose SOE;D42.-
+M9530 / 3;meningioma malignant;C70.-
+M9531 / 0;meningioma meningoteliomatoso;D32.-
+M9532 / 0;fibrous meningioma;D32.-
+M9533 / 0;meningioma psamomatoso;D32.-
+M9534 / 0;meningioma angiomatous;D32.-
+M9535 / 0;meningioma hemangiobl�stico;D32.-
+M9536 / 0;meningioma hemangioperic�tico;D32.-
+M9537 / 0;meningioma transitional;D32.-
+M9538 / 1;papillary meningioma;D42.-
+M9539 / 3;sarcomatosis meningeal;C70.-
+M9540 / 0;neurofibroma SOE;Q85.0
+M9540 / 1;neurofibromatosis SOE;
+M9540 / 3;neurofibrosarcoma;
+M9541 / 0;melanotic neurofibroma;
+M9550 / 0;plexiform neurofibroma;
+M9560 / 0;Neurilemmoma SOE;
+M9560 / 1;Neurinomatose;
+M9560 / 3;Neurilemmoma evil;
+M9561 / 3;Tumor malignant triton;
+M9562 / 0;Neurotequeoma;
+M9570 / 0;neuroma SOE;
+M9580 / 0;granular cell tumors NOS;
+M9580 / 3;Malignant neoplasm of granule cells;
+M9581 / 3;Sarcoma Alveolar soft part;
+M9590 / 3;Malignant lymphoma NOS;C84.5, C85.9
+M9591 / 3;malignant non-Hodgkin lymphoma NOS;C85.9
+M9592 / 3;lymphosarcoma SOE;C85.0
+M9593 / 3;Reticulossarcoma SOE;C83.3, C83.9
+M9594 / 3;microglioma;C85.7
+M9595 / 3;diffuse malignant lymphoma NOS;C83.9
+M9650 / 3;SOE Hodgkin's disease;C81.9
+M9652 / 3;Hodgkin's disease of mixed cellularity SOE;C81.2
+M9653 / 3;Hodgkin's disease, lymphocytic depletion, SOE;C81.3
+M9654 / 3;Hodgkin's disease, lymphocytic depletion, with diffuse fibrosis;C81.3
+M9655 / 3;Hodgkin's disease, lymphocytic depletion, reticular;C81.3
+M9657 / 3;Hodgkin's disease, lymphocytic predominance, SOE;C81.0
+M9658 / 3;Hodgkin's disease, lymphocytic predominance, diffuse;C81.0
+M9659 / 3;Hodgkin's disease, lymphocytic predominance, nodular;C81.0
+M9660 / 3;Paragranuloma Hodgkin SOE;C81.7
+M9661 / 3;Granuloma Hodgkin;C81.7
+M9662 / 3;Hodgkin's sarcoma;C81.7
+M9663 / 3;Hodgkin's disease, nodular sclerosis, SOE;C81.1
+M9664 / 3;Hodgkin's disease, nodular sclerosis, mobile phase;C81.1
+M9665 / 3;Hodgkin's disease, nodular sclerosis, lymphocytic predominance;C81.1
+M9666 / 3;Hodgkin's disease, nodular sclerosis, mixed cellularity;C81.1
+M9667 / 3;Hodgkin's disease, nodular sclerosis, lymphocytic depletion;C81.1
+M9670 / 3;malignant lymphoma, small lymphocytes, NOS;C83.0
+M9671 / 3;evil, lymphoplasmacytic lymphoma;C83.8
+M9672 / 3;Malignant lymphoma small cleaved cell, diffuse;C83.1
+M9673 / 3;malignant lymphocytic lymphoma, intermediate differentiation, diffuse;C83.8
+M9674 / 3;Centrocytic malignant lymphoma;C83.8
+M9675 / 3;malignant lymphoma, mixed small cell and large, diffuse;C83.2
+M9676 / 3;malignant lymphoma, centroblastic-Centrocytic, diffuse;C83.8
+M9677 / 3;Malignant lymphomatous polyposis;C83.8
+M9680 / 3;malignant lymphoma of large, diffuse cells, SOE;C83.3
+M9681 / 3;malignant lymphoma, large cell, cleaved, diffuse;C83.3
+M9682 / 3;malignant lymphoma, large cell, non-cleaved, diffuse;C83.3
+M9683 / 3;malignant lymphoma, centroblastic, diffuse;C83.8
+M9684 / 3;immunoblastic malignant lymphoma NOS;C83.4
+M9685 / 3;lymphoblastic malignant lymphoma;C83.5
+M9686 / 3;malignant lymphoma, small cell not cleaved, diffuse;C83.0, C83.6
+M9687 / 3;Burkitt lymphoma NOS;C83.7
+M9690 / 3;follicular malignant lymphoma NOS;C82.9
+M9691 / 3;malignant lymphoma, mixed small cleaved and large cell cell, follicular;C82.1
+M9692 / 3;malignant lymphoma, centroblastic-Centrocytic, follicular;C82.7
+M9693 / 3;evil, lymphocytic, well-differentiated, nodular lymphoma;C82.7
+M9694 / 3;Malignant lymphoma, lymphocytic, intermediate differentiation, nodular;C82.7
+M9695 / 3;Malignant lymphoma small cleaved cell, follicular;C82.0
+M9696 / 3;lymphocytic malignant lymphoma, poorly differentiated, nodular;C82.7
+M9697 / 3;malignant follicular lymphoma centroblastic;C82.7
+M9698 / 3;Malignant large cell lymphoma, follicular, SOE;
+M9700 / 3;mycosis fungoides;C84.0
+M9701 / 3;Sezary's disease;C84.1
+M9702 / 3;peripheral T-cell lymphoma NOS;C84.4
+M9703 / 3;T zone lymphoma;C84.2
+M9704 / 3;linfoepitel�ide lymphoma;C84.3
+M9705 / 3;peripheral T cell lymphoma (angio-immunoblastic lymphadenopathy with disproteinemia);C84.4
+M9706 / 3;T-cell lymphoma, peripheral, small cell pleomorphic;C84.4
+M9707 / 3;T-cell lymphoma, peripheral, medium and large cell pleomorphic;C84.4
+M9709 / 3;cutaneous;C84.5
+M9711 / 3;monocytoid B cell lymphoma;C85.7
+M9712 / 3;angioendotheliomatosis;C85.7
+M9713 / 3;angiocentric T cell lymphoma;C85.7
+M9714 / 3;large cell lymphoma (Ki-1 +);C85.7
+M9720 / 3;malignant histiocytosis;C96.1
+M9722 / 3;Letterer-Siwe disease;C96.0
+M9723 / 3;True histiocytic lymphoma;C96.3
+M9731 / 3;plasmacytoma SOE;C90.2
+M9732 / 3;multiple myeloma;C90.0
+M9740 / 1;mastocytoma SOE;D47.0
+M9740 / 3;Mast cell sarcoma;C96.2
+M9741 / 3;malignant mastocytosis;C96.2
+M9760 / 3;Immunoproliferative disease NOS;C88.9
+M9761 / 3;Waldenstrom Macroglobulinemia;C88.0
+M9762 / 3;Alpha heavy chain disease;C88.1
+M9763 / 3;Gamma heavy chain disease;C88.2
+M9764 / 3;immunoproliferative small intestinal disease;C88.3
+M9765 / 1;monoclonal gammopathy;D47.2
+M9766 / 1;Immunoproliferative angiocentric injury;D47.7
+M9767 / 1;angioimmunoblastic lymphadenopathy;D47.7
+M9768 / 1;T gamma lymphoproliferative disease;D47.7
+M9800 / 3;SOE leukemia;C95.9
+M9801 / 3;Acute leukemia NOS;C95.0
+M9802 / 3;SOE subacute leukemia;C95.2
+M9803 / 3;chronic leukemia SOE;C95.1
+M9804 / 3;aleuc�mica leukemia SOE;C95.7
+M9820 / 3;lymphoblastic leukemia SOE;C91.9
+M9821 / 3;acute lymphoblastic leukemia NOS;C91.0
+M9822 / 3;Subacute lymphocytic leukemia;C91.2
+M9823 / 3;CLL;C91.1
+M9824 / 3;lymphoblastic leukemia aleuc�mica;C91.7
+M9825 / 3;prolymphocytic leukemia;C91.3
+M9826 / 3;Burkitt cell leukemia;C91.7
+M9827 / 3;Leukemia / lymphoma Adult T cell;C91.5
+M9830 / 3;plasma cell leukemia;C90.1
+M9840 / 3;erythroleukemia;C94.0
+M9841 / 3;acute Eritremia;C94.0
+M9842 / 3;Eritremia chronic;C94.1
+M9850 / 3;lymphosarcoma cell leukemia;C94.0
+M9860 / 3;SOE myeloid leukemia;C92.9
+M9861 / three;Acute myeloid leukemia;C92.0
+M9862 / 3;Subacute myeloid leukemia;C92.2
+M9863 / 3;Chronic myeloid leukemia;C92.1
+M9864 / 3;myelogenous leukemia aleuc�mica;C92.7
+M9866 / 3;Acute promyelocytic leukemia;C92.4
+M9867 / 3;acute myelomonocytic leukemia;C92.5
+M9868 / 3;chronic myelomonocytic leukemia;C92.7
+M9870 / 3;basophilic leukemia;C92.-
+M9880 / 3;eosinophilic leukemia;C92.-
+M9890 / 3;monocytic leukemia SOE;C93.9
+M9891 / 3;acute monocytic leukemia;C93.0
+M9892 / 3;Subacute monocytic leukemia;C93.2
+M9893 / 3;chronic monocytic leukemia;C93.1
+M9894 / 3;monocytic leukemia aleuc�mica;C93.7
+M9900 / 3;mast cell leukemia;C94.3
+M9910 / 3;leukemia acute megakaryoblastic;C94.2
+M9930 / 3;myeloid sarcoma;C92.3
+M9931 / 3;acute Panmielose;C94.4
+M9932 / 3;acute myelofibrosis;C94.5
+M9940 / 3;"Leukemia ""hairy cell""";C91.4
+M9941 / 3;reticuloendotheliosis leukemic;C91.4
+M9950 / 1;polycythemia vera;D45
+M9960 / 1;chronic myeloproliferative disease;D47.1
+M9961 / 3;Mieloesclerose with myeloid metaplasia;D47.1
+M9962 / 1;idiopathic thrombocythemia;D47.3
+M9970 / 1;lymphoproliferative disease NOS;D47.9
+M9980 / 1;refractory anemia NOS;D46.4
+M9981 / 1;Refractory anemia without sideroblasts;D46.0
+M9982 / 1;refractory anemia with ringed sideroblasts;D46.1
+M9983 / 1;refractory anemia with excess blasts;D46.2
+M9984 / 1;refractory anemia with excess blasts in transformation;D46.3
+M9989 / 1;myelodysplastic syndrome NOS;D46.9
