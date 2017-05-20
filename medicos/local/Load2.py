@@ -24,6 +24,7 @@ def READ_FILE(_file):
                 seed = {}
                 seed['code'] = code
                 seed['description'] = desc
+                seed['search'] = code + ' ' + desc
 
                 group = code
                 lstGroup.append(seed)
@@ -36,6 +37,7 @@ def READ_FILE(_file):
                 seed['code'] = code
                 seed['description'] = desc
                 seed['group'] = group
+                seed['search'] = code + ' ' + desc
                 lstSubGroup.append(seed)
 
                 # seed_data = json.loads(json.dumps(seed, separators=(',', ':')))

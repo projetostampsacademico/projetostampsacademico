@@ -27,8 +27,8 @@
           <ul class="list-group">
           {% for disease in diseases_list %}
             <li class="list-group-item">
-              <h3>{{ disease.CAT }} - {{ disease.DESCRICAO }}</h3>
-              <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.CAT }}">Ref. Externa</a>
+              <h3>{{ disease.code }} - {{ disease.group }}</h3>
+              <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.code }}">Ref. Externa</a>
             </li>
           {% endfor %}
           </ul>
