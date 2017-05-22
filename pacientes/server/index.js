@@ -5,6 +5,7 @@ var User = require('./models/user');
 var mongoose = require('mongoose');
 var configDB = require('./config/database.js');
 var path = require('path');
+var bodyParser = require('body-parser')
 
 mongoose.connect(configDB.url);
 // Configure the Facebook strategy for use by Passport.
@@ -138,6 +139,18 @@ app.get('/sintomasForm',
       );
   });
 
+/**bodyParser.json(options)
+ * Parses the text as JSON and exposes the resulting object on req.body.
+ */
+app.use(bodyParser.json());
+
+app.post('/sintomasEnvio', 
+    require('connect-ensure-login').ensureLoggedIn(),
+    function (req, res) {
+      console.log(req.body.sintomas);
+      res.setHeader('Content-Type', 'application/json');
+      res.send(JSON.stringify(req.body.sintomas, null, 3));   
+});
 
 app.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
