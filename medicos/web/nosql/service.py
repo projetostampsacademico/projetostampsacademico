@@ -27,5 +27,11 @@ class MongoService:
         else:
             return list(cursor)
 
+    def related_data(self, collection, collection_id, fields, list, list_id):
+        for item in list:
+            if list_id in item:
+                item['related'] = self.query_data(collection, collection_id, item[list_id], 'list')
+        return list
+
     def convert(self, data):
         return dict([(str(k), str(v)) for k, v in data.items()])
