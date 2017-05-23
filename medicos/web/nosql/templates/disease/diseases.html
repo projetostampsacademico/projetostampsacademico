@@ -44,10 +44,7 @@
                     {% for related in disease.related %}
                       <li class="list-group-item">
                         <div class="symptoms">
-                          <b>
-                            <i class="fa fa-info-circle" title="{{ related.info }}"></i>
-                            Symptoms:
-                          </b>
+                          <b>Symptoms:<i class="fa fa-info-circle" title="{{ related.info }}"></i></b>
                           {% for symptom in related.symptoms %}
                             <div>{{ symptom }}</div>
                           {% endfor %}
