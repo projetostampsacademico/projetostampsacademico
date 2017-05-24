@@ -94,11 +94,11 @@ if [[ $SERVER = "PROCESSAMENTO" ]];then
 	mysql -u root -p  -e "CREATE DATABASE metastore CHARACTER SET utf8 COLLATE utf8_general_ci";
 	mysql -u root -p metastore < hive-schema-0.14.0.mysql.sql
 
-	mysql -u root -p -e " CREATE USER 'hiveuser'@'%' IDENTIFIED BY 'hivepassword';"
-	mysql -u root -p -e " GRANT all on metastore.* to 'hiveuser'@'%' identified by 'hivepassword';"
+	mysql -u root -p -e " CREATE USER 'hiveuser'@'localhost' IDENTIFIED BY 'hivepassword';"
+	mysql -u root -p -e " GRANT all on metastore.* to 'hiveuser'@'localhost' identified by 'hivepassword';"
 	mysql -u root -p -e " flush privileges"
 
-	cp ./hive-default.xml /usr/local/hadoop/hive/conf
+	cp ./hive-site.xml /usr/local/hadoop/hive/conf
 
 	sudo -i -u hadoop /usr/local/hadoop/hadoop/sbin/start-dfs.sh 
 	sudo -i -u hadoop /usr/local/hadoop/hadoop/sbin/start-yarn.sh
