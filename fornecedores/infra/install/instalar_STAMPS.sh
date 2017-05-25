@@ -58,18 +58,19 @@ if [[ $SERVER = "PROCESSAMENTO" ]];then
         echo "JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> /etc/environment
         source /etc/environment
 	useradd -d /usr/local/hadoop -m -s /bin/bash hadoop
-	echo "Adicionar senha no Hadoop"
+	echo "Adicionar senha no novo user Hadoop"
 	passwd hadoop
 	adduser hadoop sudo
 	echo "Preparando HDFS"
         mkdir /hadoop
         chown hadoop:hadoop  /hadoop
 
-	echo "Criando Chave"
+	echo "Criando Chave - senha user hadoop"
 	sudo -i -u hadoop ssh-keygen
 	sudo -i -u hadoop ssh-copy-id hadoop@localhost
 	echo "instalando Hadoop"
 	sudo -i -u hadoop wget http://ftp.unicamp.br/pub/apache/hadoop/common/hadoop-2.8.0/hadoop-2.8.0.tar.gz
+	echo "Descompactando Hadoop"
 	sudo -i -u hadoop tar -xzf hadoop-2.8.0.tar.gz
 	sudo -i -u hadoop ln -s /usr/local/hadoop/hadoop-2.8.0 /usr/local/hadoop/hadoop
 	echo "HADOOP_HOME=/usr/local/hadoop/hadoop" >> 	/etc/environment
@@ -87,22 +88,22 @@ if [[ $SERVER = "PROCESSAMENTO" ]];then
 	sudo -i -u hadoop tar -xzf apache-hive-1.2.2-bin.tar.gz
 	sudo -i -u hadoop ln -s /usr/local/hadoop/apache-hive-1.2.2-bin /usr/local/hadoop/hive
 	echo "HIVE_HOME=/usr/local/hadoop/hive" >>  /etc/environment
+	cp ./hive-site.xml /usr/local/hadoop/hive/conf
 
 	echo "configurando metastore"
 	apt-get install libmysql-java
 	sudo -i -u hadoop ln -s /usr/share/java/mysql-connector-java.jar /usr/local/hadoop/hive/lib/mysql-connector-java.jar
-	cd /usr/local/hadoop/hive/scripts/metastore/upgrade/mysql
 	
-	echo "Criando Databases - Entre com a senha do Mysql"
+	cd /usr/local/hadoop/hive/scripts/metastore/upgrade/mysql
+
+	
+	
+	echo "Criando Databases - Entre com a senha do Mysql 5x"
 	mysql -u root -p  -e "CREATE DATABASE metastore CHARACTER SET utf8 COLLATE utf8_general_ci";
 	mysql -u root -p metastore < hive-schema-0.14.0.mysql.sql
-
 	mysql -u root -p -e " CREATE USER 'hiveuser'@'localhost' IDENTIFIED BY 'hivepassword';"
 	mysql -u root -p -e " GRANT all on metastore.* to 'hiveuser'@'localhost' identified by 'hivepassword';"
 	mysql -u root -p -e " flush privileges"
-
-	cd
-	cp ./hive-site.xml /usr/local/hadoop/hive/conf
 	
 	echo "start HDFS + YARN"
 	sudo -i -u hadoop /usr/local/hadoop/hadoop/sbin/start-dfs.sh 
