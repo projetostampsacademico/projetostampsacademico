@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 clear
 
@@ -88,9 +88,12 @@ if [[ $SERVER = "PROCESSAMENTO" ]];then
 	sudo -i -u hadoop ln -s /usr/local/hadoop/apache-hive-1.2.2-bin /usr/local/hadoop/hive
 	echo "HIVE_HOME=/usr/local/hadoop/hive" >>  /etc/environment
 
+	echo "configurando metastore"
 	apt-get install libmysql-java
 	sudo -i -u hadoop ln -s /usr/share/java/mysql-connector-java.jar /usr/local/hadoop/hive/lib/mysql-connector-java.jar
 	cd /usr/local/hadoop/hive/scripts/metastore/upgrade/mysql
+	
+	echo "Criando Databases - Entre com a senha do Mysql"
 	mysql -u root -p  -e "CREATE DATABASE metastore CHARACTER SET utf8 COLLATE utf8_general_ci";
 	mysql -u root -p metastore < hive-schema-0.14.0.mysql.sql
 
@@ -98,11 +101,14 @@ if [[ $SERVER = "PROCESSAMENTO" ]];then
 	mysql -u root -p -e " GRANT all on metastore.* to 'hiveuser'@'localhost' identified by 'hivepassword';"
 	mysql -u root -p -e " flush privileges"
 
+	cd
 	cp ./hive-site.xml /usr/local/hadoop/hive/conf
-
+	
+	echo "start HDFS + YARN"
 	sudo -i -u hadoop /usr/local/hadoop/hadoop/sbin/start-dfs.sh 
 	sudo -i -u hadoop /usr/local/hadoop/hadoop/sbin/start-yarn.sh
 
+	echo "Testando HDFS"
 	sudo -i -u hadoop /usr/local/hadoop/hadoop/bin/hdfs dfs -mkdir       /tmp
 	sudo -i -u hadoop /usr/local/hadoop/hadoop/bin/hdfs dfs -mkdir       /user
 	sudo -i -u hadoop /usr/local/hadoop/hadoop/bin/hdfs dfs -mkdir	     /user/hive/
