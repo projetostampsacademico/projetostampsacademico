@@ -13,22 +13,47 @@
     <div class="row">
 
         <div class="col-md-8 col-md-offset-2">
-          <h1>Listagem de Doenças</h1>
+          <h1>Disease List</h1>
+          <hr>
         </div>
 
         <div class="col-md-2">
           <a class="btn btn-success" href="/disease">Voltar</a>
         </div>
 
-        {% include 'disease/query.html' %}
+        <div class="col-md-4 col-md-offset-2">
+          {% include 'disease/query.html' %}
+        </div>
+        <div class="col-md-4">
+          {% include 'disease/symptom.html' %}
+        </div>
 
-        <div class="col-md-8 col-md-offset-2">
-          <h4>Total de <b>{{diseases_list|length }}</b> doenças</h4>
+        <div class="col-md-10 col-md-offset-1">
+          <h4>Total <b>{{diseases_list|length }}</b> diseases</h4>
           <ul class="list-group">
           {% for disease in diseases_list %}
             <li class="list-group-item">
-              <h3>{{ disease.code }} - {{ disease.group }}</h3>
-              <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.code }}">Ref. Externa</a>
+              <div class="row">
+                <div class="col-md-3 disease-code">
+                  <h2><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.code }}">{{ disease.code }}</a></h2>
+                  <h4>{{ disease.description }}</h4>
+                </div>
+                <div class="col-md-9">
+
+                  <ul class="list-group">
+                    {% for related in disease.related %}
+                      <li class="list-group-item">
+                        <div class="symptoms">
+                          <b>Symptoms:<i class="fa fa-info-circle" title="{{ related.info }}"></i></b>
+                          {% for symptom in related.symptoms %}
+                            <div>{{ symptom }}</div>
+                          {% endfor %}
+                        </div>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
             </li>
           {% endfor %}
           </ul>
