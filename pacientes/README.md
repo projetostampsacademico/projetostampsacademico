@@ -1,9 +1,14 @@
 # Pacientes
 
+# Para utilizar Docker
+
 Para desenvolver:
 ```bash
 docker-compose build
-docker-compose run -p 8080:3000 server bash
+docker-compose run -p 8080:8080 server bash
+npm install
+bower install --allow-root
+npm start
 ```
 
 Para colocar em produção:
@@ -13,8 +18,7 @@ docker-compose up -d
 docker-compose logs -f server
 ```
 
-
-# Inicialização de ambiente de desenvolvimento na nuvem (Sugestão)
+# Inicialização de ambiente de desenvolvimento na nuvem (Cloud9)
 
 1 - Criar conta no Cloud9 (http://c9.io) - Apesar de precisar do cartão de crédito no cadastro, é gratuito, já uso a quase 2 anos e é bastante confiável;
 
@@ -34,8 +38,15 @@ $ npm install -g bower
 $ bower -v
 $ bower install
 ```
+5 - Configure o MongoDB de acordo com o seguinte link:
+https://community.c9.io/t/setting-up-mongodb/1717
 
-5 - Rodar o servidor: Na área inferior direita, clicar no '+' (nova aba), e selecionar a opção "New run configuration", na nova janela aberta, no campo "Command:" colocar:
+6 - Antes de rodar o NodeJS, rode o MongoDB no terminal:
+```sh
+$ ./mongod
+```
+
+6 - Rodar o servidor: Na área inferior direita, clicar no '+' (nova aba), e selecionar a opção "New run configuration", na nova janela aberta, no campo "Command:" colocar:
 ```bash
 ./pacientes/server/index.js
 ```

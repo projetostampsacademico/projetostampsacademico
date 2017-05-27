@@ -1,0 +1,12 @@
+<body>
+<% if (!user) { %>
+	<p>Bem-vindo, por favor <a href="/login">efetue login</a>.</p>
+<% } else { %>
+	<p>Olá, <%= user.facebook.displayName %>. Escolha a opção desejada: </p>
+	<ul>
+	  <li> <a href="/profile"> Veja seu perfil </a> </li>
+	  <li> <a href="/paProximos"> Liste Pronto Atendimentos Próximos </a> </li>
+	  <li> <a href="/medicosProximos"> Liste Médicos Próximos </a> </li>
+	</ul>
+<% } %>
+</body>
