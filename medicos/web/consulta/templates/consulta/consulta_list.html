@@ -1,9 +1,13 @@
 {% extends 'web/base.html' %}
 
 {% block content %}
-    <a href="{% url "consulta_new" %}" class="btn btn-success pull-right" >Nova Consulta</a>
-    <h1>Lista de Consultas do Paciente</h1>
+    <a href="{% url "consulta_new" %}" class="btn btn-success pull-right" >New Appointment</a>
+    <h1>Patient Appointment List</h1>
     <table class="table table-striped">
+        <tr>
+            <th>Appointment</th>
+            <th colspan="2">Actions</th>
+        </tr>
         {% for consulta in object_list %}
         <tr>
             <td>{{ consulta.con_entry_time }}</td>
@@ -13,3 +17,4 @@
         {% endfor %}
     </table>
 {% endblock content %}
+2
