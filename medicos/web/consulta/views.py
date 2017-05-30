@@ -31,6 +31,7 @@ def consulta_create(request, template_name='consulta/consulta_form.html'):
 def consulta_update(request, pk, template_name='consulta/consulta_form.html'):
     consulta = get_object_or_404(Consulta, pk=pk)
     form = ConsultaForm(request.POST or None, instance=consulta)
+    
     if form.is_valid():
         form.save()
         return redirect('consulta_list')
