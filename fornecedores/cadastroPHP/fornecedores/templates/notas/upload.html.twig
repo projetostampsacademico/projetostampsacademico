@@ -1,0 +1,58 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <div id="multipleupload">Upload</div>
+    <div id="eventsmessage"></div>
+
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $("#multipleupload").uploadFile({
+                url: "{{ path('upload') }}",
+                dragDrop: true,
+                fileName: "myfile",
+                multiple: true,
+                returnType: "json",
+                statusBarWidth: 700,
+                dragdropWidth: 700, 
+                maxFileSize: 200 * 1024,
+                onLoad: function (obj)
+                {
+                    $("#eventsmessage").html($("#eventsmessage").html() + "<br/>Widget Loaded:");
+                },
+                onSubmit: function (files)
+                {
+                    $("#eventsmessage").html($("#eventsmessage").html() + "<br/>Submitting:" + JSON.stringify(files));
+                    //return false;
+                },
+                onSuccess: function ( files, data, xhr, pd)
+                {
+                      pd.filename.append("<br>"+ JSON.stringify(data));        
+                },
+                afterUploadAll: function (obj)
+                {
+                    $("#eventsmessage").html($("#eventsmessage").html() + "<br/>All files are uploaded");
+                },
+                onError: function (files, status, errMsg, pd)
+                {
+                    $("#eventsmessage").html($("#eventsmessage").html() + "<br/>Error for: " + JSON.stringify(files));
+                },
+                onCancel: function (files, pd)
+                {
+                    $("#eventsmessage").html($("#eventsmessage").html() + "<br/>Canceled  files: " + JSON.stringify(files));
+                },
+                deleteCallback: function (data, pd) {
+                    for (var i = 0; i < data.length; i++) {
+                        $.post({{ path('delete', {name: "data"}) }},
+                                function (resp, textStatus, jqXHR) {
+                                    //Show Message	
+                                    alert("File Deleted");
+                                });
+                    }
+                    pd.statusbar.hide(); //You choice.
+
+                }
+            });
+        });
+    </script>
+{% endblock %}
