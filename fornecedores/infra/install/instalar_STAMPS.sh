@@ -34,16 +34,15 @@ SERVER=$( dialog --stdout --title 'Qual Servidor'       \
 	PROCESSAMENTO  'PROCESSAMENTO' 			  )
 
 
-if [[ $SERVER = "API_WEB" ]];then
+if [[ $SERVER = "API_PHP" ]];then
 	clear
 	echo "instalando python"
 	aptitude install python-software-properties python-setuptools python-pip
 	pip install --upgrade pip
 	pip install virtualenv
 	
-	echo "instalando LAMP"
-	apt-get install apache2 
-	apt-get install php libapache2-mod-php php-mcrypt php-mysql 
+	echo "instalando PHP"
+	aptitude install php7.0 php7.0-cli php7.0-common php7.0-gd php7.0-json  php7.0-mysql  php7.0-curl  php7.0-xml 
 
 fi
 
