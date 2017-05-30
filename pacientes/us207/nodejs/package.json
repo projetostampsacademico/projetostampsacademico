@@ -1,0 +1,14 @@
+{
+  "name": "triagem",
+  "version": "1.0.0",
+  "description": "Processo de Triagem do STAMPSnet",
+  "author": "Luiz Coura <luizcoura@gmail.com>",
+  "main": "triagem.js",
+  "scripts": {
+    "start": "node triagem.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "kafka-node": "latest"
+  }
+}
