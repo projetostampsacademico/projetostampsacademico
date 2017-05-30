@@ -7,16 +7,16 @@ sys.path.append('../')
 from nosql.service import MongoService
 import json
 
-def index(request):
+def index(request, template_name='disease/index.html'):
     """Index page."""
-    return render_to_response(
-        'consulta/index.html', context_instance=RequestContext(request))
+    diagnosis = generateDiagnosis('{"symptoms": [" - Fever"]}')
+    return render(request, template_name, {'diagnosis': diagnosis.items()})
 
 def generateDiagnosis(symptonsRequestList):
     symptomsRequest = json.loads(symptonsRequestList)
     service = MongoService()
     diseases_list= service.fetch_data('DETAIL', 'json')
-    result = dict()
+    result = {}
     json_disease = json.loads(diseases_list)
     for disease in json_disease:
         diseaseSymptomsList = disease['symptoms']
@@ -30,11 +30,10 @@ def generateDiagnosis(symptonsRequestList):
                 for diseaseSymptom in diseaseSymptomsList:
                     if diseaseSymptom == patientSymptom:
                         intersection = intersection + 1;
-            if intersection != 0:
-                jaccardValue = float(intersection/union)
-            result[disease] = jaccardValue;
-        json_data = json.dumps(result)
-    return json_data
+            if intersection != 0 and disease['info']:
+                jaccardValue = float(intersection)/float(union)
+                result[disease['info']] = jaccardValue;
+    return result
 
             
     

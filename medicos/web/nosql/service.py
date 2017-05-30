@@ -3,7 +3,6 @@ from singleton import Singleton
 from pprint import pprint
 from bson.json_util import dumps
 
-@Singleton
 class MongoService:
 
     def __init__(self):
