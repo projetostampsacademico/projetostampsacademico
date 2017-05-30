@@ -13,8 +13,32 @@ class MongoService:
     def collection_names(self):
         return self.db.collection_names()
 
-    def fetch_data(self, collection):
-        return dumps(self.db[collection].find())
+    def fetch_data(self, collection, format = 'json'):
+        cursor = self.db[collection].find()
+        if format == 'json':
+            return dumps(cursor)
+        else:
+            return list(cursor)
+
+    def query_data(self, collection, field, search, format = 'json'):
+        cursor = self.db[collection].find({field : {'$regex' : ".*" + search + ".*"}})
+        if format == 'json':
+            return dumps(cursor)
+        else:
+            return list(cursor)
+
+    def related_data(self, collection, collection_id, list, list_id):
+        for item in list:
+            if list_id in item:
+                item['related'] = self.query_data(collection, collection_id, item[list_id], 'list')
+        return list
+
+    def find_all_in(self, collection, field, array, format = 'json'):
+        cursor = self.db[collection].find({field : {"$in": array }})
+        if format == 'json':
+            return dumps(cursor)
+        else:
+            return list(cursor)
 
     def convert(self, data):
         return dict([(str(k), str(v)) for k, v in data.items()])

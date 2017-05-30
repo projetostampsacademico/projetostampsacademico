@@ -1,0 +1,22 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+    <link href="/static/css/nosql.css" rel="stylesheet">
+    <a class="link-right" href="/disease/database">Database access</a>
+    <h1>ICD-10 Reference</h1>
+
+    <div class="row">
+
+        <div class="col-md-8 col-md-offset-2"><br />
+          <a class="btn btn-default" href="/disease/diseases"><h4>Complete list</h4></a>
+        </div>
+
+        <div class="col-md-4 col-md-offset-4"><br>
+            {% include 'disease/query.html' %}
+        </div>
+
+        <div class="col-md-4 col-md-offset-4">
+            {% include 'disease/symptom.html' %}
+        </div>
+    </div>
+{% endblock content %}

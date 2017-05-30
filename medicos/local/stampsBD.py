@@ -72,6 +72,20 @@ def UPDATE_DETAIL(_id, CID_STAMPS, ICD):
     ref.update_one({"_id" : _id}, {'$set': {'CID_STAMPS': CID_STAMPS, 'ICD': ICD}})
 
 
+def GET_DETAIL_UNTRANSLATED():
+    '''Obtem todos os registros da tabela Detail ainda nao traduzido'''
+    db = START_CONN()
+    ref = db['DETAIL']
+    return ref.find({"Info_PT" : None })
+
+
+def UPDATE_DETAIL_TRANSLATE(_id, info_PT, symptoms_PT):
+    ''' doc string'''
+    db = START_CONN()
+    ref = db['DETAIL']
+    ref.update_one({"_id" : _id}, {'$set': {'info_PT': info_PT, 'symptoms_PT': symptoms_PT}})
+
+
 # GET_CID_10_SUBCATEGORIAS()
 '''
 db = START_CONN()

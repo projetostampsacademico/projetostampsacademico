@@ -1,0 +1,31 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+    <script src="/static/js/util.js"></script>
+    <link href="/static/css/nosql.css" rel="stylesheet">
+
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        $("#data").html(syntaxHighlight($("#data").html()));
+      });
+    </script>
+
+    <div class="row">
+
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Listagem de {{collection}}</h1>
+        </div>
+
+        <div class="col-md-2">
+          <a class="btn btn-success" href="/disease">Voltar</a>
+        </div>
+
+        <div class="col-md-8 col-md-offset-2">
+          <pre>
+            <h3>Data</h3>
+            <div id="data">{{ data }}</div>
+          </pre>
+        </div>
+
+    </div>
+{% endblock content %}

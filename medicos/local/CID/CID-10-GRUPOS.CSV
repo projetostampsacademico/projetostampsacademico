@@ -1,276 +1,276 @@
-CATINIC;CATFIM;DESCRICAO;DESCRABREV;
-A00;A09;Doenças infecciosas intestinais;Doenças infecciosas intestinais;
-A15;A19;Tuberculose;Tuberculose;
-A20;A28;Algumas doenças bacterianas zoonóticas;Algumas doenças bacterianas zoonóticas;
-A30;A49;Outras doenças bacterianas;Outras doenças bacterianas;
-A50;A64;Infecções de transmissão predominantemente sexual;Infecções de transmissão predominantemente sexual;
-A65;A69;Outras doenças por espiroquetas;Outras doenças por espiroquetas;
-A70;A74;Outras doenças causadas por clamídias;Outras doenças causadas por clamídias;
-A75;A79;Rickettsioses;Rickettsioses;
-A80;A89;Infecções virais do sistema nervoso central;Infecções virais do sistema nervoso central;
-A90;A99;Febres por arbovírus e febres hemorrágicas virais;Febres por arbovírus e febres hemorrágicas virais;
-B00;B09;Infecções virais caracterizadas por lesões de pele e mucosas;Infecções virais caract p/lesões de pele e mucosas;
-B15;B19;Hepatite viral;Hepatite viral;
-B20;B24;Doença pelo vírus da imunodeficiência humana [HIV];Doença pelo vírus da imunodeficiência humana [HIV];
-B25;B34;Outras doenças por vírus;Outras doenças por vírus;
-B35;B49;Micoses;Micoses;
-B50;B64;Doenças devidas a protozoários;Doenças devidas a protozoários;
-B65;B83;Helmintíases;Helmintíases;
-B85;B89;Pediculose, acaríase e outras infestações;Pediculose, acaríase e outras infestações;
-B90;B94;Seqüelas de doenças infecciosas e parasitárias;Seqüelas de doenças infecciosas e parasitárias;
-B95;B97;Agentes de infecções bacterianas, virais e outros agentes infecciosos;Agentes infec bacter, virais e outr agentes infecc;
-B99;B99;Outras doenças infecciosas;Outras doenças infecciosas;
-C00;C97;Neoplasias [tumores] malignas(os);Neoplasias malignas;
-C00;C75;Neoplasias [tumores] malignas(os), declaradas ou presumidas como primárias, de localizações especificadas, exceto dos tecidos linfático, hematopoético e tecidos correlatos;Neoplasias malignas de localizações especificadas;
-C00;C14;Neoplasias malignas do lábio, cavidade oral e faringe;Neoplasias malig do lábio, cavidade oral e faringe;
-C15;C26;Neoplasias malignas dos órgãos digestivos;Neoplasias malignas dos órgãos digestivos;
-C30;C39;Neoplasias malignas do aparelho respiratório e dos órgãos intratorácicos;Neopl malig aparelho respirat e órgãos intratorác;
-C40;C41;Neoplasias malignas dos ossos e das cartilagens articulares;Neopl malig dos ossos e cartilagens articulares;
-C43;C44;Melanoma e outras(os) neoplasias malignas da pele;Melanoma e outras(os) neoplasias malignas da pele;
-C45;C49;Neoplasias malignas do tecido mesotelial e tecidos moles;Neopl malig do tecido mesotelial e tecidos moles;
-C50;C50;Neoplasias malignas da mama;Neoplasias malignas da mama;
-C51;C58;Neoplasias malignas dos órgãos genitais femininos;Neoplasias malignas dos órgãos genitais femininos;
-C60;C63;Neoplasias malignas dos órgãos genitais masculinos;Neoplasias malignas dos órgãos genitais masculinos;
-C64;C68;Neoplasias malignas do trato urinário;Neoplasias malignas do trato urinário;
-C69;C72;Neoplasias malignas dos olhos, do encéfalo e de outras partes do sistema nervoso central;Neopl malig olhos encéf outr part sist nerv centr;
-C73;C75;Neoplasias malignas da tireóide e de outras glândulas endócrinas;Neopl malig tireóide e outras glândulas endócrinas;
-C76;C80;Neoplasias malignas de localizações mal definidas, secundárias e de localizações não especificadas;Neopl malig local mal def, secund e local n espec;
-C81;C96;Neoplasias [tumores] malignas(os), declaradas ou presumidas como primárias, dos tecidos linfático, hematopoético e tecidos correlatos;Neopl malig tecido linfát hematopoét e correlatos;
-C97;C97;Neoplasias malignas de localizações múltiplas independentes (primárias);Neopl malig local múltiplas independentes (prim);
-D00;D09;Neoplasias [tumores] in situ;Neoplasias [tumores] in situ;
-D10;D36;Neoplasias [tumores] benignas(os);Neoplasias [tumores] benignas(os);
-D37;D48;Neoplasias [tumores] de comportamento incerto ou desconhecido;Neopl de comportamento incerto ou desconhecido;
-D50;D53;Anemias nutricionais;Anemias nutricionais;
-D55;D59;Anemias hemolíticas;Anemias hemolíticas;
-D60;D64;Anemias aplásticas e outras anemias;Anemias aplásticas e outras anemias;
-D65;D69;Defeitos da coagulação, púrpura e outras afecções hemorrágicas;Defeitos coagulação, púrpura, outr afecç hemorrág;
-D70;D77;Outras doenças do sangue e dos órgãos hematopoéticos;Outras doenças do sangue e órgãos hematopoéticos;
-D80;D89;Alguns transtornos que comprometem o mecanismo imunitário;Alguns transt q comprometem o mecanismo imunitário;
-E00;E07;Transtornos da glândula tireóide;Transtornos da glândula tireóide;
-E10;E14;Diabetes mellitus;Diabetes mellitus;
-E15;E16;Outros transtornos da regulação da glicose e da secreção pancreática interna;Outr transt regulação glicose e secr pancreát int;
-E20;E35;Transtornos de outras glândulas endócrinas;Transtornos de outras glândulas endócrinas;
-E40;E46;Desnutrição;Desnutrição;
-E50;E64;Outras deficiências nutricionais;Outras deficiências nutricionais;
-E65;E68;Obesidade e outras formas de hiperalimentação;Obesidade e outras formas de hiperalimentação;
-E70;E90;Distúrbios metabólicos;Distúrbios metabólicos;
-F00;F09;Transtornos mentais orgânicos, inclusive os sintomáticos;Transtornos mentais orgânicos, incl sintomáticos;
-F10;F19;Transtornos mentais e comportamentais devidos ao uso de substância psicoativa;Transt ment e comport dev ao uso subst psicoativa;
-F20;F29;Esquizofrenia, transtornos esquizotípicos e transtornos delirantes;Esquizofrenia, transt esquizotípicos e delirantes;
-F30;F39;Transtornos do humor [afetivos];Transtornos do humor [afetivos];
-F40;F48;Transtornos neuróticos, transtornos relacionados com o "stress" e transtornos somatoformes;Transt neuróticos, relacion stress e somatoformes;
-F50;F59;Síndromes comportamentais associadas a disfunções fisiológicas e a fatores físicos;Síndr comport assoc disfunç fisiológ e fat físicos;
-F60;F69;Transtornos da personalidade e do comportamento do adulto;Transtornos da personalidade e do comport adulto;
-F70;F79;Retardo mental;Retardo mental;
-F80;F89;Transtornos do desenvolvimento psicológico;Transtornos do desenvolvimento psicológico;
-F90;F98;Transtornos do comportamento e transtornos emocionais que aparecem habitualmente durante a infância ou a adolescência;Transt compor e emoc q aparecem dur infânc adolesc;
-F99;F99;Transtorno mental não especificado;Transtorno mental não especificado;
-G00;G09;Doenças inflamatórias do sistema nervoso central;Doenças inflamatórias do sistema nervoso central;
-G10;G13;Atrofias sistêmicas que afetam principalmente o sistema nervoso central;Atrofias sistêm q afetam princ o sist nerv central;
-G20;G26;Doenças extrapiramidais e transtornos dos movimentos;Doenças extrapiramidais e transt dos movimentos;
-G30;G32;Outras doenças degenerativas do sistema nervoso;Outras doenças degenerativas do sistema nervoso;
-G35;G37;Doenças desmielinizantes do sistema nervoso central;Doenças desmielinizantes do sist nervoso central;
-G40;G47;Transtornos episódicos e paroxísticos;Transtornos episódicos e paroxísticos;
-G50;G59;Transtornos dos nervos, das raízes e dos plexos nervosos;Transtornos dos nervos, raízes e plexos nervosos;
-G60;G64;Polineuropatias e outros transtornos do sistema nervoso periférico;Polineuropatias e outr transt sist nerv periférico;
-G70;G73;Doenças da junção mioneural e dos músculos;Doenças da junção mioneural e dos músculos;
-G80;G83;Paralisia cerebral e outras síndromes paralíticas;Paralisia cerebral e outras síndromes paralíticas;
-G90;G99;Outros transtornos do sistema nervoso;Outros transtornos do sistema nervoso;
-H00;H06;Transtornos da pálpebra, do aparelho lacrimal e da órbita;Transtornos pálpebra, aparelho lacrimal e órbita;
-H10;H13;Transtornos da conjuntiva;Transtornos da conjuntiva;
-H15;H22;Transtornos da esclerótica, da córnea, da íris e do corpo ciliar;Transtorn esclerótica, córnea, íris e corpo ciliar;
-H25;H28;Transtornos do cristalino;Transtornos do cristalino;
-H30;H36;Transtornos da coróide e da retina;Transtornos da coróide e da retina;
-H40;H42;Glaucoma;Glaucoma;
-H43;H45;Transtornos do humor vítreo e do globo ocular;Transtornos do humor vítreo e do globo ocular;
-H46;H48;Transtornos do nervo óptico e das vias ópticas;Transtornos do nervo óptico e das vias ópticas;
-H49;H52;Transtornos dos músculos oculares, do movimento binocular, da acomodação e da refração;Transt músc oculares, movim binoc, acomod e refraç;
-H53;H54;Transtornos visuais e cegueira;Transtornos visuais e cegueira;
-H55;H59;Outros transtornos do olho e anexos;Outros transtornos do olho e anexos;
-H60;H62;Doenças do ouvido externo;Doenças do ouvido externo;
-H65;H75;Doenças do ouvido médio e da mastóide;Doenças do ouvido médio e da mastóide;
-H80;H83;Doenças do ouvido interno;Doenças do ouvido interno;
-H90;H95;Outros transtornos do ouvido;Outros transtornos do ouvido;
-I00;I02;Febre reumática aguda;Febre reumática aguda;
-I05;I09;Doenças reumáticas crônicas do coração;Doenças reumáticas crônicas do coração;
-I10;I15;Doenças hipertensivas;Doenças hipertensivas;
-I20;I25;Doenças isquêmicas do coração;Doenças isquêmicas do coração;
-I26;I28;Doenças cardíaca pulmonar e da circulação pulmonar;Doenças cardíaca pulmonar e da circulação pulmonar;
-I30;I52;Outras formas de doença do coração;Outras formas de doença do coração;
-I60;I69;Doenças cerebrovasculares;Doenças cerebrovasculares;
-I70;I79;Doenças das artérias, das arteríolas e dos capilares;Doenças das artérias, das arteríolas e capilares;
-I80;I89;Doenças das veias, dos vasos linfáticos e dos gânglios linfáticos, não classificadas em outra parte;Doenças veias, vasos e gânglios linfáticos, NCOP;
-I95;I99;Outros transtornos, e os não especificados do aparelho circulatório;Outros transt e os não espec aparelho circulatório;
-J00;J06;Infecções agudas das vias aéreas superiores;Infecções agudas das vias aéreas superiores;
-J09;J18;Influenza [gripe] e pneumonia;Influenza [gripe] e pneumonia;
-J20;J22;Outras infecções agudas das vias aéreas inferiores;Outras infecções agudas das vias aéreas inferiores;
-J30;J39;Outras doenças das vias aéreas superiores;Outras doenças das vias aéreas superiores;
-J40;J47;Doenças crônicas das vias aéreas inferiores;Doenças crônicas das vias aéreas inferiores;
-J60;J70;Doenças pulmonares devidas a agentes externos;Doenças pulmonares devidas a agentes externos;
-J80;J84;Outras doenças respiratórias que afetam principalmente o interstício;Outras doenças respirat q afetam princ interstício;
-J85;J86;Afecções necróticas e supurativas das vias aéreas inferiores;Afecções necróticas e supurat vias aéreas infer;
-J90;J94;Outras doenças da pleura;Outras doenças da pleura;
-J95;J99;Outras doenças do aparelho respiratório;Outras doenças do aparelho respiratório;
-K00;K14;Doenças da cavidade oral, das glândulas salivares e dos maxilares;Doenças cavidade oral, glând salivares e maxilares;
-K20;K31;Doenças do esôfago, do estômago e do duodeno;Doenças do esôfago, do estômago e do duodeno;
-K35;K38;Doenças do apêndice;Doenças do apêndice;
-K40;K46;Hérnias;Hérnias;
-K50;K52;Enterites e colites não-infecciosas;Enterites e colites não-infecciosas;
-K55;K63;Outras doenças dos intestinos;Outras doenças dos intestinos;
-K65;K67;Doenças do peritônio;Doenças do peritônio;
-K70;K77;Doenças do fígado;Doenças do fígado;
-K80;K87;Transtornos da vesícula biliar, das vias biliares e do pâncreas;Transt vesícula biliar, vias biliares e pâncreas;
-K90;K93;Outras doenças do aparelho digestivo;Outras doenças do aparelho digestivo;
-L00;L08;Infecções da pele e do tecido subcutâneo;Infecções da pele e do tecido subcutâneo;
-L10;L14;Afecções bolhosas;Afecções bolhosas;
-L20;L30;Dermatite e eczema;Dermatite e eczema;
-L40;L45;Afecções pápulo-descamativas;Afecções pápulo-descamativas;
-L50;L54;Urticária e eritema;Urticária e eritema;
-L55;L59;Transtornos da pele e do tecido subcutâneo relacionados com a radiação;Transt pele e tecido subcutâneo relac c/radiação;
-L60;L75;Afecções dos anexos da pele;Afecções dos anexos da pele;
-L80;L99;Outras afecções da pele e do tecido subcutâneo;Outras afecções da pele e do tecido subcutâneo;
-M00;M25;Artropatias;Artropatias;
-M00;M03;Artropatias infecciosas;Artropatias infecciosas;
-M05;M14;Poliartropatias inflamatórias;Poliartropatias inflamatórias;
-M15;M19;Artroses;Artroses;
-M20;M25;Outros transtornos articulares;Outros transtornos articulares;
-M30;M36;Doenças sistêmicas do tecido conjuntivo;Doenças sistêmicas do tecido conjuntivo;
-M40;M54;Dorsopatias;Dorsopatias;
-M40;M43;Dorsopatias deformantes;Dorsopatias deformantes;
-M45;M49;Espondilopatias;Espondilopatias;
-M50;M54;Outras dorsopatias;Outras dorsopatias;
-M60;M79;Transtornos dos tecidos moles;Transtornos dos tecidos moles;
-M60;M63;Transtornos musculares;Transtornos musculares;
-M65;M68;Transtornos das sinóvias e dos tendões;Transtornos das sinóvias e dos tendões;
-M70;M79;Outros transtornos dos tecidos moles;Outros transtornos dos tecidos moles;
-M80;M94;Osteopatias e condropatias;Osteopatias e condropatias;
-M80;M85;Transtornos da densidade e da estrutura óssea;Transtornos da densidade e da estrutura óssea;
-M86;M90;Outras osteopatias;Outras osteopatias;
-M91;M94;Condropatias;Condropatias;
-M95;M99;Outros transtornos do sistema osteomuscular e do tecido conjuntivo;Outr transt sist osteomuscular e tecido conjuntivo;
-N00;N08;Doenças glomerulares;Doenças glomerulares;
-N10;N16;Doenças renais túbulo-intersticiais;Doenças renais túbulo-intersticiais;
-N17;N19;Insuficiência renal;Insuficiência renal;
-N20;N23;Calculose renal;Calculose renal;
-N25;N29;Outros transtornos do rim e do ureter;Outros transtornos do rim e do ureter;
-N30;N39;Outras doenças do aparelho urinário;Outras doenças do aparelho urinário;
-N40;N51;Doenças dos órgãos genitais masculinos;Doenças dos órgãos genitais masculinos;
-N60;N64;Doenças da mama;Doenças da mama;
-N70;N77;Doenças inflamatórias dos órgãos pélvicos femininos;Doenças inflamatórias órgãos pélvicos femininos;
-N80;N98;Transtornos não-inflamatórios do trato genital feminino;Transt não-inflamatórios do trato genital feminino;
-N99;N99;Outros transtornos do aparelho geniturinário;Outros transtornos do aparelho geniturinário;
-O00;O08;Gravidez que termina em aborto;Gravidez que termina em aborto;
-O10;O16;Edema, proteinúria e transtornos hipertensivos na gravidez, no parto e no puerpério;Edema proteinúr e transt hipert gravid parto puerp;
-O20;O29;Outros transtornos maternos relacionados predominantemente com a gravidez;Outros transtornos maternos relac predom gravidez;
-O30;O48;Assistência prestada à mãe por motivos ligados ao feto e à cavidade amniótica e por possíveis problemas relativos ao parto;Assist à mãe mot feto cavid amniót e prob rel part;
-O60;O75;Complicações do trabalho de parto e do parto;Complicações do trabalho de parto e do parto;
-O80;O84;Parto;Parto;
-O85;O92;Complicações relacionadas predominantemente com o puerpério;Complicações relacionadas predom com o puerpério;
-O94;O99;Outras afecções obstétricas não classificadas em outra parte;Outras afecções obstétricas NCOP;
-P00;P04;Feto e recém-nascido afetados por fatores maternos e por complicações da gravidez, do trabalho de parto e do parto;Fet rec-nasc afet fat mat e compl grav, trab parto;
-P05;P08;Transtornos relacionados com a duração da gestação e com o crescimento fetal;Transt relac com a duração gestação e cresc fetal;
-P10;P15;Traumatismo de parto;Traumatismo de parto;
-P20;P29;Transtornos respiratórios e cardiovasculares específicos do período perinatal;Transt respirat e cardiovasc específ per perinatal;
-P35;P39;Infecções específicas do período perinatal;Infecções específicas do período perinatal;
-P50;P61;Transtornos hemorrágicos e hematológicos do feto e do recém-nascido;Transt hemorrág e hematológ feto e recém-nascido;
-P70;P74;Transtornos endócrinos e metabólicos transitórios específicos do feto e do recém-nascido;Transt endócr e metaból trans espec fet e rec-nasc;
-P75;P78;Transtornos do aparelho digestivo do feto ou do recém-nascido;Transt aparelho digestivo do feto ou recém-nascido;
-P80;P83;Afecções comprometendo o tegumento e a regulação térmica do feto e do recém-nascido;Afecç comprom tegument e reg térm fet e recém-nasc;
-P90;P96;Outros transtornos originados no período perinatal;Outros transtornos originados no período perinatal;
-Q00;Q07;Malformações congênitas do sistema nervoso;Malformações congênitas do sistema nervoso;
-Q10;Q18;Malformações congênitas do olho, do ouvido, da face e do pescoço;Malform congênitas do olho, ouvido, face e pescoço;
-Q20;Q28;Malformações congênitas do aparelho circulatório;Malformações congênitas do aparelho circulatório;
-Q30;Q34;Malformações congênitas do aparelho respiratório;Malformações congênitas do aparelho respiratório;
-Q35;Q37;Fenda labial e fenda palatina;Fenda labial e fenda palatina;
-Q38;Q45;Outras malformações congênitas do aparelho digestivo;Outras malformações congênitas aparelho digestivo;
-Q50;Q56;Malformações congênitas dos órgãos genitais;Malformações congênitas dos órgãos genitais;
-Q60;Q64;Malformações congênitas do aparelho urinário;Malformações congênitas do aparelho urinário;
-Q65;Q79;Malformações e deformidades congênitas do sistema osteomuscular;Malform e deform congênit do sistema osteomuscular;
-Q80;Q89;Outras malformações congênitas;Outras malformações congênitas;
-Q90;Q99;Anomalias cromossômicas não classificadas em outra parte;Anomalias cromossômicas NCOP;
-R00;R09;Sintomas e sinais relativos ao aparelho circulatório e respiratório;Sint e sinais relat aparelho circulat e respirat;
-R10;R19;Sintomas e sinais relativos ao aparelho digestivo e ao abdome;Sintom e sinais relat ao aparelho digest e abdome;
-R20;R23;Sintomas e sinais relativos à pele e ao tecido subcutâneo;Sintom e sinais relat à pele e tecido subcutâneo;
-R25;R29;Sintomas e sinais relativos aos sistemas nervoso e osteomuscular;Sint e sinais relat sist nervoso e osteomuscular;
-R30;R39;Sintomas e sinais relativos ao aparelho urinário;Sintomas e sinais relativos ao aparelho urinário;
-R40;R46;Sintomas e sinais relativos à cognição, à percepção, ao estado emocional e ao comportamento;Sint e sinais rel cogn percep estado emoc e compor;
-R47;R49;Sintomas e sinais relativos à fala e à voz;Sintomas e sinais relativos à fala e à voz;
-R50;R69;Sintomas e sinais gerais;Sintomas e sinais gerais;
-R70;R79;Achados anormais de exames de sangue, sem diagnóstico;Achados anormais exames de sangue, sem diagnóstico;
-R80;R82;Achados anormais de exames de urina, sem diagnóstico;Achados anormais exames de urina, sem diagnóstico;
-R83;R89;Achados anormais de exames e de outros líquidos, substâncias e tecidos do corpo, sem diagnóstico;Achad anorm exam e out líq, subs e tec corp s/diag;
-R90;R94;Achados anormais de exames para diagnóstico por imagem e em estudos de função, sem diagnóstico;Achad anorm exam diag imagem estud função, s/diag;
-R95;R99;Causas mal definidas e desconhecidas de mortalidade;Causas mal definidas e desconhecidas mortalidade;
-S00;S09;Traumatismos da cabeça;Traumatismos da cabeça;
-S10;S19;Traumatismos do pescoço;Traumatismos do pescoço;
-S20;S29;Traumatismos do tórax;Traumatismos do tórax;
-S30;S39;Traumatismos do abdome, do dorso, da coluna lombar e da pelve;Traumatismos abdome, dorso, coluna lombar e pelve;
-S40;S49;Traumatismos do ombro e do braço;Traumatismos do ombro e do braço;
-S50;S59;Traumatismos do cotovelo e do antebraço;Traumatismos do cotovelo e do antebraço;
-S60;S69;Traumatismos do punho e da mão;Traumatismos do punho e da mão;
-S70;S79;Traumatismos do quadril e da coxa;Traumatismos do quadril e da coxa;
-S80;S89;Traumatismos do joelho e da perna;Traumatismos do joelho e da perna;
-S90;S99;Traumatismos do tornozelo e do pé;Traumatismos do tornozelo e do pé;
-T00;T07;Traumatismos envolvendo múltiplas regiões do corpo;Traumatismos envolvendo múltiplas regiões do corpo;
-T08;T14;Traumatismos de localização não especificada do tronco, membro ou outra região do corpo;Traum local não espec tronco membro outr reg corpo;
-T15;T19;Efeito da penetração de corpo estranho através de orifício natural;Efeito penetr corpo estranho através orif natural;
-T20;T32;Queimaduras e corrosões;Queimaduras e corrosões;
-T20;T25;Queimaduras e corrosões da superfície externa do corpo, especificadas por local;Queimad e corros superf ext corpo, espec p/local;
-T26;T28;Queimaduras e corrosões limitadas ao olho e aos órgãos internos;Queimad e corrosões limit olho e órgãos internos;
-T29;T32;Queimaduras e corrosões de múltiplas regiões e de regiões não especificadas do corpo;Queimad e corrosões múlt reg e reg não espec corpo;
-T33;T35;Geladuras [frostbite];Geladuras [frostbite];
-T36;T50;Intoxicação por drogas, medicamentos e substâncias biológicas;Intox por drogas, medicamentos e subst biológicas;
-T51;T65;Efeitos tóxicos de substâncias de origem predominantemente não-medicinal;Efeitos tóxicos subst origem predom não-medicinal;
-T66;T78;Outros efeitos de causas externas e os não especificados;Outros efeitos de causas externas e os não espec;
-T79;T79;Algumas complicações precoces de traumatismos;Algumas complicações precoces de traumatismos;
-T80;T88;Complicações de cuidados médicos e cirúrgicos, não classificados em outra parte;Complicações cuidados médicos e cirúrgicos, NCOP;
-T90;T98;Seqüelas de traumatismos, de intoxicações e de outras conseqüências das causas externas;Seqüelas traum, intox e outr conseq causas extern;
-V01;X59;Acidentes;Acidentes;
-V01;V99;Acidentes de transporte;Acidentes de transporte;
-V01;V09;Pedestre traumatizado em um acidente de transporte;Pedestre traumatizado em um acidente de transporte;
-V10;V19;Ciclista traumatizado em um acidente de transporte;Ciclista traumatizado em um acidente de transporte;
-V20;V29;Motociclista traumatizado em um acidente de transporte;Motociclista traumat em um acidente de transporte;
-V30;V39;Ocupante de triciclo motorizado traumatizado em um acidente de transporte;Ocupante triciclo motorizado traumat acid transp;
-V40;V49;Ocupante de um automóvel traumatizado em um acidente de transporte;Ocupante automóvel traumat acidente transporte;
-V50;V59;Ocupante de uma caminhonete traumatizado em um acidente de transporte;Ocupante caminhonete traumat acidente transporte;
-V60;V69;Ocupante de um veículo de transporte pesado traumatizado em um acidente de transporte;Ocupante veíc transp pesado traumat acid transp;
-V70;V79;Ocupante de um ônibus traumatizado em um acidente de transporte;Ocupante ônibus traumat acidente de transporte;
-V80;V89;Outros acidentes de transporte terrestre;Outros acidentes de transporte terrestre;
-V90;V94;Acidentes de transporte por água;Acidentes de transporte por água;
-V95;V97;Acidentes de transporte aéreo e espacial;Acidentes de transporte aéreo e espacial;
-V98;V99;Outros acidentes de transporte e os não especificados;Outros acidentes de transporte e os não especif;
-W00;X59;Outras causas externas de traumatismos acidentais;Outras causas externas de traumatismos acidentais;
-W00;W19;Quedas;Quedas;
-W20;W49;Exposição a forças mecânicas inanimadas;Exposição a forças mecânicas inanimadas;
-W50;W64;Exposição a forças mecânicas animadas;Exposição a forças mecânicas animadas;
-W65;W74;Afogamento e submersão acidentais;Afogamento e submersão acidentais;
-W75;W84;Outros riscos acidentais à respiração;Outros riscos acidentais à respiração;
-W85;W99;Exposição à corrente elétrica, à radiação e às temperaturas e pressões extremas do ambiente;Expos corr elétr, radiação e temp press extrem amb;
-X00;X09;Exposição à fumaça, ao fogo e às chamas;Exposição à fumaça, ao fogo e às chamas;
-X10;X19;Contato com uma fonte de calor ou com substâncias quentes;Contato com fonte de calor ou substâncias quentes;
-X20;X29;Contato com animais e plantas venenosos;Contato com animais e plantas venenosos;
-X30;X39;Exposição às forças da natureza;Exposição às forças da natureza;
-X40;X49;Envenenamento [intoxicação] acidental por e exposição à substâncias nocivas;Envenenamento acidental e exposição subst nocivas;
-X50;X57;Excesso de esforços, viagens e privações;Excesso de esforços, viagens e privações;
-X58;X59;Exposição acidental a outros fatores e aos não especificados;Exposição acidental a outr fatores e aos não espec;
-X60;X84;Lesões autoprovocadas intencionalmente;Lesões autoprovocadas intencionalmente;
-X85;Y09;Agressões;Agressões;
-Y10;Y34;Eventos (fatos) cuja intenção é indeterminada;Eventos (fatos) cuja intenção é indeterminada;
-Y35;Y36;Intervenções legais e operações de guerra;Intervenções legais e operações de guerra;
-Y40;Y84;Complicações de assistência médica e cirúrgica;Complicações de assistência médica e cirúrgica;
-Y40;Y59;Efeitos adversos de drogas, medicamentos e substâncias biológicas usadas com finalidade terapêutica;Ef advers drog, medic e subst biológ finalid terap;
-Y60;Y69;Acidentes ocorridos em pacientes durante a prestação de cuidados médicos e cirúrgicos;Acid ocorr pacientes prest cuid médicos e cirúrg;
-Y70;Y82;Incidentes adversos durante atos diagnósticos ou terapêuticos associados ao uso de dispositivos (aparelhos) médicos;Incid advers atos diagn terap assoc disposit médic;
-Y83;Y84;Reação anormal em paciente ou complicação tardia causadas por procedimentos cirúrgicos e outros procedimentos médicos sem menção de acidente ao tempo do procedimento;Reaç anorm compl tard proc cirúrg méd s/menç acid;
-Y85;Y89;Seqüelas de causas externas de morbidade e de mortalidade;Seqüelas causas externas de morbidade e mortalidad;
-Y90;Y98;Fatores suplementares relacionados com as causas de morbidade e de mortalidade classificados em outra parte;Fatores supl relac causas de morbid e mortalid COP;
-Z00;Z13;Pessoas em contato com os serviços de saúde para exame e investigação;Pessoas contato serv saúde p/exame e investigação;
-Z20;Z29;Pessoas com riscos potenciais à saúde relacionados com doenças transmissíveis;Pessoas c/riscos potenc saúde relac doenças transm;
-Z30;Z39;Pessoas em contato com os serviços de saúde em circunstâncias relacionadas com a reprodução;Pessoas contato serv saúde circunst relac reprod;
-Z40;Z54;Pessoas em contato com os serviços de saúde para procedimentos e cuidados específicos;Pessoas contato serv saúde proced e cuidados espec;
-Z55;Z65;Pessoas com riscos potenciais à saúde relacionados com circunstâncias socioeconômicas e psicossociais;Pessoas c/risc potenc saúde relac circ socio psico;
-Z70;Z76;Pessoas em contato com os serviços de saúde em outras circunstâncias;Pessoas em contato com serv saúde outras circunst;
-Z80;Z99;Pessoas com riscos potenciais à saúde relacionados com história familiar e pessoal e algumas afecções que influenciam o estado de saúde;Pess risc pot saúde hist fam pes afecç q infl saúd;
-U04;U04;Designação provisória de novas doenças de etiologia incerta;Designação prov novas doenças de etiologia incerta;
-U80;U89;Agentes bacterianos resistentes a antibióticos;Agentes bacterianos resistentes a antibióticos;
-U99;U99;CID 10ª Revisão não disponível;CID 10ª Revisão não disponível;
+CATINIC;CATFIM;DESCRICAO;DESCRABREV
+A00;A09;intestinal infectious diseases;intestinal infectious diseases
+A15;A19;Tuberculosis;Tuberculosis
+A20;A28;Certain zoonotic bacterial diseases;Certain zoonotic bacterial diseases
+A30;A49;Other bacterial diseases;Other bacterial diseases
+A50;A64;predominantly sexually transmitted infections;predominantly sexually transmitted infections
+A65;A69;Other diseases by spirochetes;Other diseases by spirochetes
+A70;A74;Other diseases caused by chlamydiae;Other diseases caused by chlamydiae
+A75;A79;rickettsiosis;rickettsiosis
+A80;A89;Viral infections of the central nervous system;Viral infections of the central nervous system
+A90;A99;Arbovirus fever and viral hemorrhagic fevers;Arbovirus fever and viral hemorrhagic fevers
+B00;B09;Viral infections characterized by skin and mucous membrane lesions;Characteristic viral infections p / skin and mucous membrane lesions
+B15;B19;viral hepatitis;viral hepatitis
+B20;B24;Disease by the human immunodeficiency virus [HIV];Disease by the human immunodeficiency virus [HIV]
+B25;B34;Other viral diseases;Other viral diseases
+B35;B49;mycoses;mycoses
+B50;B64;protozoal diseases caused;protozoal diseases caused
+B65;B83;helminths;helminths
+B85;B89;Lice, mites and other infestations;Lice, mites and other infestations
+B90;B94;Sequelae of infectious and parasitic diseases;Sequelae of infectious and parasitic diseases
+B95;B97;Agents of bacterial, viral and other infectious agents;Infection bacter agents, viral infection due agents and othe
+B99;B99;Other infectious diseases;Other infectious diseases
+C00;C97;Neoplasms [tumors] Malignant (os);malignancies
+C00;C75;Neoplasms [tumors] Malignant (OS), stated or presumed to be primary, specified locations except of lymphoid, haematopoietic and related tissues;malignant neoplasms of specified locations
+C00;C14;Malignant neoplasms of the lip, oral cavity and pharynx;Malig neoplasms of the lip, oral cavity and pharynx
+C15;C26;Malignant neoplasms of the digestive organs;Malignant neoplasms of the digestive organs
+C30;C39;Malignant neoplasms of respiratory and intrathoracic organs;Neopl Malig Respiratory apparatus and organs intrator�c
+C40;C41;Malignant neoplasms of bone and articular cartilage;Neopl Malig of bone and articular cartilage
+C43;C44;Melanoma and other (the) skin malignancies;Melanoma and other (the) skin malignancies
+C45;C49;Malignant neoplasms of mesothelial and soft tissue;Neopl Malig of mesothelial and soft tissue
+C50;C50;malignant breast neoplasms;malignant breast neoplasms
+C51;C58;Malignant neoplasms of female genital organs;Malignant neoplasms of female genital organs
+C60;C63;Malignant neoplasms of male genital organs;Malignant neoplasms of male genital organs
+C64;C68;Malignant neoplasms of urinary tract;Malignant neoplasms of urinary tract
+C69;C72;Malignant neoplasms of eye, brain and other parts of central nervous system;Neopl Malig eyes Encephalopathies othe part nerv syst centr
+C73;C75;Malignant neoplasms of thyroid and other endocrine glands;Neopl Malig thyroid and other endocrine glands
+C76;C80;Malignant neoplasms of ill-defined, secondary and unspecified sites;Neopl Malig evil def local secondary and local No specific
+C81;C96;Neoplasms [tumors] Malignant (OS), stated or presumed to be primary, of lymphoid, haematopoietic and related tissues;Neopl Malig linf�t hematopo�t and related tissue
+C97;C97;Malignant neoplasms of independent multiple locations (primary);Neopl Malig multiple independent location (prim)
+D00;D09;Neoplasms [tumors] in situ;Neoplasms [tumors] in situ
+D10;D36;Neoplasms [tumors] benign (os);Neoplasms [tumors] benign (os)
+D37;D48;Neoplasms [tumors] uncertain or unknown behavior;Neopl of uncertain or unknown behavior
+D50;D53;nutritional anemias;nutritional anemias
+D55;D59;hemolytic anemias;hemolytic anemias
+D60;D64;aplastic anemia and other anemias;aplastic anemia and other anemias
+D65;D69;Coagulation defects, purpura and other hemorrhagic disorders;Defects coagulation, purpura, othe AFECC hemorr�g
+D70;D77;Other diseases of blood and blood-forming organs;Other diseases of blood and blood-forming organs
+D80;D89;Certain disorders involving the immune mechanism;Some transt q involving the immune mechanism
+E00;E07;thyroid gland disorders;thyroid gland disorders
+E10;E14;diabetes mellitus;diabetes mellitus
+E15;E16;Other disorders of glucose regulation and pancreatic internal secretion;Othe transt regulating glucose and Ans Pancreatic int
+E20;E35;Disorders of other endocrine glands;Disorders of other endocrine glands
+E40;E46;malnutrition;malnutrition
+E50;E64;Other nutritional deficiencies;Other nutritional deficiencies
+E65;E68;Obesity and other hyperalimentation;Obesity and other hyperalimentation
+E70;E90;metabolic disorders;metabolic disorders
+F00;F09;organic mental disorders, including symptomatic;organic mental disorders, symptomatic incl
+F10;F19;Mental and behavioral disorders due to psychoactive substance use;Transt ment and comport dev to use psychoactive subst
+F20;F29;Schizophrenia, schizotypal and delusional disorders;Schizophrenia, schizotypal and delusional transt
+F30;F39;Mood disorders [affective];Mood disorders [affective]
+F40;F48;"neurotic disorders, disorders related to ""stress"" and somatoform disorders";Transt neurotic, stress and somatoform relacion
+F50;F59;behavioral syndromes associated with physiological disturbances and physical factors;S�ndr comport assoc disfun� fisiol�g and physical fat
+F60;F69;Personality disorders and adult behavior;Personality disorders and adult comport
+F70;F79;mental retardation;mental retardation
+F80;F89;Disorders of psychological development;Disorders of psychological development
+F90;F98;behavioral disorders and emotional disorders that usually appear during childhood or adolescence;Transt compose and oC q appear dur Childhood adolesc
+F99;F99;mental disorder, unspecified;mental disorder, unspecified
+G00;G09;inflammatory diseases of the central nervous system;inflammatory diseases of the central nervous system
+G10;G13;Systemic atrophies primarily affecting the central nervous system;Atrophies Sistem q affect princess the central nerv syst
+G20;G26;Extrapyramidal and movement disorders;Extrapyramidal and movement transt
+G30;G32;Other degenerative diseases of the nervous system;Other degenerative diseases of the nervous system
+G35;G37;demyelinating diseases of the central nervous system;demyelinating diseases of the central nervous syst
+G40;G47;episodic disorders and paroxysmal;episodic disorders and paroxysmal
+G50;G59;Disorders of nerve root and plexus disorders;Disorders of the nerves, roots and nerve plexus
+G60;G64;Polyneuropathy and other disorders of the peripheral nervous system;Polyneuropathies and othe transt syst peripheral nerv
+G70;G73;joint and muscle diseases mioneural;joint and muscle diseases mioneural
+G80;G83;Cerebral palsy and other paralytic syndromes;Cerebral palsy and other paralytic syndromes
+G90;G99;Other disorders of the nervous system;Other disorders of the nervous system
+H00;H06;Disorders of eyelid, lacrimal system and orbit;Disorders Eyelid, lacrimal system and orbit
+H10;H13;Disorders of the conjunctiva;Disorders of the conjunctiva
+H15;H22;Disorders of sclera, cornea, iris and ciliary body;Transtorn sclera, cornea, iris and ciliary body
+H25;H28;crystalline Disorders;crystalline Disorders
+H30;H36;Disorders of choroid and retina;Disorders of choroid and retina
+H40;H42;Glaucoma;Glaucoma
+H43;H45;Disorders of vitreous body and globe;Disorders of vitreous body and globe
+H46;H48;Disorders of optic nerve and visual pathways;Disorders of optic nerve and visual pathways
+H49;H52;Disorders of ocular muscles, binocular movement, accommodation and refraction;Transt eye musc, binoc MOVIM, accommod and refraction
+H53;H54;visual disturbances and blindness;visual disturbances and blindness
+H55;H59;Other disorders of eye and adnexa;Other disorders of eye and adnexa
+H60;H62;Diseases of the outer ear;Diseases of the outer ear
+H65;H75;middle ear and mastoid diseases;middle ear and mastoid diseases
+H80;H83;Diseases of the inner ear;Diseases of the inner ear
+H90;H95;Other disorders of ear;Other disorders of ear
+I00;I02;Acute rheumatic fever;Acute rheumatic fever
+I05;I09;Chronic rheumatic heart disease;Chronic rheumatic heart disease
+I10;I15;hypertensive diseases;hypertensive diseases
+I20;I25;Ischemic heart disease;Ischemic heart disease
+I26;I28;pulmonary heart disease and pulmonary circulation;pulmonary heart disease and pulmonary circulation
+I30;I52;Other forms of heart disease;Other forms of heart disease
+I60;I69;cerebrovascular diseases;cerebrovascular diseases
+I70;I79;Diseases of arteries, arterioles and capillaries;Diseases of arteries, arterioles and capillaries
+I80;I89;Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified;Diseases veins, vessels and lymph nodes, NEC
+I95;I99;Other disorders, and unspecified circulatory;Other transt and non-specific circulatory
+J00;J06;Acute infections of the upper airways;Acute infections of the upper airways
+J09;J18;Influenza [flu] and pneumonia;Influenza [flu] and pneumonia
+J20;J22;Other acute infections of the lower respiratory tract;Other acute infections of the lower respiratory tract
+J30;J39;Other diseases of the upper airways;Other diseases of the upper airways
+J40;J47;Chronic diseases of the lower airways;Chronic diseases of the lower airways
+J60;J70;Lung diseases due to external agents;Lung diseases due to external agents
+J80;J84;Other respiratory diseases principally affecting the interstitium;Other Respiratory diseases affect q princess interstitial
+J85;J86;suppurative necrotic conditions and lower airway;and necrotic conditions airways infer supurat
+J90;J94;Other diseases of pleura;Other diseases of pleura
+J95;J99;Other diseases of the respiratory tract;Other diseases of the respiratory tract
+K00;K14;Diseases of the oral cavity, salivary glands and maxillary;Oral cavity diseases, salivary gland and jaws
+K20;K31;Diseases of the Esophagus, stomach and duodenum;Diseases of the Esophagus, stomach and duodenum
+K35;K38;Diseases of appendix;Diseases of appendix
+K40;K46;hernias;hernias
+K50;K52;Non-infectious enteritis and colitis;Non-infectious enteritis and colitis
+K55;K63;Other diseases of intestines;Other diseases of intestines
+K65;K67;Diseases of peritoneum;Diseases of peritoneum
+K70;K77;Liver diseases;Liver diseases
+K80;K87;Disorders of the gallbladder, biliary tract and of the pancreas;Transt gallbladder, biliary tract and pancreas
+K90;K93;Other diseases of the digestive tract;Other diseases of the digestive tract
+L00;L08;Infections of the skin and subcutaneous tissue;Infections of the skin and subcutaneous tissue
+L10;L14;bullous disorders;bullous disorders
+L20;L30;Dermatitis and eczema;Dermatitis and eczema
+L40;L45;papular scaly disorders;papular scaly disorders
+L50;L54;Urticaria and erythema;Urticaria and erythema
+L55;L59;Disorders of the skin and subcutaneous tissue related to radiation;Transt RELAC skin and subcutaneous tissue c / radiation
+L60;L75;Disorders of skin appendages;Disorders of skin appendages
+L80;L99;Other disorders of skin and subcutaneous tissue;Other disorders of skin and subcutaneous tissue
+M00;M25;arthropathy;arthropathy
+M00;M03;infectious arthropathies;infectious arthropathies
+M05;M14;inflammatory polyarthropathies;inflammatory polyarthropathies
+M15;M19;arthrosis;arthrosis
+M20;M25;Other joint disorders;Other joint disorders
+M30;M36;systemic connective tissue disorders;systemic connective tissue disorders
+M40;M54;dorsopathies;dorsopathies
+M40;M43;dorsopathies deforming;dorsopathies deforming
+M45;M49;spondylopathies;spondylopathies
+M50;M54;other dorsopathies;other dorsopathies
+M60;M79;soft tissue disorders;soft tissue disorders
+M60;M63;muscle disorders;muscle disorders
+M65;M68;Disorders of synovium and tendon;Disorders of synovium and tendon
+M70;M79;Other soft tissue disorders;Other soft tissue disorders
+M80;M94;Osteopathy and condropatias;Osteopathy and condropatias
+M80;M85;Disorders of bone density and structure;Disorders of bone density and structure
+M86;M90;other osteopathy;other osteopathy
+M91;M94;Condropatias;Condropatias
+M95;M99;Other disorders of the musculoskeletal system and connective tissue;Othe transt syst musculoskeletal and connective tissue
+N00;N08;glomerular diseases;glomerular diseases
+N10;N16;renal tubulo-interstitial diseases;renal tubulo-interstitial diseases
+N17;N19;Renal insufficiency;Renal insufficiency
+N20;N23;renal calculi;renal calculi
+N25;N29;Other disorders of kidney and ureter;Other disorders of kidney and ureter
+N30;N39;Other diseases of the urinary tract;Other diseases of the urinary tract
+N40;N51;Diseases of male genital organs;Diseases of male genital organs
+N60;N64;Breast Diseases;Breast Diseases
+N70;N77;Inflammatory diseases of female pelvic organs;inflammatory diseases female pelvic organs
+N80;N98;noninflammatory disorders of female genital tract;noninflammatory Transt the female genital tract
+N99;N99;Other disorders of the genitourinary system;Other disorders of the genitourinary system
+O00;O08;Pregnancy ending in abortion;Pregnancy ending in abortion
+O10;O16;Edema, proteinuria and hypertensive disorders in pregnancy, childbirth and postpartum;Edema protein�r and transt hipert gravid delivery puerp
+O20;O29;Other maternal disorders predominantly related to pregnancy;Other maternal disorders RELAC Mostly pregnancy
+O30;O48;Maternal care for reasons related to the fetus and amniotic cavity and possible problems related to childbirth;Assist the mother mot fetus Cavid amni�t and prob rel part
+O60;O75;Complications of labor and delivery;Complications of labor and delivery
+O80;O84;parturition;parturition
+O85;O92;Complications predominantly related to the puerperium;Mostly complications related to the puerperium
+O94;O99;Other obstetric conditions, not elsewhere classified;Other obstetric conditions NCOP
+P00;P04;Fetus and newborn affected by maternal factors and by complications of pregnancy, labor and delivery;Fet newly born AFET fat mat and compl grav, Job delivery
+P05;P08;Disorders related to length of gestation and fetal growth;Transt RELAC lasting pregnancy and fetal gro
+P10;P15;birth injury;birth injury
+P20;P29;respiratory and cardiovascular disorders specific to the perinatal period;Transt Respiratory and cardiovasc specific per perinatal
+P35;P39;Infections specific to the perinatal period;Infections specific to the perinatal period
+P50;P61;Haemorrhagic and haematological disorders of fetus and newborn;Transt hemorr�g and hematolog fetus and newborn
+P70;P74;endocrine and metabolic disorders specific to fetus transient and newborn;Transt Endocr and trans specific fet metabolized and newly born
+P75;P78;Disorders of the digestive apparatus of the fetus or newborn;Transt digestive apparatus of the fetus or newborn
+P80;P83;Conditions involving the integument and temperature regulation of fetus and newborn;AFECC appointm tegument and reg Heat-fet and newly born
+P90;P96;Other disorders originating in the perinatal period;Other disorders originating in the perinatal period
+Q00;Q07;Congenital malformations of the nervous system;Congenital malformations of the nervous system
+Q10;Q18;Congenital malformations of eye, ear, face and neck;Malform congenital eye, ear, face and neck
+Q20;Q28;Congenital malformations of the circulatory system;Congenital malformations of the circulatory system
+Q30;Q34;Congenital malformations of the respiratory system;Congenital malformations of the respiratory system
+Q35;Q37;cleft lip and cleft palate;cleft lip and cleft palate
+Q38;Q45;Other congenital malformations of digestive system;Other congenital malformations digestive tract
+Q50;Q56;Congenital malformations of the genitals;Congenital malformations of the genitals
+Q60;Q64;Congenital malformations of the urinary tract;Congenital malformations of the urinary tract
+Q65;Q79;Defects and congenital deformities of the musculoskeletal system;Malform and deform cong�nit of the musculoskeletal system
+Q80;Q89;Other congenital malformations;Other congenital malformations
+Q90;Q99;Chromosomal abnormalities not elsewhere classified;Chromosomal abnormalities NEC
+R00;R09;Symptoms and signs involving the circulatory and respiratory;Sint signal vs and Respiratory and circulatory system
+R10;R19;Symptoms and signs involving the digestive system and abdomen;Sintom signal vs and the digestion tract and abdomen
+R20;R23;Symptoms and signs involving the skin and subcutaneous tissue;Sintom and signs relat to the skin and subcutaneous tissue
+R25;R29;Symptoms and signs involving the nervous and musculoskeletal systems;Sint and signs relat nervous and musculoskeletal syst
+R30;R39;Symptoms and signs involving the urinary system;Symptoms and signs involving the urinary system
+R40;R46;Symptoms and signs involving cognition, perception, emotional state and behavior;Sint and signs rel cogn perception oC state and compose
+R47;R49;Symptoms and signs involving speech and voice;Symptoms and signs involving speech and voice
+R50;R69;General symptoms and signs;General symptoms and signs
+R70;R79;Abnormal findings on examination of blood, without diagnosis;Abnormal findings blood tests, no diagnosis
+R80;R82;Abnormal findings on examination of urine, without diagnosis;Abnormal findings urine tests, no diagnosis
+R83;R89;Abnormal findings on examination of other body fluids, tissues and substances, undiagnosed;Achad abnorm exam and out of liq, subs and tec corp s / diag
+R90;R94;Abnormal findings on diagnostic imaging and in function studies, without diagnosis;Achad abnorm exam diag image function honor student, s / diag
+R95;R99;Ill-defined and unknown causes of mortality;Ill-defined and unknown causes of mortality
+S00;S09;Injuries to the head;Injuries to the head
+S10;S19;Injuries to the neck;Injuries to the neck
+S20;S29;Injuries to the thorax;Injuries to the thorax
+S30;S39;Injuries to the abdomen, lower back, lumbar spine and pelvis;Injuries abdomen, back, lumbar spine and pelvis
+S40;S49;Injuries to the shoulder and upper arm;Injuries to the shoulder and upper arm
+S50;S59;traumas of the elbow and forearm;traumas of the elbow and forearm
+S60;S69;wrist and hand injuries;wrist and hand injuries
+S70;S79;Injuries to the hip and thigh;Injuries to the hip and thigh
+S80;S89;Injuries of the knee and leg;Injuries of the knee and leg
+S90;S99;Injuries to the ankle and foot;Injuries to the ankle and foot
+T00;T07;Injuries involving multiple body regions;Injuries involving multiple body regions
+T08;T14;Injuries to unspecified location trunk, limb or body region;Traum site no specific trunk othe reg member body
+T15;T19;foreign body penetration effect through natural orifice;Effect penetr foreign body through natural ORIF
+T20;T32;Burns and corrosions;Burns and corrosions
+T20;T25;Burns and corrosions of external body surface, specified by site;Burnt and corrosion surface ext body, specific p / local
+T26;T28;Limited burns and corrosion to eye and internal organs;Burnt and corrosion limit eye and internal organs
+T29;T32;Burns and corrosions of multiple regions and regions unspecified body;Burnt and corrosion Multiple Reg and Reg no specific body
+T33;T35;Frostbite [frostbite];Frostbite [frostbite]
+T36;T50;Poisoning by drugs, medicinal and biological substances;Intox by drugs, medicaments and biological subst
+T51;T65;Toxic effects of substances of predominantly non-medicinal;toxic subst non-medicinal Mostly origin
+T66;T78;Other effects of external causes and unspecified;Other effects of external causes and not specific
+T79;T79;Certain early complications of trauma;Certain early complications of trauma
+T80;T88;Complications of surgical and medical care, not elsewhere classified;Medical care and surgical complications, NEC
+T90;T98;Sequelae of injuries, of poisoning and of other consequences of external causes;Traum sequels, intox and othe conseq causes extern
+V01;X59;accidents;accidents
+V01;V99;Transport accidents;Transport accidents
+V01;V09;Pedestrian injured in transport accident;Pedestrian injured in transport accident
+V10;V19;Cyclist injured in transport accident;Cyclist injured in transport accident
+V20;V29;Motorcycle rider injured in transport accident;Biker Trauma in transport accident
+V30;V39;Occupant injured in a motorized tricycle transport accident;Trauma wheeled motor vehicle occupant acid transp
+V40;V49;Occupant injured in automotive transport accident;Trauma occupant automobile accident transport
+V50;V59;Occupant of a truck or van injured in transport accident;Occupant accident transport truck Trauma
+V60;V69;Occupant of heavy transport vehicle injured in transport accident;Occupant heavy veh transp transp acid Trauma
+V70;V79;Occupant injured in bus transport accident;Trauma occupant bus transport accident
+V80;V89;Other road accidents;Other road accidents
+V90;V94;Water transport accidents;Water transport accidents
+V95;V97;air transport accidents and space;air transport accidents and space
+V98;V99;Other transport accidents and unspecified;Other transport accidents and not specif
+W00;X59;Other external causes of accidental injury;Other external causes of accidental injury
+W00;W19;falls;falls
+W20;W49;Exposure to inanimate mechanical forces;Exposure to inanimate mechanical forces
+W50;W64;Exposure to animate mechanical forces;Exposure to animate mechanical forces
+W65;W74;Accidental drowning and submersion;Accidental drowning and submersion
+W75;W84;Other accidental threats to breathing;Other accidental threats to breathing
+W85;W99;Exposure to electric current, radiation and temperatures and extreme environmental pressures;Expos corr Baker Electric, radiation and pressure temp extrem amb
+X00;X09;Exposure to smoke, fire and flames;Exposure to smoke, fire and flames
+X10;X19;Contact with a source of heat and hot substances;Contact heat source or hot substances
+X20;X29;Contact with animals and poisonous plants;Contact with animals and poisonous plants
+X30;X39;Exposure to forces of nature;Exposure to forces of nature
+X40;X49;Poisoning [poisoning] and by accidental exposure to harmful substances;accidental poisoning and harmful exposure subst
+X50;X57;Excessive efforts, travel and hardship;Excessive efforts, travel and hardship
+X58;X59;Accidental exposure to other and unspecified factors;Accidental exposure to othe factors and non-specific
+X60;X84;self injuries intentionally;self injuries intentionally
+X85;Y09;assaults;assaults
+Y10;Y34;Events (facts) of undetermined intent;Events (facts) of undetermined intent
+Y35;Y36;Legal intervention and operations of war;Legal intervention and operations of war
+Y40;Y84;medical and surgical care complications;medical and surgical care complications
+Y40;Y59;adverse effects of drugs, medicaments and biological substances used for therapeutic purposes;Eph offwhite adversary, medic and Biological subst ther finalid
+Y60;Y69;Accidents occurring in patients while providing medical and surgical care;Acid occurrence patients perst medical Nursing and surg
+Y70;Y82;adverse incidents in diagnostic and therapeutic acts associated with the use of devices (devices) Medical;INCID adversary acts diagn ther assoc disposit zi
+Y83;Y84;Abnormal reaction or late complication in a patient caused by surgical procedures and other medical procedures without mention of an accident to the time of the procedure;Abnorm reaction compl tard Proc surg s avg / MenC acid
+Y85;Y89;Sequelae of external causes of morbidity and mortality;Sequelae external causes of morbidity and mortalidad
+Y90;Y98;Supplementary factors related to causes of morbidity and mortality classified elsewhere;suppl factors RELAC causes of morbid and mortalid COP
+Z00;Z13;Persons encountering health services for examination and investigation;People contact Epidemiol p / examination and investigation
+Z20;Z29;Persons with potential health hazards related to communicable diseases;People c / health risks potentiometr RELAC transm diseases
+Z30;Z39;Persons encountering health services in circumstances related to reproduction;People contact Epidemiol EVENT RELAC Playback
+Z40;Z54;Persons encountering health services for specific procedures and health care;People contact Epidemiol proced and specific care
+Z55;Z65;Persons with potential health hazards related to socioeconomic and psychosocial circumstances;People c / scribing potentiometr health RELAC circ socio psycho
+Z70;Z76;Persons encountering health services in other circumstances;People in touch with other Epidemiol EVENT
+Z80;Z99;Persons with potential health hazards related to family and personal history and certain conditions influencing health status;Persons scratch pot health fam hist feet AFECC q infl WWII
+U04;U04;Provisional designation of new diseases of uncertain etiology;Designation prov new uncertain etiology of diseases
+U80;U89;antibiotic resistant bacterial agents;antibiotic resistant bacterial agents
+U99;U99;ICD 10th Revision unavailable;ICD 10th Revision unavailable
