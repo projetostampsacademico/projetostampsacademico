@@ -5,7 +5,11 @@ var User = require('./models/user');
 var mongoose = require('mongoose');
 var configDB = require('./config/database.js');
 var path = require('path');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+var kafka = require('kafka-node'),
+    Producer = kafka.Producer,
+    client = new kafka.Client('34.204.88.242:2181'),
+    producer = new Producer(client);
 
 mongoose.connect(configDB.url);
 // Configure the Facebook strategy for use by Passport.
@@ -128,14 +132,14 @@ app.get('/medicosProximos',
 app.get('/paProximos',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
-    res.render('paProximos', { user: req.user}
+    res.render('paProximos', {user: req.user}
       );
   });
 
 app.get('/sintomasForm',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
-    res.render('sintomasForm', { user: req.user}
+    res.render('sintomasForm', {user: req.user}
       );
   });
 
@@ -149,14 +153,21 @@ app.post('/sintomasEnvio',
     function (req, res) {
       console.log(req.body.sintomas);
       res.setHeader('Content-Type', 'application/json');
-      res.send(JSON.stringify(req.body.sintomas, null, 3));   
+      res.send(JSON.stringify(req.body.sintomas, null, 3));
+      payloads = [
+         { topic: 'det-paciente', messages: JSON.stringify(req.body, null, 3), partition: 0 },
+      ];
+      producer.send(payloads, function(err, data){
+         console.log(data)
+      });
+
 });
 
 app.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
     console.log(req.user);
-    res.render('profile', { user: req.user}
+    res.render('profile', {user: req.user}
       );
   });
 
@@ -165,5 +176,5 @@ var config = {
 }
 
 app.listen(config.port, function () {
-  console.log('Running on port ' + config.port)
+  console.log('Running on port ' + config.port);
 })
