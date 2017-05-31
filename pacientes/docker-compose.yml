@@ -5,8 +5,6 @@ server:
     - mongodb
   ports:
     - "8080:8080"
-  volumes:
-    - ./server:/var/www/pacientes
   environment:
     - DB=mongodb://mongodb/pacientes
 mongodb:
