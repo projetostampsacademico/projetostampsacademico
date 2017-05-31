@@ -1,0 +1,30 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+    <link href="/static/css/diagnosis.css" rel="stylesheet">
+
+    <h1>Diagnosis</h1>
+
+    <form action="/diagnosis" method="GET">
+      <div class="form-group ">
+        <label>Type your symptoms:</label>
+        <select class="js-select2 form-control" name="symptoms" multiple="multiple">
+          {% for symptom in symptoms %}
+            <option value="{{symptom}}">{{symptom}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    {% for disease_info, matches in diagnosis %}
+      <p><b>{{matches}} Matches</b> - Disease information: {{ disease_info }}</p>
+    {% endfor %}
+
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        $(".js-select2").select2();
+      });
+    </script>
+
+{% endblock content %}

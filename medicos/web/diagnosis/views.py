@@ -2,15 +2,15 @@
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from django.shortcuts import render, redirect, get_object_or_404
-import sys
-sys.path.append('../')
 from nosql.service import MongoService
 import json
 
-def index(request, template_name='disease/index.html'):
+def index(request, template_name='diagnosis/index.html'):
     """Index page."""
-    diagnosis = generateDiagnosis('{"symptoms": [" - Fever"]}')
-    return render(request, template_name, {'diagnosis': diagnosis.items()})
+    symptoms = ['fever', 'flu']
+    #diagnosis = generateDiagnosis('{"symptoms": [" - Fever"]}')
+    diagnosis = {}
+    return render(request, template_name, {'diagnosis': diagnosis.items(), 'symptoms': symptoms})
 
 def generateDiagnosis(symptonsRequestList):
     symptomsRequest = json.loads(symptonsRequestList)

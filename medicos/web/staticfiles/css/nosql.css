@@ -1,0 +1,58 @@
+body > .container {
+  text-align: center;
+}
+
+span {
+    display: inline-grid;
+    max-width: 600px;
+    overflow: auto;
+}
+
+pre {
+  text-align: left;
+  display: inline-block;
+  outline: 1px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+}
+
+pre > h3 {
+  text-align: center;
+}
+
+.symptoms {
+  text-align: left;
+}
+
+.disease-search > h3 {
+  margin: 10px 0 20px;
+}
+
+.disease-code {
+  border-bottom: 1px dashed #333;
+  border-right: 1px dashed #333;
+}
+
+.link-right {
+  float: right;
+}
+
+.string {
+  color: green;
+}
+
+.number {
+  color: darkorange;
+}
+
+.boolean {
+  color: blue;
+}
+
+.null {
+  color: magenta;
+}
+
+.key {
+  color: red;
+}

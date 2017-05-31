@@ -1,9 +1,0 @@
-{% extends 'web/base.html' %}
-
-	{% block content %}
-	    <form method="post">{% csrf_token %}
-	       <h4> Deseja remover <b>"{{ object }}" </b> ? </h4> <br>
-	        <button type="submit" class="btn btn-success">Sim </button>
-	        <a type="submit" href="/list_consulta" class="btn btn-primary">Não</a>
-	    </form>
-    {% endblock content %}
