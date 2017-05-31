@@ -7,14 +7,14 @@ from datetime import date
 # Create your models here.
 
 class Consulta(models.Model):
-    con_patient_number = models.ForeignKey('Patient', verbose_name = "Paciente")
+    con_patient_number = models.ForeignKey('Patient', verbose_name = "Patient")
     con_hospital_id = models.ForeignKey('Hospital', verbose_name = "Hospital")
-    con_doctor_crm = models.ForeignKey('register.Doctor', verbose_name = "Médico Responsável")
-    con_triagem_id = models.ForeignKey('Triagem', verbose_name ="Triagem")
-    con_diagnostico = models.CharField("Diagnóstico", max_length = 256)
-    con_prescricao = models.CharField("Prescrição", max_length = 256)
-    con_tratamento = models.CharField("Tratamento", max_length = 256)
-    con_evolucao = models.CharField("Evolução", max_length = 256)
+    con_doctor_crm = models.ForeignKey('register.Doctor', verbose_name = "Responsible doctor")
+    con_triagem_id = models.ForeignKey('Triagem', verbose_name ="Screening")
+    con_diagnostico = models.CharField("Diagnostic", max_length = 256)
+    con_prescricao = models.CharField("Prescription", max_length = 256)
+    con_tratamento = models.CharField("Treatment", max_length = 256)
+    con_evolucao = models.CharField("Evolution", max_length = 256)
     con_entry_time =   models.DateField(("Date"), default=date.today)
     
     class Meta:
@@ -24,7 +24,7 @@ class Consulta(models.Model):
         return self.con_entry_time.strftime("%b %d, %Y")
 
 class Hospital(models.Model):
-    hos_name = models.CharField("Nome", max_length=50)
+    hos_name = models.CharField("Name", max_length=50)
     class Meta:
         db_table = "hospital"
         
@@ -32,7 +32,7 @@ class Hospital(models.Model):
         return self.hos_name
         
 class Patient(models.Model):
-    pat_name = models.CharField("Nome", max_length=50)
+    pat_name = models.CharField("Name", max_length=50)
     
     class Meta:
         db_table = "patient"
@@ -41,7 +41,7 @@ class Patient(models.Model):
         return self.pat_name
         
 class Enfermeiro(models.Model):
-    enf_name = models.CharField("Nome", max_length=50)
+    enf_name = models.CharField("Name", max_length=50)
     
     class Meta:
         db_table = "enfermeiro"
@@ -57,12 +57,12 @@ class Triagem(models.Model):
       #  on_delete=models.CASCADE,
        # primary_key=True,
     #)
-    tri_pressao = models.CharField('Pressao', max_length=6)
-    tri_temperatura = models.FloatField('Temperatura')
-    tri_diabete = models.FloatField('Diabete')
-    tri_problem = models.CharField('Problema', max_length = 256)
+    tri_pressao = models.CharField('Pressure', max_length=6)
+    tri_temperatura = models.FloatField('Temperature')
+    tri_diabete = models.FloatField('Diabetes')
+    tri_problem = models.CharField('Problem', max_length = 256)
     tri_manchester = models.CharField('Manchester', max_length = 50)
-    tri_enfermeiro = models.ForeignKey('Enfermeiro', verbose_name = "Enfermeiro Responsável")
+    tri_enfermeiro = models.ForeignKey('Enfermeiro', verbose_name = "Responsible Nurse")
     
     class Meta:
         db_table = "triagem"

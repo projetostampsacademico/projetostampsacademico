@@ -7,6 +7,10 @@ label{
     text-align:left;
 }
 
+th {
+    text-align: center;
+}
+
 input[type=text], select {
     width: 100%;
     background-color: #fff;

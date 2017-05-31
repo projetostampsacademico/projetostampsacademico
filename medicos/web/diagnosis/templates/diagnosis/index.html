@@ -1,0 +1,60 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+    <link href="/static/css/diagnosis.css" rel="stylesheet">
+    <style>
+      .select2-container {
+        padding: 0px;
+        border-width: 0px;
+      }
+      .select2-container .select2-choice {
+        height: 38px;
+        line-height: 38px;
+      }
+      .panel-group {
+        text-align: left;
+      }
+    </style>
+
+    <h1>Diagnosis</h1>
+
+    <form action="/diagnosis" method="GET">
+      <div class="form-group ">
+        <label>Type your symptoms:</label>
+        <select class="js-select2 form-control" name="symptoms" multiple="multiple">
+          {% for symptom in symptoms %}
+            <option value="{{symptom}}">{{symptom}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <hr />
+
+    <div class="panel-group" id="accordion">
+      {% for disease_info, matches in diagnosis %}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.counter }}">
+              <b>{{ matches|floatformat:1 }}% match</b> - {{ disease_info|truncatechars:60 }}</a>
+            </h4>
+          </div>
+          <div id="collapse{{ forloop.counter }}" class="panel-collapse collapse">
+            <div class="panel-body">{{ disease_info }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        $(".js-select2").select2({
+          placeholder: "What are you feeling?",
+          minimumInputLength: 3
+        });
+      });
+    </script>
+
+{% endblock content %}

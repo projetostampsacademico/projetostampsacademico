@@ -1,9 +1,13 @@
 {% extends 'web/base.html' %}
 
 {% block content %}
-    <a href="{% url "triagem_new" %}" class="btn btn-success pull-right" > Nova Triagem</a>
-    <h1>Lista de Triagens Antigas</h1>
+    <a href="{% url "triagem_new" %}" class="btn btn-success pull-right" > New screening</a>
+    <h1>List old screening</h1>
     <table class="table table-striped">
+        <tr>
+            <th>Screening</th>
+            <th colspan="2">Actions</th>
+        </tr>
         {% for triagem in object_list %}
         <tr>
             <td>{{ triagem.tri_problem }}</td>
