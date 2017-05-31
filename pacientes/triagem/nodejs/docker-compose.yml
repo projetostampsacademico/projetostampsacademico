@@ -4,5 +4,5 @@ triagem:
     - .:/app
   environment:
     - ZOOKEEPER=34.204.88.242:2181
-    - TOPIC-IN=test
-    - TOPIC-OUT=test
+    - TOPICIN=test
+    - TOPICOUT=test
