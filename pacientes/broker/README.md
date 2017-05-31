@@ -28,7 +28,7 @@ Consumer (terminal-1):
 docker run --rm -it ryane/kafkacat -C -b 34.204.88.242 -t test
 ```
 
-Productor (terminal-2):
+Producer (terminal-2):
 ```
 docker run --rm -it ryane/kafkacat -P -b 34.204.88.242 -t test
 ```
