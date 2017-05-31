@@ -17,13 +17,30 @@
       <button type="submit" class="btn btn-primary">Search</button>
     </form>
 
-    {% for disease_info, matches in diagnosis %}
-      <p><b>{{matches}} Matches</b> - Disease information: {{ disease_info }}</p>
-    {% endfor %}
+    <hr />
+
+    <div class="panel-group" id="accordion">
+      {% for disease_info, matches in diagnosis %}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.counter }}">
+              <b>{{ matches|floatformat:1 }}% match</b> - {{ disease_info|truncatechars:60 }}</a>
+            </h4>
+          </div>
+          <div id="collapse{{ forloop.counter }}" class="panel-collapse collapse">
+            <div class="panel-body">{{ disease_info }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
 
     <script type='text/javascript'>
       $(document).ready(function() {
-        $(".js-select2").select2();
+        $(".js-select2").select2({
+          placeholder: "What are you feeling?",
+          minimumInputLength: 3
+        });
       });
     </script>
 

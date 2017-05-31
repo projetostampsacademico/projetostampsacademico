@@ -10,7 +10,7 @@ from nosql.util import Util
 
 def index(request, template_name='disease/index.html'):
     """Index page."""
-    service = MongoService()
+    service = MongoService.get_instance()
     collections = service.collection_names()
     # data = service.fetch_data()
     return render(request, template_name, {'collections': collections})
@@ -18,7 +18,7 @@ def index(request, template_name='disease/index.html'):
 
 def database(request, template_name='disease/database.html'):
     """Database page."""
-    service = MongoService()
+    service = MongoService.get_instance()
     collections = service.collection_names()
     # data = service.fetch_data()
     return render(request, template_name, {'collections': collections})
@@ -26,7 +26,7 @@ def database(request, template_name='disease/database.html'):
 
 def list(request, template_name='disease/list.html'):
     """Collection list page."""
-    service = MongoService()
+    service = MongoService.get_instance()
     collection = request.GET['collection']
     data = service.fetch_data(collection)
     return render(request, template_name, {'collection': collection, 'data': data})
@@ -34,7 +34,7 @@ def list(request, template_name='disease/list.html'):
 
 def diseases(request, template_name='disease/diseases.html'):
     """Collection list page."""
-    service = MongoService()
+    service = MongoService.get_instance()
     disease_search = request.GET.get('disease')
     symptom_search = request.GET.get('symptom')
     if disease_search is not None:
