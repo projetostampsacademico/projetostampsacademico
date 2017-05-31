@@ -1,5 +1,4 @@
 from pymongo import MongoClient
-from singleton import Singleton
 from pprint import pprint
 from bson.json_util import dumps
 
