@@ -11,7 +11,7 @@ var PatientModel = function(username, email, latitude, longitude, symptomsdate, 
 }
 
 
-/* internal variable */
+/* model canonical validation */
 var schema = {
          username      : Joi.string().required().min(3)
         ,email         : Joi.string().required().email()

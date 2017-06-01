@@ -11,7 +11,7 @@ var MedicalRecordModel = function(email, latitude, longitude, date, cid, entity)
 }
 
 
-/* internal variable */
+/* model canonical validation */
 var schema = {
          patientemail    : Joi.string().required().email()
         ,latitude        : Joi.number().required()
