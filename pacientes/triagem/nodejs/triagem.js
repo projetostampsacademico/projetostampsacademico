@@ -1,5 +1,5 @@
 var kafka = require('kafka-node');
-var patientcontroller = require('./KafkaControllers/patientController');
+var dataqueuecontroller = require('./KafkaControllers/dataQueueController');
 
 var client = new kafka.Client(process.env.ZOOKEEPER || '34.204.88.242:2181');
 
@@ -16,7 +16,7 @@ consumer.on('message', function (message) { // <<< REALIZA A LEITURA DO TOPICO A
   //Deve-se criar um controller e um modelo para cada canonico que será enviado ao tópico.
   var isValid = false;
 
-  isValid = patientcontroller.PatientValidator(message.value);
+  isValid = dataqueuecontroller.DataValidator(message.value);
 
 
   if (isValid) {
