@@ -9,6 +9,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "kafka-node": "latest"
+    "async": "1.5.2",
+    "binary": "^0.3.0",
+    "buffermaker": "^1.2.0",
+    "debug": "^2.6.8",
+    "joi": "^10.4.1",
+    "kafka-node": "^1.6.2",
+    "lodash": "latest",
+    "nested-error-stacks": "^2.0.0",
+    "retry": "^0.10.1",
+    "uuid": "latest"
   }
 }
