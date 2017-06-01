@@ -1,10 +1,10 @@
 var PatientModel = require('../KafkaModels/patientModel');
-var ProntuarioModel = require('../KafkaModels/prontuarioModel');
+var MedicalRecordModel = require('../KafkaModels/medicalRecordModel');
 
 exports.DataValidator = function(json){
     try{
         var obj = JSON.parse(json);
-        var prototypes = [PatientModel, ProntuarioModel];
+        var prototypes = [PatientModel, MedicalRecordModel];
 
 
         for(var i=0; i<prototypes.length; i++){
