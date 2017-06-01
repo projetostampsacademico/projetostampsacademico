@@ -34,8 +34,11 @@ def generateDiagnosis(patientSymptomsList):
                         intersection = intersection + 1;
             if intersection != 0 and disease['info']:
                 jaccardValue = 100 * float(intersection)/float(union)
-                result[disease['info']] = jaccardValue;
-    return result
+                result[disease['info'][:60]] = { 'info': disease['info'], 'jaccard': jaccardValue }
+    diagnosis = {}
+    for key, val in result.iteritems():
+        diagnosis[val['info']] = val['jaccard']
+    return diagnosis
 
             
     
