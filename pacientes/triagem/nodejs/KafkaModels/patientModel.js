@@ -1,24 +1,24 @@
 var Joi = require("joi");
 
 /* ProtoType */
-var PatientModel = function(username, email, latitude, longitude, sintomsdate, sintoms){
+var PatientModel = function(username, email, latitude, longitude, symptomsdate, symptoms){
     this.username = username,
     this.email = email,
     this.latitude = latitude,
     this.longitude = longitude,
-    this.sintoms = sintoms,
-    this.sintomsdate = sintomsdate
+    this.symptoms = symptoms,
+    this.symptomsdate = symptomsdate
 }
 
 
 /* internal variable */
 var schema = {
-         username     : Joi.string().required().min(3)
-        ,email        : Joi.string().required().email()
-        ,latitude     : Joi.number().required()
-        ,longitude    : Joi.number().required()
-        ,sintomsdate  : Joi.date().required().timestamp()
-        ,sintoms      : Joi.array().items(Joi.string().required())
+         username      : Joi.string().required().min(3)
+        ,email         : Joi.string().required().email()
+        ,latitude      : Joi.number().required()
+        ,longitude     : Joi.number().required()
+        ,symptomsdate  : Joi.date().required().timestamp()
+        ,symptoms      : Joi.array().items(Joi.string().required())
         
   };
 
