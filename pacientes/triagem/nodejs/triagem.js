@@ -16,8 +16,7 @@ consumer.on('message', function (message) { // <<< REALIZA A LEITURA DO TOPICO A
   //Deve-se criar um controller e um modelo para cada canonico que será enviado ao tópico.
   var isValid = false;
 
-  if (patientcontroller.PatientValidator(message.value))
-    isValid = true;
+  isValid = patientcontroller.PatientValidator(message.value);
 
 
   if (isValid) {

@@ -23,7 +23,7 @@ var schema = {
   };
 
 PatientModel.prototype.validate = function(){
-    Joi.validate(this, schema, function(err, value){
+    return Joi.validate(this, schema, function(err, value){
         if(err || !value){
             //console.log(err);
             return false;
