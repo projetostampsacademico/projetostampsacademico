@@ -35,7 +35,7 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-md-3 disease-code">
-                  <h2><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.code }}">{{ disease.code }}</a></h2>
+                  <h2><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.code[:3] + '.' +  disease.code[3:] }}">{{ disease.code }}</a></h2>
                   <h4>{{ disease.description }}</h4>
                 </div>
                 <div class="col-md-9">
