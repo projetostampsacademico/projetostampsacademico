@@ -24,8 +24,10 @@ consumer.on('message', function (message) { // <<< REALIZA A LEITURA DO TOPICO A
       topic: process.env.TOPICOUT || 'tri-twitter',
       messages: [message.value]
     }], function (err, result) { // <<< ENVIA PARA O TOPICO POSTERIOR
-      console.log(err || result);
+      console.log(err || "VALID: " + result);
     });
+  } else {
+    console.log("INVALID: " + message.value);
   }
 
 });
