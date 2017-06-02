@@ -18,14 +18,14 @@ var schema = {
         ,latitude      : Joi.number().required()
         ,longitude     : Joi.number().required()
         ,symptomsdate  : Joi.date().required().timestamp()
-        ,symptoms      : Joi.array().items(Joi.string().required())
+        ,symptoms      : Joi.object().min(1)
         
   };
 
 PatientModel.prototype.validate = function(){
     return Joi.validate(this, schema, function(err, value){
         if(err || !value){
-            //console.log(err);
+            console.log(err);
             return false;
         }
         else{

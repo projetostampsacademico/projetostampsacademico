@@ -6,7 +6,7 @@ exports.DataValidator = function(json){
         var obj = JSON.parse(json);
         var prototypes = [PatientModel, MedicalRecordModel];
 
-
+        console.log(obj);
         for(var i=0; i<prototypes.length; i++){
             var prot = Object.assign(new prototypes[i], obj)
             if(prot && prot.validate())
