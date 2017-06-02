@@ -41,7 +41,6 @@ passport.use(new Strategy({
         if (err)
           return cb(err);
         if (user) {
-          console.log(user)
           return cb(null, user);
         } else {
           
@@ -163,14 +162,12 @@ app.use(bodyParser.json());
 app.post('/sintomasEnvio', 
     require('connect-ensure-login').ensureLoggedIn(),
     function (req, res) {
-
-      console.log(req.body);
-  
-
+      var dados = req.body;
+      dados.symptomsdate = Math.floor(Date.now() / 1000);
       res.setHeader('Content-Type', 'application/json');
-      res.send(JSON.stringify(req.body, null, 3));
+      res.send(JSON.stringify(dados, null, 3));
       payloads = [
-         { topic: 'det-paciente', messages: JSON.stringify(req.body), partition: 0 },
+         { topic: 'det-paciente', messages: JSON.stringify(dados), partition: 0 },
       ];
       producer.send(payloads, function(err, data){
          console.log(data)
