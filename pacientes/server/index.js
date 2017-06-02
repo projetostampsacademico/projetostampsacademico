@@ -11,6 +11,10 @@ var kafka = require('kafka-node'),
     client = new kafka.Client('34.204.88.242:2181'),
     producer = new Producer(client);
 
+var config = {
+  port: 8080
+}
+
 mongoose.connect(configDB.url);
 // Configure the Facebook strategy for use by Passport.
 //
@@ -27,24 +31,30 @@ passport.use(new Strategy({
     clientSecret: '69803b262211015ea714b2593e690e26',
     //Modificar o callback para o seu sistema
     //callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
-    callbackURL: 'http://localhost:8080/login/facebook/return',
-    profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)']
+    callbackURL: 'http://localhost:'+config.port+'/login/facebook/return',
+    profileFields: ['id', 'emails', 'displayName', 'name', 'gender', 'picture.type(large)']
   },
   function(accessToken, refreshToken, profile, cb) {
     process.nextTick(function() {
       User.findOne({ 'facebook.id': profile.id }, function(err, user) {
+        
         if (err)
           return cb(err);
         if (user) {
+          console.log(user)
           return cb(null, user);
         } else {
+          
           var newUser = new User();
           newUser.facebook.id = profile.id;
           newUser.facebook.token = accessToken;
           newUser.facebook.displayName = profile.displayName;
           if (profile.emails) { 
             newUser.facebook.email = (profile.emails[0].value || '').toLowerCase();
+          } else {
+            newUser.facebook.email = profile.email
           }
+
           if (profile.photos) { 
             newUser.facebook.photo = profile.photos[0].value;
           }
@@ -115,8 +125,8 @@ app.get('/login',
     res.render('login');
   });
 
-app.get('/login/facebook',
-  passport.authenticate('facebook'));
+app.get('/login/facebook'
+  , passport.authorize('facebook', { scope : ['email'] }));
 
 app.get('/login/facebook/return', 
   passport.authenticate('facebook', { failureRedirect: '/login' }),
@@ -153,11 +163,14 @@ app.use(bodyParser.json());
 app.post('/sintomasEnvio', 
     require('connect-ensure-login').ensureLoggedIn(),
     function (req, res) {
-      console.log(req.body.sintomas);
+
+      console.log(req.body);
+  
+
       res.setHeader('Content-Type', 'application/json');
-      res.send(JSON.stringify(req.body.sintomas, null, 3));
+      res.send(JSON.stringify(req.body, null, 3));
       payloads = [
-         { topic: 'det-paciente', messages: JSON.stringify(req.body, null, 3), partition: 0 },
+         { topic: 'det-paciente', messages: JSON.stringify(req.body), partition: 0 },
       ];
       producer.send(payloads, function(err, data){
          console.log(data)
@@ -173,9 +186,6 @@ app.get('/profile',
       );
   });
 
-var config = {
-  port: 8080
-}
 
 app.listen(config.port, function () {
   console.log('Running on port ' + config.port);

@@ -17,18 +17,22 @@
   </head>
   <body>
     <form class="form-horizontal" id="sintomas" action="/sintomasEnvio" accept-charset="UTF-8" method="post">
-        
-        <input type="hidden" name="user" value="<%= user.facebook.id %>" >
+        <input type="hidden" name="email" value="<%= user.facebook.email %>" >
+        <input type="hidden" name="username" value="<%= user.facebook.displayName %>" >
+        <input type="hidden" name="userid" value="<%= user.facebook.id %>" >
+        <input type="hidden" name="latitude" value="<%=-23.20389472%>">
+        <input type="hidden" name="longitude" value="<%=-45.90955491%>">
+        <input type="hidden" name="symptomsdate" value="2017-01-06">
         <div class="form-group"> 
             <div class="col-sm-offset-2 col-sm-10"><h3>Mensuráveis</h3></div>
             <div class="col-sm-offset-2 col-sm-10">
                 <div class="text">
-                    <label><input type="text" name="sintomas[febre]" id="sintomas_febre"> graus de febre</label>
+                    <label><input type="text" name="symptoms[febre]" id="sintomas_febre"> graus de febre</label>
                 </div>
             </div>
             <div class="col-sm-offset-2 col-sm-10">
                 <div class="text">
-                    <label><input type="text" name="sintomas[bpm]" id="sintomas_febre"> bpm em repouso</label>
+                    <label><input type="text" name="symptoms[bpm]" id="sintomas_bpm"> bpm em repouso</label>
                 </div>
             </div>
         </div>
@@ -37,12 +41,12 @@
             <div class="col-sm-offset-2 col-sm-10"><h3>Dores</h3></div>
             <div class="col-sm-offset-2 col-sm-10">
                 <div class="checkbox">
-                    <label><input type="checkbox" name="sintomas[dores]" value="cabeca" id="sintomas_dor_cabeca"> Dor de cabeça</label>
+                    <label><input type="checkbox" name="symptoms[dores]" value="cabeca" id="sintomas_dor_cabeca"> Dor de cabeça</label>
                 </div>
             </div>
             <div class="col-sm-offset-2 col-sm-10">
                 <div class="checkbox">
-                    <label><input type="checkbox" name="sintomas[dores]" value="corpo" id="sintomas_dor_corpo"> Dores pelo corpo</label>
+                    <label><input type="checkbox" name="symptoms[dores]" value="corpo" id="sintomas_dor_corpo"> Dores pelo corpo</label>
                 </div>
             </div>
         </div>
