@@ -1,0 +1,266 @@
+{
+  "contributors": null,
+  "truncated": false,
+  "text": "RT @TrendsOfNigeria: Scientists at Redeemer's University have built test kits that can detect Ebola and Lassa virus in 10 mins. It has b… ",
+  "is_quote_status": false,
+  "in_reply_to_status_id": null,
+  "id": 870396587943624700,
+  "favorite_count": 0,
+  "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+  "retweeted": false,
+  "coordinates": null,
+  "timestamp_ms": "1496353692409",
+  "entities": {
+    "user_mentions": [
+      {
+        "id": 719960941,
+        "indices": [
+          3,
+          19
+        ],
+        "id_str": "719960941",
+        "screen_name": "TrendsOfNigeria",
+        "name": "Trends Of Nigeria"
+      }
+    ],
+    "symbols": [],
+    "hashtags": [],
+    "urls": [
+      {
+        "url": "",
+        "indices": [
+          138,
+          138
+        ],
+        "expanded_url": null
+      }
+    ]
+  },
+  "in_reply_to_screen_name": null,
+  "id_str": "870396587943624704",
+  "retweet_count": 0,
+  "in_reply_to_user_id": null,
+  "favorited": false,
+  "retweeted_status": {
+    "contributors": null,
+    "truncated": true,
+    "text": "Scientists at Redeemer's University have built test kits that can detect Ebola and Lassa virus in 10 mins. It has b… https://t.co/qTEiK5pgob",
+    "is_quote_status": false,
+    "in_reply_to_status_id": null,
+    "id": 870393870391103500,
+    "favorite_count": 13,
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "retweeted": false,
+    "coordinates": null,
+    "entities": {
+      "user_mentions": [],
+      "symbols": [],
+      "hashtags": [],
+      "urls": [
+        {
+          "url": "https://t.co/qTEiK5pgob",
+          "indices": [
+            117,
+            140
+          ],
+          "expanded_url": "https://twitter.com/i/web/status/870393870391103489",
+          "display_url": "twitter.com/i/web/status/8…"
+        }
+      ]
+    },
+    "in_reply_to_screen_name": null,
+    "id_str": "870393870391103489",
+    "display_text_range": [
+      0,
+      140
+    ],
+    "retweet_count": 39,
+    "in_reply_to_user_id": null,
+    "favorited": false,
+    "user": {
+      "follow_request_sent": null,
+      "profile_use_background_image": true,
+      "default_profile_image": false,
+      "id": 719960941,
+      "verified": false,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/859525071702040576/l4aoZoT2_normal.jpg",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "followers_count": 92771,
+      "profile_sidebar_border_color": "000000",
+      "id_str": "719960941",
+      "profile_background_color": "000000",
+      "listed_count": 147,
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/572158476508352512/yQD6TvfU.jpeg",
+      "utc_offset": 3600,
+      "statuses_count": 24019,
+      "description": "Home Of News , Motivation and Entertainment in Nigeria .. We love it when you RETWEET !!\n For Ads 》》 Email:Trendsnigeria1@gmail.com / +2349076067108",
+      "friends_count": 3444,
+      "location": "Nigeria",
+      "profile_link_color": "4A913C",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/859525071702040576/l4aoZoT2_normal.jpg",
+      "following": null,
+      "geo_enabled": true,
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/719960941/1492159025",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/572158476508352512/yQD6TvfU.jpeg",
+      "name": "Trends Of Nigeria",
+      "lang": "en",
+      "profile_background_tile": true,
+      "favourites_count": 283,
+      "screen_name": "TrendsOfNigeria",
+      "notifications": null,
+      "url": "http://Trendsofnigeria.com",
+      "created_at": "Fri Jul 27 11:12:27 +0000 2012",
+      "contributors_enabled": false,
+      "time_zone": "West Central Africa",
+      "protected": false,
+      "default_profile": false,
+      "is_translator": false
+    },
+    "geo": null,
+    "in_reply_to_user_id_str": null,
+    "possibly_sensitive": false,
+    "lang": "en",
+    "extended_tweet": {
+      "display_text_range": [
+        0,
+        139
+      ],
+      "entities": {
+        "user_mentions": [],
+        "symbols": [],
+        "hashtags": [],
+        "urls": [],
+        "media": [
+          {
+            "expanded_url": "https://twitter.com/TrendsOfNigeria/status/870393870391103489/photo/1",
+            "display_url": "pic.twitter.com/ekaUoLfz8W",
+            "url": "https://t.co/ekaUoLfz8W",
+            "media_url_https": "https://pbs.twimg.com/media/DBRCm5RWAAEiX1L.jpg",
+            "id_str": "870393863965376513",
+            "sizes": {
+              "large": {
+                "h": 271,
+                "resize": "fit",
+                "w": 543
+              },
+              "small": {
+                "h": 271,
+                "resize": "fit",
+                "w": 543
+              },
+              "medium": {
+                "h": 271,
+                "resize": "fit",
+                "w": 543
+              },
+              "thumb": {
+                "h": 150,
+                "resize": "crop",
+                "w": 150
+              }
+            },
+            "indices": [
+              140,
+              163
+            ],
+            "type": "photo",
+            "id": 870393863965376500,
+            "media_url": "http://pbs.twimg.com/media/DBRCm5RWAAEiX1L.jpg"
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "expanded_url": "https://twitter.com/TrendsOfNigeria/status/870393870391103489/photo/1",
+            "display_url": "pic.twitter.com/ekaUoLfz8W",
+            "url": "https://t.co/ekaUoLfz8W",
+            "media_url_https": "https://pbs.twimg.com/media/DBRCm5RWAAEiX1L.jpg",
+            "id_str": "870393863965376513",
+            "sizes": {
+              "large": {
+                "h": 271,
+                "resize": "fit",
+                "w": 543
+              },
+              "small": {
+                "h": 271,
+                "resize": "fit",
+                "w": 543
+              },
+              "medium": {
+                "h": 271,
+                "resize": "fit",
+                "w": 543
+              },
+              "thumb": {
+                "h": 150,
+                "resize": "crop",
+                "w": 150
+              }
+            },
+            "indices": [
+              140,
+              163
+            ],
+            "type": "photo",
+            "id": 870393863965376500,
+            "media_url": "http://pbs.twimg.com/media/DBRCm5RWAAEiX1L.jpg"
+          }
+        ]
+      },
+      "full_text": "Scientists at Redeemer's University have built test kits that can detect Ebola and Lassa virus in 10 mins. It has been approved by the WHO. https://t.co/ekaUoLfz8W"
+    },
+    "created_at": "Thu Jun 01 21:37:24 +0000 2017",
+    "filter_level": "low",
+    "in_reply_to_status_id_str": null,
+    "place": null
+  },
+  "user": {
+    "follow_request_sent": null,
+    "profile_use_background_image": true,
+    "default_profile_image": false,
+    "id": 358891167,
+    "verified": false,
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/845240016590852097/10xBDsDl_normal.jpg",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "followers_count": 1053,
+    "profile_sidebar_border_color": "C0DEED",
+    "id_str": "358891167",
+    "profile_background_color": "C0DEED",
+    "listed_count": 14,
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "utc_offset": null,
+    "statuses_count": 1720,
+    "description": "#Blogger, #Entrepreneur, #RealEstate, #InvestorHunter, #SocialMediaGuru, #MotivatingMachine, #Marketer, #Merchandiser #Sales #TeamManutd, #TeamUndaunted",
+    "friends_count": 1505,
+    "location": "Lagos, Nigeria.",
+    "profile_link_color": "1DA1F2",
+    "profile_image_url": "http://pbs.twimg.com/profile_images/845240016590852097/10xBDsDl_normal.jpg",
+    "following": null,
+    "geo_enabled": true,
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "name": "Anthony Onwushai",
+    "lang": "en",
+    "profile_background_tile": false,
+    "favourites_count": 91,
+    "screen_name": "sir_proximo",
+    "notifications": null,
+    "url": "http://tonyxofalltrades.blogspot.com",
+    "created_at": "Sat Aug 20 17:39:35 +0000 2011",
+    "contributors_enabled": false,
+    "time_zone": null,
+    "protected": false,
+    "default_profile": true,
+    "is_translator": false
+  },
+  "geo": null,
+  "in_reply_to_user_id_str": null,
+  "lang": "en",
+  "created_at": "Thu Jun 01 21:48:12 +0000 2017",
+  "filter_level": "low",
+  "in_reply_to_status_id_str": null,
+  "place": null
+}
