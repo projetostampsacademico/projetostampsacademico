@@ -1,7 +1,8 @@
 var express = require('express');
 var passport = require('passport');
-var Strategy = require('passport-facebook').Strategy;
+var Strategy = require('passport-facebook').Strategy
 var User = require('./models/user');
+var Detail = require('./models/detail');
 var mongoose = require('mongoose');
 var configDB = require('./config/database.js');
 var path = require('path');
@@ -30,8 +31,8 @@ passport.use(new Strategy({
     clientID: '251768885289067',
     clientSecret: '69803b262211015ea714b2593e690e26',
     //Modificar o callback para o seu sistema
-    //callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
-    callbackURL: 'http://localhost:'+config.port+'/login/facebook/return',
+    callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
+    //callbackURL: 'http://localhost:'+config.port+'/login/facebook/return',
     profileFields: ['id', 'emails', 'displayName', 'name', 'gender', 'picture.type(large)']
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -124,6 +125,26 @@ app.get('/login',
     res.render('login');
   });
 
+app.get('/report', function(req, res) {
+  mongoose.model('Detail').find(function(err,ills){
+    //res.setHeader('Content-Type', 'application/json');
+    //res.send(JSON.stringify(ills), null, 3);
+    var sintomas = [];
+    ills.forEach(function(ill) {
+      ill.symptoms.forEach(function(sintoma) {
+        sintomas.push(sintoma);
+      })
+    });
+    var aux = new Set(sintomas);
+    var unique = Array.from(aux).sort();
+    var data = unique;
+    res.render('sintomas',{data: data,user: req.user});
+    //res.send(unique.toString());
+  });
+  }
+);
+  
+
 app.get('/login/facebook'
   , passport.authorize('facebook', { scope : ['email'] }));
 
@@ -150,6 +171,7 @@ app.get('/paProximos',
 app.get('/sintomasForm',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
+    
     res.render('sintomasForm', {user: req.user}
       );
   });
@@ -160,20 +182,22 @@ app.get('/sintomasForm',
 app.use(bodyParser.json());
 
 app.post('/sintomasEnvio', 
-    require('connect-ensure-login').ensureLoggedIn(),
-    function (req, res) {
-      var dados = req.body;
-      dados.symptomsdate = Math.floor(Date.now() / 1000);
-      res.setHeader('Content-Type', 'application/json');
-      res.send(JSON.stringify(dados, null, 3));
-      payloads = [
-         { topic: 'det-paciente', messages: JSON.stringify(dados), partition: 0 },
-      ];
-      producer.send(payloads, function(err, data){
-         console.log(data)
-      });
+  require('connect-ensure-login').ensureLoggedIn(),
+  function (req, res) {
+    var dados = req.body;
+    dados.symptomsdate = Math.floor(Date.now() / 1000);
+    res.setHeader('Content-Type', 'application/json');
+    console.log(JSON.stringify(dados, null, 3));
+    res.send(JSON.stringify(dados, null, 3));
+    payloads = [
+       { topic: 'det-paciente', messages: JSON.stringify(dados), partition: 0 },
+    ];
+    producer.send(payloads, function(err, data){
+       console.log(data)
+    });
 
-});
+  }
+);
 
 app.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
