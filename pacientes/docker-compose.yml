@@ -1,11 +1,18 @@
-server:
+pacientes:
   build: ./server
   command: npm start
   links:
     - mongodb
   ports:
-    - "8080:8080"
+    - 8081:8081
   environment:
     - DB=mongodb://mongodb/pacientes
 mongodb:
   image: mongo
+timeline:
+  build: ./timeline
+  ports:
+    - 9090:9090
+  environment:
+    - PORT=9090
+    - ZOOKEEPER=34.204.88.242:80

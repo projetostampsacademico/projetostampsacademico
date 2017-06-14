@@ -1,0 +1,32 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+        <img src="data:image/png;base64,{{ params['captchaBase64'] }}" />
+        <form method="POST" action="{{ path('cadastro') }}">
+            <input type="hidden" name="cookie" value="{{ params['cookie'] }}" />
+            <input type="text" name="captcha" placeholder="Captcha" />
+            <input type="text" name="cnpj" placeholder="CNPJ" />
+            <button type="submit">Consultar</button>
+        </form>
+
+        <div class="span12 "> 
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Empresa</th>
+                        <th>Cidade</th>
+                        <th>UF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entity in empresas %}
+                        <tr>
+                            <td >{{ entity.empresa }}</td>
+                            <td >{{ entity.cidade }}</td>
+                            <td >{{ entity.uf }}</td>
+                        </tr>
+                    {% else %}
+                        <tr><td>Nothing empresa listed.</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+{% endblock %}
