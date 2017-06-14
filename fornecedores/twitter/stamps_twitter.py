@@ -5,33 +5,31 @@ from tweepy import Stream
 from pprint import pprint
 from kafka import KafkaProducer
 from datetime import datetime
-import time
 import pymysql.cursors
 import json
+import time
 
 
-
-#chaves de app do Twitter 
-consumer_key = 
-consumer_secret = 
-access_token = 
-access_token_secret =
+#chaves de app do Twitter
+consumer_key = '8u3IW1VYGVYLv63PkM19D84PW'
+consumer_secret = 'CRoN2lqVFYkvR6xkysGPIeMK0woxfxC0xjhuzyUqwKp3FSYKJc'
+access_token = '869333600205930496-4Y42hh785DGi5EETUAm5dJ7pfBXieLF'
+access_token_secret = 'YiG2fTEJ8WIfzpF0RnHO2UeLzbjSceVPbNk3B8h2p3ZtJ'
 
 poll_interval = 5
 
 #conecao com o Mysql
-connection = pymysql.connect(host='localhost', port=3306, user='root', password='123456',db='busca',
+connection = pymysql.connect(host='localhost', port=3306, user='root', password='123456789',db='busca',
                              cursorclass=pymysql.cursors.DictCursor,charset='utf8mb4',autocommit=True
                              )
 cursor = connection.cursor()
 
-#Classe hedada do Tweepy
+#Classe herdada do Tweepy
 class StdOutListener(StreamListener):
     def on_data(self, data):
         twit = json.loads(data)
-	# configuracao kafka
-        producer = KafkaProducer(bootstrap_servers='192.168.56.101:9093', value_serializer=lambda v: json.dumps(v).encode('utf-8'))
-        producer.send('test2', {'msg': twit["text"], 'datatime': datetime.now().strftime("%Y-%m-%d %H:%M:%S")})
+        producer = KafkaProducer(bootstrap_servers='34.204.88.242:443', value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+        producer.send('det-twitter', twit)
         producer.flush()
         print(twit["text"])
         return True
@@ -39,17 +37,16 @@ class StdOutListener(StreamListener):
     def on_error(self, status):
         if status == 420:
             return False
+	print("erro:" + str(status))
 
-#Busca palavras no Mysql
 def get_keywords_fromdb():
     cursor.execute("select palavra from palavras where ativa = 1;");
     keywords = [item['palavra'] for item in cursor.fetchall()]
     return keywords
 
-#Busca locais no Mysql
 def get_locations_fromdb():
     locationBD =[]
-    cursor.execute("select lat1,lon1,lat2,lon2 from locais where ativa = 1;");
+    cursor.execute("select lat1,lon1,lat2,lon2 from Locais where ativa = 1;");
     for item in cursor.fetchall():
         locationBD.append(float(item['lat1']))
         locationBD.append(float(item['lon1']))
