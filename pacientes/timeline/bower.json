@@ -15,6 +15,7 @@
     "angular-resource": "^1.6.4",
     "angular-timeline": "^1.7.0",
     "bootstrap": "^3.3.7",
-    "ngtouch": "^1.0.2"
+    "ngtouch": "^1.0.2",
+    "angular-scroll-glue": "*"
   }
 }
