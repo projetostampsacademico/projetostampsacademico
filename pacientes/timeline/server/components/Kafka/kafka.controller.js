@@ -12,6 +12,9 @@ exports.startListen = function (topicName) {
 
     global.consumer = new kafka.Consumer(client, [
         { topic: 'tri-twitter', offset: offset },
+        { topic: 'tri-paciente', offset: offset },
+        { topic: 'tri-hospital', offset: offset },
+        { topic: 'tri-medico', offset: offset },
         { topic: 'test', offset: offset}
     ]);
 
