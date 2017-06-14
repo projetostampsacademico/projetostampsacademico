@@ -43,7 +43,7 @@ $app->match('/upload', function (Request $request) use ($app) {
                     $app['monolog']->debug($output_dir . $nfeProc->getNFe()->getInfNFe()->getId() . 'csv');
                     $qtMov = 0;
                     if ($empresa) {
-                        $csvFile = new CsvFile($output_dir . $nfeProc->getNFe()->getInfNFe()->getId().'.csv');
+                        $csvFile = new CsvFile($output_dir . $nfeProc->getNFe()->getInfNFe()->getId().'.csv',',','');
                         $mov = array();
                         $mov['emit_Municipio'] = $nfeProc->getNFe()->getInfNFe()->getEmit()->getEnderEmit()->getXMun();
                         $mov['emit_UF'] = $nfeProc->getNFe()->getInfNFe()->getEmit()->getEnderEmit()->getUF();
