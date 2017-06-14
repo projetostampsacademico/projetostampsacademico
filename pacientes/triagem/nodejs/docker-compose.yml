@@ -1,8 +1,6 @@
 triagem:
   build: .
-  volumes:
-    - .:/app
   environment:
     - ZOOKEEPER=34.204.88.242:2181
-    - TOPICIN=test
-    - TOPICOUT=test
+    - TOPICIN=det-paciente
+    - TOPICOUT=tri-paciente

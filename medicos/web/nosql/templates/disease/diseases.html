@@ -35,7 +35,18 @@
             <li class="list-group-item">
               <div class="row">
                 <div class="col-md-3 disease-code">
-                  <h2><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.code }}">{{ disease.code }}</a></h2>
+                    {% if disease.code|length > 3 %}
+                    {%    with disease.code|slice:':3'|add:'.' as cid1 %}
+                    {%    with disease.code|slice:'3:' as cid2  %}
+                          <h2><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid1 }}{{ cid2 }}">{{ cid1 }}{{ cid2 }}</a></h2>
+                    {%    endwith %}
+                    {%    endwith %}
+                    {% else %}
+                    {%    with disease.code as cid  %}
+                          <h2><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid }}">{{ cid }}</a></h2>
+                    {%    endwith %}
+                    {% endif %}
+
                   <h4>{{ disease.description }}</h4>
                 </div>
                 <div class="col-md-9">
