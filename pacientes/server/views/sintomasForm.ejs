@@ -16,6 +16,9 @@
     <![endif]-->
   </head>
   <body>
+    <div class="wrapper">
+    <div class="container">
+    <h2>O que você está sentindo?</h2>
     <form class="form-horizontal" id="sintomas" action="/sintomasEnvio" accept-charset="UTF-8" method="post">
         <input type="hidden" name="email" value="<%= user.facebook.email %>" >
         <input type="hidden" name="username" value="<%= user.facebook.displayName %>" >
@@ -54,6 +57,8 @@
         <div class="form-group"> 
         <div class="col-sm-offset-2 col-sm-10">
           <button type="submit" class="btn btn-default">Enviar sintomas</button>
+        </div> 
+        </div> 
         </div> 
     </form>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

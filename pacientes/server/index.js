@@ -113,6 +113,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 // Define routes.
 app.get('/',
@@ -187,7 +188,7 @@ app.post('/sintomasEnvio',
     var dados = req.body;
     dados.symptomsdate = Math.floor(Date.now() / 1000);
     res.setHeader('Content-Type', 'application/json');
-    console.log(JSON.stringify(dados, null, 3));
+    //console.log(JSON.stringify(dados, null, 3));
     res.send(JSON.stringify(dados, null, 3));
     payloads = [
        { topic: 'det-paciente', messages: JSON.stringify(dados), partition: 0 },
