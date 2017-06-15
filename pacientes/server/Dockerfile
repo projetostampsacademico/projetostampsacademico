@@ -2,8 +2,10 @@ FROM node:6
 
 MAINTAINER Luiz Coura <luizcoura@gmail.com>
 
-ENV IP mongodb
-ENV COMPOSER_ALLOW_SUPERUSER 1 
+ENV CALLBACK "http://localhost:8080/login/facebook/return" 
+ENV ZOOKEEPER "34.204.88.242:2181"
+ENV DB "mongodb"
+ENV PORT "8080"
 
 ADD . /var/www/pacientes
 WORKDIR /var/www/pacientes

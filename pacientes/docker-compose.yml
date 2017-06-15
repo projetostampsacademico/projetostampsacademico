@@ -1,18 +1,47 @@
-pacientes:
-  build: ./server
-  command: npm start
-  links:
-    - mongodb
-  ports:
-    - 8081:8081
-  environment:
-    - DB=mongodb://mongodb/pacientes
-mongodb:
-  image: mongo
-timeline:
-  build: ./timeline
-  ports:
-    - 9090:9090
-  environment:
-    - PORT=9090
-    - ZOOKEEPER=34.204.88.242:80
+version: '2'
+services:
+  pacientes:
+    build: ./server
+    ports:
+      - 8080:8080
+    restart: always
+    environment:
+      - PORT=8080
+      - ZOOKEEPER=34.204.88.242:2181
+      - CALLBACK=http://localhost:8080/login/facebook/return
+      - DB=mongodb://heroku_6c04n1s3:eg0rtjdqtmf8ukmmo3pfflqdbe@ds161630.mlab.com:61630/heroku_6c04n1s3
+  triagem:
+    build: ./triagem/nodejs
+    environment:
+      - ZOOKEEPER=34.204.88.242:2181
+      - TOPICIN=det-paciente
+      - TOPICOUT=tri-paciente
+  timeline:
+    build: ./timeline
+    ports:
+      - 9090:9090
+    restart: always
+    environment:
+      - PORT=9090
+      - ZOOKEEPER=34.204.88.242:2181
+  kafka:
+    image: wurstmeister/kafka:latest
+    ports: 
+      - 9092:9092
+    restart: always
+    depends_on: 
+      - zookeeper
+    environment:
+      - KAFKA_ADVERTISED_HOST_NAME=34.204.88.242 
+      - KAFKA_CREATE_TOPICS=test:1:1,det-twitter:1:1,det-paciente:1:1,det-hospital:1:1,det-medico:1:1,det-fornecedor:1:1,tri-twitter:1:1,tri-paciente:1:1,tri-hospital:1:1,tri-medico:1:1,tri-fornecedor:1:1,msg-paciente:1:1,msg-hospital:1:1,msg-medico:1:1,msg-fornecedor:1:1,msg-autoridade:1:1
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_AUTO_CREATE_TOPICS_ENABLE=false
+      - KAFKA_OFFSETS_RETENTION_MINUTES=1
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  zookeeper:
+    image: wurstmeister/zookeeper:latest
+    ports: 
+      - 2181:2181
+    restart: always
+

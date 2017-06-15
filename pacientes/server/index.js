@@ -9,11 +9,11 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var kafka = require('kafka-node'),
     Producer = kafka.Producer,
-    client = new kafka.Client('34.204.88.242:2181'),
+    client = new kafka.Client(process.env.ZOOKEEPER || '34.204.88.242:2181'),
     producer = new Producer(client);
 
 var config = {
-  port: 8080
+  port: process.env.PORT || '8080'
 }
 
 mongoose.connect(configDB.url);
@@ -30,9 +30,7 @@ mongoose.connect(configDB.url);
 passport.use(new Strategy({
     clientID: '251768885289067',
     clientSecret: '69803b262211015ea714b2593e690e26',
-    //Modificar o callback para o seu sistema
-    callbackURL: 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
-    //callbackURL: 'http://localhost:'+config.port+'/login/facebook/return',
+    callbackURL: process.env.CALLBACK || 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
     profileFields: ['id', 'emails', 'displayName', 'name', 'gender', 'picture.type(large)']
   },
   function(accessToken, refreshToken, profile, cb) {

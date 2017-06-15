@@ -20,11 +20,12 @@ consumer.on('message', function (message) { // <<< REALIZA A LEITURA DO TOPICO A
 
 
   if (isValid) {
+    console.log("VALID: " + message.value);
     producer.send([{
       topic: process.env.TOPICOUT || 'tri-paciente',
       messages: [message.value]
     }], function (err, result) { // <<< ENVIA PARA O TOPICO POSTERIOR
-      console.log(err || "VALID: " + result);
+      console.log(err || JSON.stringify(result));
     });
   } else {
     console.log("INVALID: " + message.value);

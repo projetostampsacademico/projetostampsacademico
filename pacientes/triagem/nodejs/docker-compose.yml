@@ -1,6 +1,0 @@
-triagem:
-  build: .
-  environment:
-    - ZOOKEEPER=34.204.88.242:2181
-    - TOPICIN=det-paciente
-    - TOPICOUT=tri-paciente

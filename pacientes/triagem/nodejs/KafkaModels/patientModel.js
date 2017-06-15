@@ -18,7 +18,7 @@ var schema = {
         ,latitude      : Joi.number().required()
         ,longitude     : Joi.number().required()
         ,symptomsdate  : Joi.date().required().timestamp()
-        ,symptoms      : Joi.object().min(1)
+        ,symptoms      : Joi.array().min(1)
         
   };
 
