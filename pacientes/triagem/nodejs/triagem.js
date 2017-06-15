@@ -5,7 +5,7 @@ var client = new kafka.Client(process.env.ZOOKEEPER || '34.204.88.242:2181');
 
 var offset = new kafka.Offset(client); // <<< PARA INICIAR A LEITURA A PARTIR DA ULTIMA MENSAGEM
 var consumer = new kafka.Consumer(client, [{
-  topic: process.env.TOPICIN || 'det-twitter',
+  topic: process.env.TOPICIN || 'det-paciente',
   offset: offset
 }]);
 var producer = new kafka.Producer(client);
@@ -21,7 +21,7 @@ consumer.on('message', function (message) { // <<< REALIZA A LEITURA DO TOPICO A
 
   if (isValid) {
     producer.send([{
-      topic: process.env.TOPICOUT || 'tri-twitter',
+      topic: process.env.TOPICOUT || 'tri-paciente',
       messages: [message.value]
     }], function (err, result) { // <<< ENVIA PARA O TOPICO POSTERIOR
       console.log(err || "VALID: " + result);
