@@ -28,6 +28,7 @@ services:
     image: wurstmeister/kafka:latest
     ports: 
       - 9092:9092
+      - 443:9092
     restart: always
     depends_on: 
       - zookeeper
@@ -43,5 +44,7 @@ services:
     image: wurstmeister/zookeeper:latest
     ports: 
       - 2181:2181
+      - 80:2181
     restart: always
+
 
