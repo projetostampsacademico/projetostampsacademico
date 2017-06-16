@@ -73,7 +73,7 @@ def prepareJson():
         for i in range(0, len(screening)):
             data = {}
             data["resourceType"] = "Mensagem"
-            data["msg_id"] =  str(screening[i]['msg_id'])
+            data["identifier"] =  str(screening[i]['msg_id'])
             data["msg_remetente"] =  str(screening[i]['msg_remetente'].encode('utf-8'))
             data["msg_destinatario"] =  str(screening[i]['msg_destinatario'].encode('utf-8'))
             data["msg_assunto"] =  str(screening[i]['msg_assunto'].encode('utf-8'))
