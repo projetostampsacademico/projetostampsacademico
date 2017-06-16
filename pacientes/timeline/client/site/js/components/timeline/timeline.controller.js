@@ -12,12 +12,12 @@ angular.module('stampsacad')
                 badgeClass: 'info',
                 badgeIconClass: 'glyphicon-check',
                 title: 'BEM VINDO!',
-                content: 'Sistema STAMPs NET INICIADO.'
+                content: 'Iniciando Sistema STAMPSNet'
             }, {
                 badgeClass: 'warning',
                 badgeIconClass: 'glyphicon-credit-card',
-                title: 'Aguardando....',
-                content: ''
+                title: 'CONECTADO',
+                content: 'Aguardando...'
             }];
 
             var adicionarDados = function (dadosApi) {
