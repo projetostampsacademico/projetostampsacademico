@@ -31,7 +31,7 @@ def conectDB():
     result = []
     
     try:
-        conn = MySQLdb.connect(host="us-cdbr-iron-east-03.cleardb.net:",
+        conn = MySQLdb.connect(host="us-cdbr-iron-east-03.cleardb.net",
                      user="b6f15ede9bfc87",
                      passwd="5cad9d31",  
                      db="heroku_96fcc4c8ee9de87", 
@@ -66,7 +66,7 @@ def prepareJson():
     if len(conectDB()) > 0 :
         screening = conectDB()
     else:
-        return ''
+        print 'Sem informações no Banco de Dados'
 
     try:
         for i in range(0, len(screening)):
@@ -99,7 +99,8 @@ def sendMensage():
     if len(prepareJson()) > 0:
         mensage = prepareJson()
     else:
-        return 'Sem mensagens para ser enviada!'
+        print 'Sem mensagens para ser enviada!'
+        return ''
         
 
     try:
