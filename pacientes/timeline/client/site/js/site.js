@@ -4,7 +4,8 @@ angular.module('stampsacad', [
         'ngTouch',
         'ngResource',
         'angular-timeline',
-        'luegg.directives'
+        'luegg.directives',
+        'ngMap'
     ])
     .config(function ($interpolateProvider) {
         $interpolateProvider.startSymbol('{[{');

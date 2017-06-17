@@ -1,0 +1,6 @@
+<div ng-controller="mapsCtrl">
+    <ng-map style="width:49%; height:100%;position: absolute;" center="[-23.207547,-45.882341]">
+       <marker ng-repeat="mark in markers" 
+         position="[{[{mark.latitude}]}, {[{mark.longitude}]}]"></marker>
+    </ng-map>
+</div>
