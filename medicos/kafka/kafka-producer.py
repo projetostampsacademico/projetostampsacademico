@@ -67,6 +67,7 @@ def prepareJson():
         screening = conectDB()
     else:
         print 'Sem informações no Banco de Dados'
+        return ''
 
     try:
         for i in range(0, len(screening)):
@@ -75,7 +76,7 @@ def prepareJson():
             data["identifier"] =  [1,20]
             data["status"]  = "In Progress"
             data["code"]  = str(i)
-            data["description"] =  str(screening[i]['con_diagnostico'].encode('utf-8')) +"\n" + str(screening[i]['con_prescricao'].encode('utf-8')) +"\n" + str(screening[i]['con_tratamento'].encode('utf-8')) 
+            data["description"] =  str(screening[i]['con_diagnostico'].encode('utf-8')) 
             data["subject"] =  { str(screening[i]['con_patient_number_id']) } 
             data["context"] =  { str(screening[i]['con_patient_number_id']) }
             data["date"] =  str(datetime.now())
@@ -107,7 +108,9 @@ def sendMensage():
         producer = KafkaProducer(bootstrap_servers='34.204.88.242:9092')    
         for i in mensage:
             producer.send('det-medico', str(i))
-    
+        
+        print 'Mensagens enviadas'
+        
     except Exception as e:
         print 'Ocorreu um erro na envio da mensagem- '+ str(e)
         
