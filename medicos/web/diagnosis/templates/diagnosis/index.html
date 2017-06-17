@@ -40,7 +40,11 @@
 
     <div class="panel-group" id="accordion">
       {% for disease_info, matches in diagnosis %}
-        <div class="panel panel-default">
+        {% if matches.alert %}
+          <div class="panel panel-danger">
+        {% else %}
+          <div class="panel panel-default">
+        {% endif %}
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.counter }}">
@@ -49,6 +53,9 @@
           </div>
           <div id="collapse{{ forloop.counter }}" class="panel-collapse collapse">
             <div class="panel-body">
+              {% if matches.alert %}
+                <a href="/list_consulta" class="btn btn-danger">[DANGER] Find a Doctor as soon as possible.</a>
+              {% endif %}
               <h4>Symptoms List:</h4>
               <ul>
                 {% for symptom in matches.symptoms %}

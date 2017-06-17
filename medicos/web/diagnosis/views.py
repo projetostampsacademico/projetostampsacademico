@@ -34,8 +34,11 @@ def generate_diagnosis(patientSymptomsList):
                 result[disease['info'][:60]] = { 
                     'info': disease['info'],
                     'symptoms': disease['symptoms'],
-                    'jaccard': jaccardValue
+                    'jaccard': jaccardValue,
+                    'alert': 'Ebola' in disease['info']
                 }
+                if 'Ebola' in disease['info']:
+                    print ("EBOLA DETECTED!!!!")
 
     return result
 
@@ -44,7 +47,7 @@ def symptoms_in_common(patientSymptomsList, diseaseSymptomsList):
     intersection = 0
     for patientSymptom in patientSymptomsList:
         for diseaseSymptom in diseaseSymptomsList:
-            if words_in_common(patientSymptom, diseaseSymptom) > 0.5    :
+            if words_in_common(patientSymptom, diseaseSymptom) > 0.5:
                 intersection = intersection + 1
     return intersection
 
