@@ -11,34 +11,54 @@ def index(request, template_name='diagnosis/index.html'):
     diagnosis = {}
     symptoms = request.GET.getlist('symptoms')    
     if symptoms is not None:
-        diagnosis = generateDiagnosis(symptoms)
-        sorted_matches = sorted(diagnosis.items(), key=operator.itemgetter(1), reverse=True)
+        diagnosis = generate_diagnosis(symptoms)
+        sorted_matches = sorted(diagnosis.items(), key=lambda x: x[1]['jaccard'], reverse=True)
     all_symptoms = MongoService.get_instance().fetch_unique_list('DETAIL', 'symptoms')
     return render(request, template_name, {'diagnosis': sorted_matches, 'symptoms': all_symptoms})
 
-def generateDiagnosis(patientSymptomsList):
-    service = MongoService.get_instance()
-    diseases_list= service.fetch_data('DETAIL', 'json')
+def generate_diagnosis(patientSymptomsList):
+    search_regex = "|".join(patientSymptomsList)
+    related_diseases = MongoService.get_instance().query_data('DETAIL', 'symptoms', search_regex, 'list')
+
     result = {}
-    json_disease = json.loads(diseases_list)
-    for disease in json_disease:
+    for disease in related_diseases:
         diseaseSymptomsList = disease['symptoms']
         print (patientSymptomsList)
         print (diseaseSymptomsList)
         if diseaseSymptomsList is not None:
-            intersection = 0
+            intersection = symptoms_in_common(patientSymptomsList, diseaseSymptomsList)
             union = len(diseaseSymptomsList) + len(patientSymptomsList)
-            for patientSymptom in patientSymptomsList:
-                for diseaseSymptom in diseaseSymptomsList:
-                    if diseaseSymptom == patientSymptom:
-                        intersection = intersection + 1;
+            
             if intersection != 0 and disease['info']:
                 jaccardValue = 100 * float(intersection)/float(union)
-                result[disease['info'][:60]] = { 'info': disease['info'], 'jaccard': jaccardValue }
-    diagnosis = {}
-    for key, val in result.iteritems():
-        diagnosis[val['info']] = val['jaccard']
-    return diagnosis
+                result[disease['info'][:60]] = { 
+                    'info': disease['info'],
+                    'symptoms': disease['symptoms'],
+                    'jaccard': jaccardValue,
+                    'alert': 'Ebola' in disease['info']
+                }
+                if 'Ebola' in disease['info']:
+                    print ("EBOLA DETECTED!!!!")
 
+    return result
+
+
+def symptoms_in_common(patientSymptomsList, diseaseSymptomsList):
+    intersection = 0
+    for patientSymptom in patientSymptomsList:
+        for diseaseSymptom in diseaseSymptomsList:
+            if words_in_common(patientSymptom, diseaseSymptom) > 0.5:
+                intersection = intersection + 1
+    return intersection
+
+
+def words_in_common(patientSymptom, diseaseSymptom):
+    intersection = 0
+    total = min([len(patientSymptom.split()), len(diseaseSymptom.split())])
+    for patientSymptomWord in patientSymptom.split():
+        for diseaseSymptomWord in diseaseSymptom.split():
+            if diseaseSymptomWord == patientSymptomWord:
+                intersection = intersection + 1
+    return intersection * 1.0 / total
             
     

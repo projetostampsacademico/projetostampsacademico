@@ -6,6 +6,6 @@
   height: 38px;
   line-height: 38px;
 }
-.panel-group {
+.panel-group, .panel-body {
   text-align: left;
 }
