@@ -21,13 +21,19 @@
     <form action="/diagnosis" method="GET">
       <div class="form-group ">
         <label>Type your symptoms:</label>
-        <select class="js-select2 form-control" name="symptoms" multiple="multiple">
-          {% for symptom in symptoms %}
-            <option value="{{symptom}}">{{symptom}}</option>
-          {% endfor %}
-        </select>
+        <div class="row">
+          <div class="col-sm-11">
+            <select class="js-select2 form-control" name="symptoms" multiple="multiple">
+              {% for symptom in symptoms %}
+                <option value="{{symptom}}">{{symptom}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-sm-1">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </div>
       </div>
-      <button type="submit" class="btn btn-primary">Search</button>
     </form>
 
     <hr />
@@ -38,11 +44,21 @@
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.counter }}">
-              <b>{{ matches|floatformat:1 }}% match</b> - {{ disease_info|truncatechars:60 }}</a>
+              <b>{{ matches.jaccard|floatformat:1 }}% match</b> - {{ disease_info|truncatechars:60 }}</a>
             </h4>
           </div>
           <div id="collapse{{ forloop.counter }}" class="panel-collapse collapse">
-            <div class="panel-body">{{ disease_info }}</div>
+            <div class="panel-body">
+              <h4>Symptoms List:</h4>
+              <ul>
+                {% for symptom in matches.symptoms %}
+                  <li>{{ symptom }}</li>
+                {% endfor %}           
+              </ul>
+              <hr>
+              <h4>Disease description:</h4>
+              <small>{{ matches.info }}</small>
+            </div>
           </div>
         </div>
       {% endfor %}
