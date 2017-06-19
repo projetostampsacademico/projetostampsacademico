@@ -46,6 +46,10 @@ class SeleniumTest extends PHPUnit_Extensions_Selenium2TestCase {
 		$this->assertTrue(true);
 	}
 
+	function testDois() {
+		$this->assertTrue(false);
+	}
+
 	public function tearDown() {
 		$this->stop();
 	}
