@@ -34,7 +34,7 @@ def conectDB():
     result = []
     
     try:
-        conn = MySQLdb.connect(host="us-cdbr-iron-east-03.cleardb.net:",
+        conn = MySQLdb.connect(host="us-cdbr-iron-east-03.cleardb.net",
                      user="b6f15ede9bfc87",
                      passwd="5cad9d31",  
                      db="heroku_96fcc4c8ee9de87", 
@@ -66,13 +66,14 @@ def prepareJson():
     if len(conectDB()) > 0 :
         screening = conectDB()
     else:
+        print 'Sem informações no Banco de Dados'
         return ''
 
     try:
         for i in range(0, len(screening)):
             data = {}
             data["resourceType"] = "Mensagem"
-            data["msg_id"] =  str(screening[i]['msg_id'].encode('utf-8'))
+            data["identifier"] =  str(screening[i]['msg_id'].encode('utf-8'))
             data["msg_remetente"] =  str(screening[i]['msg_remetente'].encode('utf-8'))
             data["msg_destinatario"] =  str(screening[i]['msg_destinatario'].encode('utf-8'))
             data["msg_assunto"] =  str(screening[i]['msg_assunto'].encode('utf-8'))
@@ -93,14 +94,17 @@ def sendMensage():
     if len(prepareJson()) > 0:
         mensage = prepareJson()
     else:
-        return 'Sem mensagens para ser enviada!'
+        print 'Sem mensagens para ser enviada!'
+        return ''
         
 
     try:
         producer = KafkaProducer(bootstrap_servers='34.204.88.242:9092')    
         for i in mensage:
             producer.send('msg-paciente', str(i))
-    
+        
+        print 'Mensagens envidas'
+        
     except Exception as e:
         print 'Ocorreu um erro na envio da mensagem- '+ str(e)
         

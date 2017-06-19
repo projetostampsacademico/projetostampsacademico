@@ -1,16 +1,1 @@
-<div ng-controller="timelinectrl" style="height: 600px; overflow: auto" scroll-glue>
-    <timeline>
-        <timeline-event ng-repeat="event in events" side="right">
-            <timeline-badge class="{[{event.badgeClass}]}">
-                <i class="glyphicon {[{event.badgeIconClass}]}"></i>
-            </timeline-badge>
-            <timeline-panel class="{[{event.badgeClass}]}">
-                <timeline-heading>
-                    <h4>{[{event.title}]}</h4>
-                    <i>{[{event.date | date:'yyyy-MM-dd HH:mm:ss'}]}</i>
-                </timeline-heading>
-                <p>{[{event.content}]}</p>
-            </timeline-panel>
-        </timeline-event>
-    </timeline>
-</div>
+{{>timeline}}

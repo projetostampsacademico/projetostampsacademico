@@ -1,8 +1,7 @@
 'use strict';
-
 angular.module('stampsacad')
-    .controller('timelinectrl', ['$scope', '$timeout', '$location', '$anchorScroll', 'Broker',
-        function ($scope, $timeout, $location, $anchorScroll, Broker) {
+    .controller('timelinectrl', ['$rootScope', '$scope', '$timeout', '$location', '$anchorScroll', 'Broker',
+        function ($rootScope, $scope, $timeout, $location, $anchorScroll, Broker) {
             $location.hash('bottom');
             //Lê a cada 1 segundo...
             var tempoParaLeitura = 1000;
@@ -21,7 +20,6 @@ angular.module('stampsacad')
             }];
 
             var adicionarDados = function (dadosApi) {
-                console.log("lido");
                 for (var i = 0; i < dadosApi.length; i++) {
                     var mensagem = {
                         badgeClass: 'info',
@@ -30,6 +28,7 @@ angular.module('stampsacad')
                         content: dadosApi[i],
                         date: new Date()
                     }
+                    checkJSonHasLatLong(dadosApi[i]);
                     $scope.events.push(mensagem);
                     $anchorScroll();
                 }
@@ -48,5 +47,29 @@ angular.module('stampsacad')
 
             $timeout(lerDadosBroker, tempoParaLeitura);
 
+            function checkJSonHasLatLong(mensagem) {
+                var lat = 0,
+                    lon = 0,
+                    contem = false;
+                try {
+                    var data = JSON.parse(mensagem);
+                    if (data.latitude && data.longitude) {
+                        contem = true;
+                        lat = data.latitude;
+                        lon = data.longitude;
+                    }
+
+                    if (contem) {
+                        $rootScope.$broadcast('latlong-recebido', {
+                            position: {
+                                lat: lat,
+                                long: lon
+                            }
+                        });
+                    }
+                } catch (err) {
+
+                }
+            }
         }
     ]);

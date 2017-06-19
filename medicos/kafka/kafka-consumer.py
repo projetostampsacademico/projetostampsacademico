@@ -20,6 +20,6 @@ consumer = KafkaConsumer(bootstrap_servers='34.204.88.242:9092',
 
 consumer.subscribe(['det-medico'])
 for message in consumer:
-    print (message)
+    print (message.value)
 
 
