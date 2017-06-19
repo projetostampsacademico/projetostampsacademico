@@ -1,0 +1,16 @@
+{
+    "name": "wiboo/tests-ecommerce",
+    
+    "authors": [
+        {
+            "name": "Wiboo",
+            "email": "wiboo@wiboo.com.br"
+        }
+    ],
+   
+    "require-dev": {
+        "phpunit/phpunit-selenium": "^3.0",
+        "se/selenium-server-standalone": "^3.4"
+        
+    }
+}
