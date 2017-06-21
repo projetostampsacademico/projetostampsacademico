@@ -1,7 +1,6 @@
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
-app.use(favicon(__dirname + '/client/site/imagens/favicon.png'));
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -15,7 +14,7 @@ kafka.startListen();
 // view engine setup
 app.set('views', path.join(__dirname, 'client/site/'));
 app.set('view engine', 'hbs');
-
+app.use(favicon(__dirname + '/client/site/imagens/favicon.png'));
 // configure the view engine 
 app.engine('hbs', hbs.express4({
   defaultLayout: __dirname + '/client/site/views/layout/layout.hbs',
