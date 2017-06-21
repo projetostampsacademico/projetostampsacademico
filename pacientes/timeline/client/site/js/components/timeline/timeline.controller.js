@@ -25,7 +25,7 @@ angular.module('stampsacad')
                         backgroundcolor: dadosApi[i].backgroundcolor,
                         icon: dadosApi[i].icon,
                         fontcolor: dadosApi[i].fontcolor,
-                        title: 'Mensagem Recebida',
+                        title: 'Mensagem Recebida de '+ dadosApi[i].display,
                         content: dadosApi[i].message,
                         date: new Date()
                     }

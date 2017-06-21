@@ -25,29 +25,6 @@ exports.startListen = function (topicName) {
         return;
     }
     console.log(topics);
-    /*
-    [{
-            topic: 'tri-twitter',
-            offset: offset
-        },
-        {
-            topic: 'tri-paciente',
-            offset: offset
-        },
-        {
-            topic: 'tri-hospital',
-            offset: offset
-        },
-        {
-            topic: 'tri-medico',
-            offset: offset
-        },
-        {
-            topic: 'test',
-            offset: offset
-        }
-    ]
-    */
     global.consumer = new kafka.Consumer(client, topics);
 
     consumer.on('message', function (message) {
@@ -66,6 +43,7 @@ function pushData(message) {
     if (message.value && !lendodados) {
 
         dados.push({
+            display: configtopics[message.topic].display,
             backgroundcolor: configtopics[message.topic].backgroundcolor,
             icon: configtopics[message.topic].icon,
             fontcolor: configtopics[message.topic].fontcolor || 'black',
