@@ -8,7 +8,7 @@ angular.module('stampsacad')
 
             // Inicio
             $scope.events = [{
-                backgroundcolor: 'red',
+                backgroundcolor: 'white',
                 icon: 'syringe.png',
                 title: 'BEM VINDO!',
                 content: 'Iniciando Sistema STAMPSNet'
