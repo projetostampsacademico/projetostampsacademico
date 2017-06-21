@@ -39,13 +39,15 @@ def diseases(request, template_name='disease/diseases.html'):
     symptom_search = request.GET.get('symptom')
     if disease_search is not None:
         diseases_list = service.query_data('Category', 'search', disease_search, 'list')
-        diseases_list = service.related_data('DETAIL', 'CID_STAMPS', diseases_list, 'code')
+        diseases_list = service.related_data('DETAIL', 'CID_STAMPS', 'related', diseases_list)
+        diseases_list = service.related_data('SubCategory', 'code', 'subdiseases', diseases_list) 
     elif symptom_search is not None:
         results_list = service.query_data('DETAIL', 'symptoms', symptom_search, 'list')
         diseases_codes = [code for result in results_list for code in result["CID_STAMPS"]]
         diseases_codes = Util().unique(diseases_codes)
         diseases_list = service.find_all_in('Category', 'code', diseases_codes, 'list')
-        diseases_list = service.related_data('DETAIL', 'CID_STAMPS', diseases_list, 'code')
+        diseases_list = service.related_data('DETAIL', 'CID_STAMPS', 'related', diseases_list)
+        diseases_list = service.related_data('Subcategory', 'code', 'subdiseases', diseases_list) 
     else:
         diseases_list = service.fetch_data('Category', 'list')
     return render(request, template_name, {'diseases_list': diseases_list})

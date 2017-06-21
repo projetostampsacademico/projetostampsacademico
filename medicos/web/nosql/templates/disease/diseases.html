@@ -4,12 +4,6 @@
     <script src="/static/js/util.js"></script>
     <link href="/static/css/nosql.css" rel="stylesheet">
 
-    <script type='text/javascript'>
-      $(document).ready(function() {
-        $("#data").html(syntaxHighlight($("#data").html()));
-      });
-    </script>
-
     <div class="row">
 
         <div class="col-md-8 col-md-offset-2">
@@ -34,7 +28,8 @@
           {% for disease in diseases_list %}
             <li class="list-group-item">
               <div class="row">
-                <div class="col-md-3 disease-code">
+                <div class="col-md-4">
+                  <div class="disease-code">
                     {% if disease.code|length > 3 %}
                     {%    with disease.code|slice:':3'|add:'.' as cid1 %}
                     {%    with disease.code|slice:'3:' as cid2  %}
@@ -42,20 +37,45 @@
                     {%    endwith %}
                     {%    endwith %}
                     {% else %}
-                    {%    with disease.code as cid  %}
-                          <h2><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid }}">{{ cid }}</a></h2>
-                    {%    endwith %}
+                      <h2><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.code }}">{{ disease.code }}</a></h2>
                     {% endif %}
 
-                  <h4>{{ disease.description }}</h4>
+                    <h4>{{ disease.description }}</h4>
+                  </div>
+                  <div class="subdiseases">
+                    <h4>Related subdiseases</h4>
+                    <ul class="list-group">
+                      {% for subdisease in disease.subdiseases %}
+                        {% if subdisease.code|length > 3 %}
+                          {%    with subdisease.code|slice:':3'|add:'.' as cid1 %}
+                          {%    with subdisease.code|slice:'3:' as cid2  %}
+                          <li><b><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid1 }}{{ cid2 }}">{{ cid1 }}{{ cid2 }}</a></b> {{ subdisease.description }}</li>
+                          {%    endwith %}
+                          {%    endwith %}
+                        {% else %}
+                          <li><b><a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ subdisease.code }}">{{ subdisease.code }}</a></b> {{ subdisease.description }}</li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </div>
                 </div>
-                <div class="col-md-9">
 
+                <div class="col-md-8">
                   <ul class="list-group">
                     {% for related in disease.related %}
                       <li class="list-group-item">
                         <div class="symptoms">
-                          <b>Symptoms:<i class="fa fa-info-circle" title="{{ related.info }}"></i></b>
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{disease.code}}{{ forloop.counter }}"><i class="fa fa-info-circle"><span>More info</span></i></a>
+                            </h4>
+                          </div>
+                          <div id="collapse{{disease.code}}{{ forloop.counter }}" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <small>{{ related.info }}</small>
+                            </div>
+                          </div>
+                          <h4>Symptoms:</h4>
                           {% for symptom in related.symptoms %}
                             <div>{{ symptom }}</div>
                           {% endfor %}
