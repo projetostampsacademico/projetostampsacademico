@@ -1,0 +1,20 @@
+<div ng-controller="timelinectrl" style="height: 100%; overflow: auto" scroll-glue>
+    <timeline>
+        <timeline-event ng-repeat="event in events" side="right">
+            <timeline-badge style="background-color: {[{event.backgroundcolor}]}">
+                <i> <img height="25px" width="25px" src="images/{[{event.icon}]}" /> </i>
+            </timeline-badge>
+            <timeline-panel style="
+                 border-left: {[{event.backgroundcolor}]};
+                 border-right:  {[{event.backgroundcolor}]};
+                 background-color: {[{event.backgroundcolor}]};
+                 color: {[{event.fontcolor}]}">
+                <timeline-heading>
+                    <h4>{[{event.title}]}</h4>
+                    <i>{[{event.date | date:'yyyy-MM-dd HH:mm:ss'}]}</i>
+                </timeline-heading>
+                <p>{[{event.content | json}]}</p>
+            </timeline-panel>
+        </timeline-event>
+    </timeline>
+</div>
