@@ -8,13 +8,13 @@ angular.module('stampsacad')
 
             // Inicio
             $scope.events = [{
-                badgeClass: 'info',
-                badgeIconClass: 'glyphicon-check',
+                backgroundcolor: 'red',
+                icon: 'syringe.png',
                 title: 'BEM VINDO!',
                 content: 'Iniciando Sistema STAMPSNet'
             }, {
-                badgeClass: 'warning',
-                badgeIconClass: 'glyphicon-credit-card',
+                backgroundcolor: 'white',
+                icon: 'syringe.png',
                 title: 'CONECTADO',
                 content: 'Aguardando...'
             }];
@@ -22,10 +22,11 @@ angular.module('stampsacad')
             var adicionarDados = function (dadosApi) {
                 for (var i = 0; i < dadosApi.length; i++) {
                     var mensagem = {
-                        badgeClass: 'info',
-                        badgeIconClass: 'glyphicon-check',
+                        backgroundcolor: dadosApi[i].backgroundcolor,
+                        icon: dadosApi[i].icon,
+                        fontcolor: dadosApi[i].fontcolor,
                         title: 'Mensagem Recebida',
-                        content: dadosApi[i],
+                        content: dadosApi[i].message,
                         date: new Date()
                     }
                     checkJSonHasLatLong(dadosApi[i]);
