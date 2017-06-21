@@ -10,7 +10,7 @@
           "backgroundcolor": "#99ccff"
       },
       "tri-paciente": {
-          "icon": "syringe.png",
+          "icon": "patient.png",
           "fontcolor": "black",
           "backgroundcolor": "#99ff99"
       },
