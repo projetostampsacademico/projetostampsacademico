@@ -37,10 +37,10 @@ class MongoService:
         else:
             return list(cursor)
 
-    def related_data(self, collection, collection_id, list, list_id):
+    def related_data(self, collection, collection_id, field, list, list_id='code'):
         for item in list:
             if list_id in item:
-                item['related'] = self.query_data(collection, collection_id, item[list_id], 'list')
+                item[field] = self.query_data(collection, collection_id, item[list_id], 'list')
         return list
 
     def find_all_in(self, collection, field, array, format = 'json'):

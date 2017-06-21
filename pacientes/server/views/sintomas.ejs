@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Estou doente! Quero informar os sintomas...</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <link href="/bower_components/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="/bower_components/select2/dist/js/select2.min.js"></script>
+  </head>
+  <body>
+    <form class="form-horizontal" id="sintomas" action="/sintomasEnvio" accept-charset="UTF-8" method="post">
+        <input type="hidden" name="email" value="<%= user.facebook.email %>" >
+        <input type="hidden" name="username" value="<%= user.facebook.displayName %>" >
+        <!--<input type="hidden" name="userid" value="<%= user.facebook.id %>" >-->
+        <input type="hidden" name="latitude" value="<%=-23.20389472%>">
+        <input type="hidden" name="longitude" value="<%=-45.90955491%>">
+        <input type="hidden" name="symptomsdate" value="1">
+        <div class="col-sm-offset-2 col-sm-10">
+            <script type="text/javascript">
+            $(".js-example-basic-multiple").select2();
+            </script>
+            <select class="js-example-basic-multiple col-sm-10" multiple="multiple" name="symptoms">
+              <% data.forEach(function(symptom) { %>
+                <option value="<%=symptom%>"><%=symptom%></option>
+              <% }); %>
+            </select>
+        </div>
+        
+<script type="text/javascript">
+$(".js-example-basic-multiple").select2();
+</script>
+
+        
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Enviar sintomas</button>
+        </div> 
+    </form>
+  </body>
+</html>

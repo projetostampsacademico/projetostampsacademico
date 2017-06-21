@@ -1,10 +1,20 @@
 var express = require('express');
 var passport = require('passport');
-var Strategy = require('passport-facebook').Strategy;
+var Strategy = require('passport-facebook').Strategy
 var User = require('./models/user');
+var Detail = require('./models/detail');
 var mongoose = require('mongoose');
 var configDB = require('./config/database.js');
 var path = require('path');
+var bodyParser = require('body-parser');
+var kafka = require('kafka-node'),
+    Producer = kafka.Producer,
+    client = new kafka.Client(process.env.ZOOKEEPER || '34.204.88.242:2181'),
+    producer = new Producer(client);
+
+var config = {
+  port: process.env.PORT || '8080'
+}
 
 mongoose.connect(configDB.url);
 // Configure the Facebook strategy for use by Passport.
@@ -20,24 +30,29 @@ mongoose.connect(configDB.url);
 passport.use(new Strategy({
     clientID: '251768885289067',
     clientSecret: '69803b262211015ea714b2593e690e26',
-    callbackURL: 'http://stampsacademico.com:8080/login/facebook/return',
-    profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)']
+    callbackURL: process.env.CALLBACK || 'https://stamps2-mknarciso.c9users.io/login/facebook/return',
+    profileFields: ['id', 'emails', 'displayName', 'name', 'gender', 'picture.type(large)']
   },
   function(accessToken, refreshToken, profile, cb) {
     process.nextTick(function() {
       User.findOne({ 'facebook.id': profile.id }, function(err, user) {
+        
         if (err)
           return cb(err);
         if (user) {
           return cb(null, user);
         } else {
+          
           var newUser = new User();
           newUser.facebook.id = profile.id;
           newUser.facebook.token = accessToken;
           newUser.facebook.displayName = profile.displayName;
           if (profile.emails) { 
             newUser.facebook.email = (profile.emails[0].value || '').toLowerCase();
+          } else {
+            newUser.facebook.email = profile.email
           }
+
           if (profile.photos) { 
             newUser.facebook.photo = profile.photos[0].value;
           }
@@ -96,6 +111,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 // Define routes.
 app.get('/',
@@ -108,8 +124,28 @@ app.get('/login',
     res.render('login');
   });
 
-app.get('/login/facebook',
-  passport.authenticate('facebook'));
+app.get('/report', function(req, res) {
+  mongoose.model('Detail').find(function(err,ills){
+    //res.setHeader('Content-Type', 'application/json');
+    //res.send(JSON.stringify(ills), null, 3);
+    var sintomas = [];
+    ills.forEach(function(ill) {
+      ill.symptoms.forEach(function(sintoma) {
+        sintomas.push(sintoma);
+      })
+    });
+    var aux = new Set(sintomas);
+    var unique = Array.from(aux).sort();
+    var data = unique;
+    res.render('sintomas',{data: data,user: req.user});
+    //res.send(unique.toString());
+  });
+  }
+);
+  
+
+app.get('/login/facebook'
+  , passport.authorize('facebook', { scope : ['email'] }));
 
 app.get('/login/facebook/return', 
   passport.authenticate('facebook', { failureRedirect: '/login' }),
@@ -127,22 +163,50 @@ app.get('/medicosProximos',
 app.get('/paProximos',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
-    res.render('paProximos', { user: req.user}
+    res.render('paProximos', {user: req.user}
       );
   });
+
+app.get('/sintomasForm',
+  require('connect-ensure-login').ensureLoggedIn(),
+  function(req, res){
+    
+    res.render('sintomasForm', {user: req.user}
+      );
+  });
+
+/**bodyParser.json(options)
+ * Parses the text as JSON and exposes the resulting object on req.body.
+ */
+app.use(bodyParser.json());
+
+app.post('/sintomasEnvio', 
+  require('connect-ensure-login').ensureLoggedIn(),
+  function (req, res) {
+    var dados = req.body;
+    dados.symptomsdate = Math.floor(Date.now() / 1000);
+    res.setHeader('Content-Type', 'application/json');
+    //console.log(JSON.stringify(dados, null, 3));
+    res.send(JSON.stringify(dados, null, 3));
+    payloads = [
+       { topic: 'det-paciente', messages: JSON.stringify(dados), partition: 0 },
+    ];
+    producer.send(payloads, function(err, data){
+       console.log(data)
+    });
+
+  }
+);
 
 app.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
   function(req, res){
     console.log(req.user);
-    res.render('profile', { user: req.user}
+    res.render('profile', {user: req.user}
       );
   });
 
-var config = {
-  port: 8080
-}
 
 app.listen(config.port, function () {
-  console.log('Running on port ' + config.port)
+  console.log('Running on port ' + config.port);
 })

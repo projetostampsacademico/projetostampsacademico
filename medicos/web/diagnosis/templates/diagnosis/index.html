@@ -21,28 +21,86 @@
     <form action="/diagnosis" method="GET">
       <div class="form-group ">
         <label>Type your symptoms:</label>
-        <select class="js-select2 form-control" name="symptoms" multiple="multiple">
-          {% for symptom in symptoms %}
-            <option value="{{symptom}}">{{symptom}}</option>
-          {% endfor %}
-        </select>
+        <div class="row">
+          <div class="col-sm-11">
+            <select class="js-select2 form-control" name="symptoms" multiple="multiple">
+              {% for symptom in symptoms %}
+                <option value="{{symptom}}">{{symptom}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-sm-1">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </div>
       </div>
-      <button type="submit" class="btn btn-primary">Search</button>
     </form>
 
     <hr />
 
     <div class="panel-group" id="accordion">
       {% for disease_info, matches in diagnosis %}
-        <div class="panel panel-default">
+        {% if matches.alert %}
+          <div class="panel panel-danger">
+        {% else %}
+          <div class="panel panel-default">
+        {% endif %}
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.counter }}">
-              <b>{{ matches|floatformat:1 }}% match</b> - {{ disease_info|truncatechars:60 }}</a>
+              <b>{{ matches.jaccard|floatformat:1 }}% match</b> - {{ disease_info|truncatechars:60 }}</a>
             </h4>
           </div>
           <div id="collapse{{ forloop.counter }}" class="panel-collapse collapse">
-            <div class="panel-body">{{ disease_info }}</div>
+            <div class="panel-body">
+              {% if matches.alert %}
+                <a href="/list_consulta" class="btn btn-danger">[DANGER] Find a Doctor as soon as possible.</a>
+              {% endif %}
+              <h4>Related diseases:</h4>
+              <ul>
+                {% if matches.diseases %}
+                  <!-- Matches for STAMPS CID -->
+                  {% for disease in matches.diseases %}
+                    <li>
+                    {% if disease.code|length > 3 %}
+                      {%    with disease.code|slice:':3'|add:'.' as cid1 %}
+                      {%    with disease.code|slice:'3:' as cid2  %}
+                        <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid1 }}{{ cid2 }}"><b>{{ cid1 }}{{ cid2 }}</b></a>: {{ disease.description }}
+                      {%    endwith %}
+                      {%    endwith %}
+                    {% else %}
+                      <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.code }}"><b>{{ disease.code }}</b></a>
+                    {% endif %}
+                    </li>
+                  {% endfor %}
+                {% else %}
+                  <!-- No match for STAMPS CID -->
+                  {% for cid in matches.CID_STAMPS %}
+                    <li>
+                    {% if cid|length > 3 %}
+                      {%    with cid|slice:':3'|add:'.' as cid1 %}
+                      {%    with cid|slice:'3:' as cid2  %}
+                        <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid1 }}{{ cid2 }}"><b>{{ cid1 }}{{ cid2 }}</b></a>
+                      {%    endwith %}
+                      {%    endwith %}
+                    {% else %}
+                      <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid }}"><b>{{ cid }}</b></a>
+                    {% endif %}
+                    </li>
+                  {% endfor %}
+                {% endif %}
+              </ul>
+              <hr>
+              <h4>Symptoms List:</h4>
+              <ul>
+                {% for symptom in matches.symptoms %}
+                  <li>{{ symptom }}</li>
+                {% endfor %}           
+              </ul>
+              <hr>
+              <h4>Disease description:</h4>
+              <small>{{ matches.info }}</small>
+            </div>
           </div>
         </div>
       {% endfor %}
