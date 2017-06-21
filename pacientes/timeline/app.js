@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
+app.use(favicon(__dirname + '/client/site/imagens/favicon.png'));
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -38,7 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 app.use('/js', express.static(__dirname + '/client/site/js'));
 app.use('/css', express.static(__dirname + '/client/site/css'));
-
+app.use('/images', express.static(__dirname + '/client/site/imagens'));
 
 app.use('/', index);
 app.use('/api/broker', require('./server/api/broker'));
