@@ -29,7 +29,7 @@ angular.module('stampsacad')
                         content: dadosApi[i].message,
                         date: new Date()
                     }
-                    checkJSonHasLatLong(dadosApi[i]);
+                    checkJSonHasLatLong(dadosApi[i].message);
                     $scope.events.push(mensagem);
                     $anchorScroll();
                 }
