@@ -23,15 +23,17 @@ def generate_diagnosis(patientSymptomsList):
     result = {}
     for disease in related_diseases:
         diseaseSymptomsList = disease['symptoms']
-        print (patientSymptomsList)
-        print (diseaseSymptomsList)
+        #print (patientSymptomsList)
+        #print (diseaseSymptomsList)
         if diseaseSymptomsList is not None:
             intersection = symptoms_in_common(patientSymptomsList, diseaseSymptomsList)
             union = len(diseaseSymptomsList) + len(patientSymptomsList)
             
             if intersection != 0 and disease['info']:
                 jaccardValue = 100 * float(intersection)/float(union)
-                result[disease['info'][:60]] = { 
+                result[disease['info'][:60]] = {
+                    'diseases': diseases_for(disease['CID_STAMPS']),
+                    'CID_STAMPS': disease['CID_STAMPS'],
                     'info': disease['info'],
                     'symptoms': disease['symptoms'],
                     'jaccard': jaccardValue,
@@ -42,6 +44,12 @@ def generate_diagnosis(patientSymptomsList):
 
     return result
 
+def diseases_for(diseases_codes):
+    diseases = MongoService.get_instance().find_all_in('Category', 'code', diseases_codes, 'list')
+    if not diseases:
+        shortned_codes = [disease_code[:3] for disease_code in diseases_codes]
+        diseases = MongoService.get_instance().find_all_in('Category', 'code', shortned_codes, 'list')
+    return diseases
 
 def symptoms_in_common(patientSymptomsList, diseaseSymptomsList):
     intersection = 0

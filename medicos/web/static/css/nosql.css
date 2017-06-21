@@ -24,6 +24,10 @@ pre > h3 {
   text-align: left;
 }
 
+.symptoms > .panel-heading {
+  padding: 0;
+}
+
 .disease-search > h3 {
   margin: 10px 0 20px;
 }
@@ -31,6 +35,15 @@ pre > h3 {
 .disease-code {
   border-bottom: 1px dashed #333;
   border-right: 1px dashed #333;
+}
+
+.subdiseases {
+  text-align: left;
+  padding: 15px;
+}
+
+.fa-info-circle > span {
+  margin-left: 4px;
 }
 
 .link-right {

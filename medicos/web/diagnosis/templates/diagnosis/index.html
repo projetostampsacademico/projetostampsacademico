@@ -56,6 +56,41 @@
               {% if matches.alert %}
                 <a href="/list_consulta" class="btn btn-danger">[DANGER] Find a Doctor as soon as possible.</a>
               {% endif %}
+              <h4>Related diseases:</h4>
+              <ul>
+                {% if matches.diseases %}
+                  <!-- Matches for STAMPS CID -->
+                  {% for disease in matches.diseases %}
+                    <li>
+                    {% if disease.code|length > 3 %}
+                      {%    with disease.code|slice:':3'|add:'.' as cid1 %}
+                      {%    with disease.code|slice:'3:' as cid2  %}
+                        <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid1 }}{{ cid2 }}"><b>{{ cid1 }}{{ cid2 }}</b></a>: {{ disease.description }}
+                      {%    endwith %}
+                      {%    endwith %}
+                    {% else %}
+                      <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ disease.code }}"><b>{{ disease.code }}</b></a>
+                    {% endif %}
+                    </li>
+                  {% endfor %}
+                {% else %}
+                  <!-- No match for STAMPS CID -->
+                  {% for cid in matches.CID_STAMPS %}
+                    <li>
+                    {% if cid|length > 3 %}
+                      {%    with cid|slice:':3'|add:'.' as cid1 %}
+                      {%    with cid|slice:'3:' as cid2  %}
+                        <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid1 }}{{ cid2 }}"><b>{{ cid1 }}{{ cid2 }}</b></a>
+                      {%    endwith %}
+                      {%    endwith %}
+                    {% else %}
+                      <a href="http://apps.who.int/classifications/icd10/browse/2016/en#/{{ cid }}"><b>{{ cid }}</b></a>
+                    {% endif %}
+                    </li>
+                  {% endfor %}
+                {% endif %}
+              </ul>
+              <hr>
               <h4>Symptoms List:</h4>
               <ul>
                 {% for symptom in matches.symptoms %}
