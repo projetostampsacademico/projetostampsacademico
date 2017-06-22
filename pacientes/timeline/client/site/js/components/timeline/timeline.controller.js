@@ -26,7 +26,7 @@ angular.module('stampsacad')
                         icon: dadosApi[i].icon,
                         fontcolor: dadosApi[i].fontcolor,
                         title: 'Mensagem Recebida de ' + dadosApi[i].display,
-                        content: dadosApi[i].message,
+                        content: converterJSon(dadosApi[i].message),
                         date: new Date()
                     }
                     checkJSonHasLatLong(dadosApi[i].message);
@@ -45,8 +45,29 @@ angular.module('stampsacad')
 
             }
 
-
             $timeout(lerDadosBroker, tempoParaLeitura);
+
+            function converterJSon(mensagem){
+                try{
+                    var retorno = "";
+                    var data = JSON.parse(mensagem);
+                    for (var property in data) {
+                        var y = data[property];
+                        if(data[property] instanceof Array){
+                            var a = data[property];
+                            y = "";
+                            for(var x in a){
+                                y += x + ',';
+                            }
+                            y = y.substring(1, y.length);
+                        }
+                        retorno += property + ': ' + y + '  ';
+                    }
+                    return retorno;
+                }catch (err) {
+                    return mensagem;
+                }
+            }
 
             function checkJSonHasLatLong(mensagem) {
                 var lat = 0,
