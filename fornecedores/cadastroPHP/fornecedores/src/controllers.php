@@ -7,7 +7,6 @@ use JansenFelipe\CnpjGratis\CnpjGratis;
 use JansenFelipe\NFePHPSerialize\NFePHPSerialize;
 use Keboola\Csv\CsvFile;
 
-
 $app->get('/', function () use ($app) {
             return $app['twig']->render('index.html.twig', array());
         })
@@ -31,24 +30,36 @@ $app->match('/cadastro', function (Request $request) use ($app) {
 ;
 
 $app->match('/upload', function (Request $request) use ($app) {
-    if ($request->isMethod('POST')) {
+            if ($request->isMethod('POST')) {
                 $files = $request->files;
                 $output_dir = __DIR__ . '/../web/uploads/';
                 $ret = array();
                 $em = new EmpresaRepository();
-		foreach ($files->all() as $file) {
-		    $app['monolog']->debug(file_get_contents($file->getRealPath()));
+                foreach ($files->all() as $file) {
+                    $app['monolog']->debug(file_get_contents($file->getRealPath()));
                     $nfeProc = NFePHPSerialize::xmlToObject(file_get_contents($file->getRealPath()));
-		    $empresa = $em->testCNPJ($app, $nfeProc->getNFe()->getInfNFe()->getEmit()->getCNPJ());
-                    $app['monolog']->debug($output_dir . $nfeProc->getNFe()->getInfNFe()->getId() . 'csv');
+                    $empresa = $em->testCNPJ($app, $nfeProc->getNFe()->getInfNFe()->getEmit()->getCNPJ());
                     $qtMov = 0;
                     if ($empresa) {
-                        $csvFile = new CsvFile($output_dir . $nfeProc->getNFe()->getInfNFe()->getId().'.csv',',','');
+                        #Consultando Lat e Lon
+                        $enderecoNFe = $nfeProc->getNFe()->getInfNFe()->getDest()->getEnderDest();
+                        $endereco = $enderecoNFe->getNro().' '.$enderecoNFe->getXLgr().', '.$enderecoNFe->getXBairro().', '.$enderecoNFe->getXMun().', '.$enderecoNFe->getUF();
+                        $chave = 'AIzaSyBVCqLF3SzQy9JxXaEcCiC6sWpySevCPbs';
+                        $json = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address='.str_replace(' ', '+', $endereco).'&key='.$chave);
+                        $data1 = get_object_vars(json_decode($json));
+                        $data2 = get_object_vars($data1['results'][0]);
+                        $data3 = get_object_vars($data2['geometry']);
+                        $result_GPS = (array) $data3['location'];
+                        
+                        #Gerando arquivo de dados
+                        $csvFile = new CsvFile($output_dir . $nfeProc->getNFe()->getInfNFe()->getId() . '.csv', ',', '');
                         $mov = array();
-                        $mov['emit_Municipio'] = $nfeProc->getNFe()->getInfNFe()->getEmit()->getEnderEmit()->getXMun();
-                        $mov['emit_UF'] = $nfeProc->getNFe()->getInfNFe()->getEmit()->getEnderEmit()->getUF();
+                        $mov['dest_nome'] = $nfeProc->getNFe()->getInfNFe()->getDest()->getXNome();
+                        $mov['dest_telefone'] = $nfeProc->getNFe()->getInfNFe()->getDest()->getEnderDest()->getFone();
                         $mov['dest_Municipio'] = $nfeProc->getNFe()->getInfNFe()->getDest()->getEnderDest()->getXMun();
                         $mov['dest_UF'] = $nfeProc->getNFe()->getInfNFe()->getDest()->getEnderDest()->getUF();
+                        $mov['dest_lat'] = $result_GPS['lat'];
+                        $mov['dest_lng'] = $result_GPS['lng'];
                         foreach ($nfeProc->getNFe()->getInfNFe()->getDet() as $movimentacao) {
                             $mov['prod_nome'] = $movimentacao->getProd()->getXProd();
                             $mov['prod_quant'] = $movimentacao->getProd()->getQTrib();
