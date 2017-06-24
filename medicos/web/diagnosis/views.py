@@ -2,7 +2,7 @@
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from django.shortcuts import render, redirect, get_object_or_404
-from nosql.service import MongoService
+#from nosql.service import MongoService
 import operator
 import json
 
@@ -27,7 +27,7 @@ def generate_diagnosis(patientSymptomsList):
         #print (diseaseSymptomsList)
         if diseaseSymptomsList is not None:
             intersection = symptoms_in_common(patientSymptomsList, diseaseSymptomsList)
-            union = len(diseaseSymptomsList) + len(patientSymptomsList)
+            union = len(diseaseSymptomsList) + len(patientSymptomsList) - intersection
             
             if intersection != 0 and disease['info']:
                 jaccardValue = 100 * float(intersection)/float(union)
@@ -70,3 +70,24 @@ def words_in_common(patientSymptom, diseaseSymptom):
     return intersection * 1.0 / total
             
     
+def generate_ebola_diagnosis(patientSymptomsList):
+    #ebolaSymptomsList = ["Fever", "Headache", "Joint and muscle aches", "Weakness", "Diarrhea", "Vomiting", "Stomach pain", "Lack of appetite"]
+    search_regex = "|".join(patientSymptomsList)
+    EBOLA_THRESHOLD = 0.8
+    ebolaSymptomsParameters = dict()
+    ebolaSymptomsParameters['Fever'] = 0.06
+    ebolaSymptomsParameters['Headache'] = 0.04
+    ebolaSymptomsParameters['Joint and muscle aches'] = 0.25
+    ebolaSymptomsParameters['Weakness'] = 0.05
+    ebolaSymptomsParameters['Diarrhea'] = 0.15
+    ebolaSymptomsParameters['Vomiting'] = 0.15
+    ebolaSymptomsParameters['Stomach pain'] = 0.15
+    ebolaSymptomsParameters['Lack of appetite'] = 0.15
+    probability = 0.0
+    for patientSymptom in patientSymptomsList:
+        if patientSymptom in ebolaSymptomsParameters:
+            probability = probability + ebolaSymptomsParameters[patientSymptom]
+    print (probability)
+    if probability >= EBOLA_THRESHOLD:
+        return True
+    return False
