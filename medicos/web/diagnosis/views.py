@@ -2,7 +2,7 @@
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from django.shortcuts import render, redirect, get_object_or_404
-#from nosql.service import MongoService
+from nosql.service import MongoService
 import operator
 import json
 
