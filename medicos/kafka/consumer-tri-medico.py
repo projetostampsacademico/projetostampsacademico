@@ -107,7 +107,7 @@ def sendMensage():
     try:
         producer = KafkaProducer(bootstrap_servers='34.204.88.242:9092')    
         for i in mensage:
-            producer.send('det-medico', str(i))
+            producer.send('tri-medico', str(i))
         
         print 'Mensagens enviadas'
         

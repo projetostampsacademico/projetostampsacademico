@@ -42,7 +42,7 @@ def conectDB():
         
         cursor = conn.cursor()
         cursor.execute("""SELECT *
-                         FROM mensagem WHERE msg_destinatario='aut'""")
+                         FROM mensagem WHERE msg_destinatario='authority'""")
         
         
         for linha in cursor.fetchall():
@@ -72,14 +72,13 @@ def prepareJson():
     try:
         for i in range(0, len(screening)):
             data = {}
-            data["resourceType"] = "Mensagem"
-            data["identifier"] =  str(screening[i]['msg_id'])
-            data["msg_remetente"] =  str(screening[i]['msg_remetente'].encode('utf-8'))
-            data["msg_destinatario"] =  str(screening[i]['msg_destinatario'].encode('utf-8'))
-            data["msg_assunto"] =  str(screening[i]['msg_assunto'].encode('utf-8'))
-            data["msg_conteudo"] =  str(screening[i]['msg_conteudo'].encode('utf-8'))
-            data["msg_data"] =  str(screening[i]['msg_data'])
-            data["msg_nivelCriticidade"] =  str(screening[i]['msg_nivelCriticidade'])
+            data["id"] =  str(screening[i]['msg_id'])
+            data["remetente"] =  str(screening[i]['msg_remetente'].encode('utf-8'))
+            data["destinatario"] =  str(screening[i]['msg_destinatario'].encode('utf-8'))
+            data["assunto"] =  str(screening[i]['msg_assunto'].encode('utf-8'))
+            data["conteudo"] =  str(screening[i]['msg_conteudo'].encode('utf-8'))
+            data["data"] =  str(screening[i]['msg_data'])
+            data["criticidade"] =  str(screening[i]['msg_nivelCriticidade'])
             list_screening.append(data)
             
     except Exception as e:
