@@ -14,6 +14,29 @@ __author__ = 'Fabio Kfouri/Victor Pugliese'
     Responsavel pela leitura e armazenamento dos dados do Kafta-tri-paciente
 """
 
+def generate_ebola_diagnosis(patientSymptomsList):
+    #ebolaSymptomsList = ["Fever", "Headache", "Joint and muscle aches", "Weakness", "Diarrhea", "Vomiting", "Stomach pain", "Lack of appetite"]
+    search_regex = "|".join(patientSymptomsList)
+    EBOLA_THRESHOLD = 0.8
+    ebolaSymptomsParameters = dict()
+    ebolaSymptomsParameters['Fever'] = 0.06
+    ebolaSymptomsParameters['Headache'] = 0.04
+    ebolaSymptomsParameters['Joint and muscle aches'] = 0.25
+    ebolaSymptomsParameters['Weakness'] = 0.05
+    ebolaSymptomsParameters['Diarrhea'] = 0.15
+    ebolaSymptomsParameters['Vomiting'] = 0.15
+    ebolaSymptomsParameters['Stomach pain'] = 0.15
+    ebolaSymptomsParameters['Lack of appetite'] = 0.15
+    probability = 0.0
+    for patientSymptom in patientSymptomsList:
+        if patientSymptom in ebolaSymptomsParameters:
+            probability = probability + ebolaSymptomsParameters[patientSymptom]
+    print (probability)
+    if probability >= EBOLA_THRESHOLD:
+        return 'a984'
+    return ''
+
+
 ''' Retorna a conexao com o MySQL '''
 def getConnMySQL():
 	conn = MySQLdb.connect(	host="us-cdbr-iron-east-03.cleardb.net", 
@@ -44,14 +67,17 @@ def SaveRecord(_record):
 	#transforma e limpa um array de sintomas em string separado por ponto e virgula
 	_symptoms = '; '.join(str(e).replace('-','').strip() for e in x.symptoms)
 
+        #verifica incidencia ebola
+        ebola = generate_ebola_diagnosis(x.symptoms)
+        	
 	# convert numero em data - 
 	_date = datetime.fromtimestamp(time.mktime(time.localtime(x.symptomsdate)))
 	
 	try:
 		conn = getConnMySQL()
 
-		query = ("INSERT INTO tri_paciente (email, user_name, latitude, longitude, date_register, symptoms, offset) " \
-				"VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')").format(x.email, x.username, float(x.latitude), float(x.longitude), _date, _symptoms, int(_offset))
+		query = ("INSERT INTO tri_paciente (email, user_name, latitude, longitude, date_register, symptoms, disease, offset) " \
+				"VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')").format(x.email, x.username, float(x.latitude), float(x.longitude), _date, _symptoms, ebola, int(_offset))
 
 
 		#print(query)
