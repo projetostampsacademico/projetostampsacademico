@@ -33,7 +33,7 @@ def generate_ebola_diagnosis(patientSymptomsList):
             probability = probability + ebolaSymptomsParameters[patientSymptom]
     print (probability)
     if probability >= EBOLA_THRESHOLD:
-        return 'a984'
+        return 'A98.4'
     return ''
 
 
