@@ -7,13 +7,13 @@ services:
     restart: always
     environment:
       - PORT=8080
-      - ZOOKEEPER=34.204.88.242:2181
+      - ZOOKEEPER=34.204.88.242:80
       - CALLBACK=http://localhost:8080/login/facebook/return
       - DB=mongodb://heroku_6c04n1s3:eg0rtjdqtmf8ukmmo3pfflqdbe@ds161630.mlab.com:61630/heroku_6c04n1s3
   triagem:
     build: ./triagem/nodejs
     environment:
-      - ZOOKEEPER=34.204.88.242:2181
+      - ZOOKEEPER=34.204.88.242:80
       - TOPICIN=det-paciente
       - TOPICOUT=tri-paciente
   timeline:
@@ -23,7 +23,7 @@ services:
     restart: always
     environment:
       - PORT=9090
-      - ZOOKEEPER=34.204.88.242:2181
+      - ZOOKEEPER=34.204.88.242:80
   kafka:
     image: wurstmeister/kafka:latest
     ports: 
@@ -46,5 +46,4 @@ services:
       - 2181:2181
       - 80:2181
     restart: always
-
 
