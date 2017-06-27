@@ -28,5 +28,35 @@
           "icon": "doctor.png",
           "fontcolor": "black",
           "backgroundcolor": "#ffffff"
+      },
+      "msg-medico": {
+          "display": "Médico",
+          "icon": "doctor.png",
+          "fontcolor": "black",
+          "backgroundcolor": "#ffffff"
+      },
+      "msg-paciente": {
+          "display": "Paciente",
+          "icon": "paciente.png",
+          "fontcolor": "black",
+          "backgroundcolor": "#ffffff"
+      },
+      "msg-hospital": {
+          "display": "Hospital",
+          "icon": "hospital.png",
+          "fontcolor": "black",
+          "backgroundcolor": "#ffffff"
+      },
+      "msg-fornecedor": {
+          "display": "Fornecedor",
+          "icon": "hospital.png",
+          "fontcolor": "black",
+          "backgroundcolor": "#ffffff"
+      },
+      "msg-autoridade": {
+          "display": "Autoridade",
+          "icon": "doctor.png",
+          "fontcolor": "black",
+          "backgroundcolor": "#ffffff"
       }
   }
