@@ -7,15 +7,9 @@ var bodyParser = require('body-parser');
 var kafka = require('./server/components/Kafka/kafka.controller');
 var index = require('./server/routes/index');
 var app = express();
-var hbs = require('express-hbs');
-var session = require('express-session');
-
+var hbs = require('express-hbs')
 kafka.startListen();
-app.use(session({
-  secret: 'ssshhhhh',
-  resave: true,
-  saveUninitialized: true
-}));
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'client/site/'));
