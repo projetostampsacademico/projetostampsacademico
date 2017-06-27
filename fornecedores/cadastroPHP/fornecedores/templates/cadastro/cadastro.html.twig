@@ -1,14 +1,29 @@
 {% extends "layout.html.twig" %}
 {% block content %}
-        <img src="data:image/png;base64,{{ params['captchaBase64'] }}" />
-        <form method="POST" action="{{ path('cadastro') }}">
-            <input type="hidden" name="cookie" value="{{ params['cookie'] }}" />
-            <input type="text" name="captcha" placeholder="Captcha" />
-            <input type="text" name="cnpj" placeholder="CNPJ" />
-            <button type="submit">Consultar</button>
-        </form>
-
-        <div class="span12 "> 
+        <div class="row">
+        <div class="col-md-12 ">
+            <h2>Cadastro de Fabricante / Distribuidor</h2>
+            <br><br><br>
+        </div>
+        </div>
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="col-md-2 col-md-offset-3 "> 
+                <img src="data:image/png;base64,{{ params['captchaBase64'] }}" />
+            </div>
+            <div class="col-md-5" style="vertical-align:middle;"> 
+                <form method="POST" action="{{ path('cadastro') }}">
+                    <input type="hidden" name="cookie" value="{{ params['cookie'] }}" />
+                    <input type="text" name="captcha" placeholder="Captcha" />
+                    <input type="text" name="cnpj" placeholder="CNPJ" />
+                    <button type="submit">Consultar</button>
+                </form>
+            </div>
+        </div>
+    </div>        
+    <div class="row">
+        <div class="col-md-12 "> 
+            <br><br><br>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -29,4 +44,5 @@
                     {% endfor %}
                 </tbody>
             </table>
-{% endblock %}
+        </div>
+    {% endblock %}

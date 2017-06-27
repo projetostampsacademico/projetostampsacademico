@@ -1,9 +1,21 @@
 {% extends "layout.html.twig" %}
 
 {% block content %}
-    <div id="multipleupload">Upload</div>
-    <div id="eventsmessage"></div>
+    <div class="row">
+        <div class="col-md-12 ">
+            <h2>Upload de Notas Fiscais</h2>
+            <br><br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 ">
+            <div id="multipleupload">Upload</div>
+            <div id="eventsmessage"></div>
+        </div>
+    </div>
+{% endblock %}
 
+{% block js %}
     <script type="text/javascript">
         $(document).ready(function ()
         {
@@ -13,8 +25,8 @@
                 fileName: "myfile",
                 multiple: true,
                 returnType: "json",
-                statusBarWidth: 700,
-                dragdropWidth: 700, 
+                statusBarWidth: 1200,
+                dragdropWidth: 1200,
                 maxFileSize: 200 * 1024,
                 onLoad: function (obj)
                 {
@@ -25,9 +37,9 @@
                     $("#eventsmessage").html($("#eventsmessage").html() + "<br/>Submitting:" + JSON.stringify(files));
                     //return false;
                 },
-                onSuccess: function ( files, data, xhr, pd)
+                onSuccess: function (files, data, xhr, pd)
                 {
-                      pd.filename.append("<br>"+ JSON.stringify(data));        
+                    pd.filename.append("<br>" + JSON.stringify(data));
                 },
                 afterUploadAll: function (obj)
                 {

@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>{% block title '' %} - My Silex Application</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">
+        <title>STAMPS</title>
+        <link href="{{ asset('/static/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('/static/css/home.css') }}" rel="stylesheet">
+        <link href="{{ asset('/static/css/web.css') }}" rel="stylesheet">
+         <link href="{{ asset('/static/css/uploadfile.css') }}" rel="stylesheet">
+        <link rel="shortcut icon" href="{{ asset('static/img/favicon.ico') }}" type="image/vnd.microsoft.icon" />
+        <link href="{{ asset('static/css/select2.min.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-        <link href="http://hayageek.github.io/jQuery-Upload-File/4.0.10/uploadfile.css" rel="stylesheet">
-        <style>
-            .ajax-file-upload-filename {
-                width: 100%;
-            }
-        </style>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">STAMPS</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/diagnosis">Diagnosis</a></li>
+                    <li><a href="/consulta">Appointment</a></li>
+                    <li><a href="/disease">Diseases</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/admin">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="http://hayageek.github.io/jQuery-Upload-File/4.0.10/jquery.uploadfile.min.js"></script>
-    </head>
-    <body>
-    {% block content %}{% endblock %}
-</body>
+        <script src="{{ asset('/static/js/bootstrap.min.js') }}"></script>
+        {% block js %}
+        {% endblock %}
+    </body>
 </html>
