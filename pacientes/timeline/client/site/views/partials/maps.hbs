@@ -1,5 +1,5 @@
 <div ng-controller="mapsCtrl">
-    <ng-map style="width:49%; height:90%;position: absolute;" zoom-to-include-markers="{[{zoomtomark}]}" center="{[{center}]}">
+    <ng-map style="width:45%; height:100%;position: fixed;" zoom="13" zoom-to-include-markers="{[{zoomtomark}]}" center="{[{center}]}">
        <marker ng-repeat="mark in markers" 
          position="[{[{mark.latitude}]}, {[{mark.longitude}]}]"></marker>
     </ng-map>
