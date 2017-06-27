@@ -1,9 +1,9 @@
   module.exports = {
       "test": {
-          "display": "test",
+          "display": "SPARK",
           "icon": "syringe.png",
-          "fontcolor": "white",
-          "backgroundcolor": "red"
+          "fontcolor": "black",
+          "backgroundcolor": "AliceBlue"
       },
       "tri-twitter": {
           "display": "Twitter",
@@ -27,7 +27,7 @@
           "display": "Médico",
           "icon": "doctor.png",
           "fontcolor": "black",
-          "backgroundcolor": "#ffffff"
+          "backgroundcolor": "#F5F5DC"
       },
       "msg-medico": {
           "display": "Médico",
