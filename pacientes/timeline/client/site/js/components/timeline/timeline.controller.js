@@ -10,13 +10,13 @@ angular.module('stampsacad')
             $scope.events = [{
                 backgroundcolor: 'white',
                 icon: 'syringe.png',
-                title: 'BEM VINDO!',
-                content: 'Iniciando Sistema STAMPSNet'
+                title: 'Welcome!',
+                content: 'Starting STAMPSNet'
             }, {
                 backgroundcolor: 'white',
                 icon: 'syringe.png',
-                title: 'CONECTADO',
-                content: 'Aguardando...'
+                title: 'Connected',
+                content: 'Waiting...'
             }];
 
             var adicionarDados = function (dadosApi) {
@@ -25,7 +25,7 @@ angular.module('stampsacad')
                         backgroundcolor: dadosApi[i].backgroundcolor,
                         icon: dadosApi[i].icon,
                         fontcolor: dadosApi[i].fontcolor,
-                        title: 'Mensagem Recebida de ' + dadosApi[i].display,
+                        title: 'Message Received from ' + dadosApi[i].display,
                         content: converterJSon(dadosApi[i].message),
                         date: new Date()
                     }
