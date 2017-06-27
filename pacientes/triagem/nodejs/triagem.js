@@ -9,6 +9,7 @@ var consumer = new kafka.Consumer(client, [{
   offset: offset
 }]);
 var producer = new kafka.Producer(client);
+console.log("**** SOA Screening Messages Routines ******");
 console.log("Listening to topic: " + process.env.TOPICIN + " ...");
 consumer.on('message', function (message) { // <<< REALIZA A LEITURA DO TOPICO ANTERIOR
 
@@ -25,7 +26,7 @@ consumer.on('message', function (message) { // <<< REALIZA A LEITURA DO TOPICO A
       topic: process.env.TOPICOUT || 'tri-paciente',
       messages: [message.value]
     }], function (err, result) { // <<< ENVIA PARA O TOPICO POSTERIOR
-      console.log(err || JSON.stringify(result));
+      console.log(err || "Message forwarded to: " + JSON.stringify(result));
     });
   } else {
     console.log("INVALID: " + message.value);
