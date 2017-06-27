@@ -3,7 +3,7 @@
 from kafka import KafkaProducer
 from datetime import datetime
 import MySQLdb
-
+import json
 
 __author__ = 'Victor Pugliese'
 
@@ -79,7 +79,7 @@ def prepareJson():
             data["conteudo"] =  str(screening[i]['msg_conteudo'].encode('utf-8'))
             data["data"] =  str(screening[i]['msg_data'])
             data["criticidade"] =  str(screening[i]['msg_nivelCriticidade'])
-            list_screening.append(data)
+            list_screening.append(json.dumps(data))
             
     except Exception as e:
         print 'Ocorreu na geração do JSON - '+ str(e)
@@ -100,7 +100,7 @@ def sendMensage():
     try:
         producer = KafkaProducer(bootstrap_servers='34.204.88.242:9092')    
         for i in mensage:
-            producer.send('msg-paciente', str(i))
+            producer.send('msg-paciente', i)
         
         print 'Mensagens envidas'
         
