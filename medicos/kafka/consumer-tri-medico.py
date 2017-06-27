@@ -3,7 +3,7 @@
 from kafka import KafkaProducer
 from datetime import datetime
 import MySQLdb
-
+import json
 
 __author__ = 'Samara Cardoso'
 
@@ -14,7 +14,7 @@ __author__ = 'Samara Cardoso'
     pip install kafka-python 
     sudo apt-get install python-mysqldb or pip install MySQL-python
 
-    Se der algum problema entre em contato comigo
+    Se der algum problema entre em contato:
     samaracardosodossantos@gmail.com
     
 """    
@@ -77,16 +77,16 @@ def prepareJson():
             data["status"]  = "In Progress"
             data["code"]  = str(i)
             data["description"] =  str(screening[i]['con_diagnostico'].encode('utf-8')) 
-            data["subject"] =  { str(screening[i]['con_patient_number_id']) } 
-            data["context"] =  { str(screening[i]['con_patient_number_id']) }
+            data["subject"] =  [str(screening[i]['con_patient_number_id'])]
+            data["context"] =  [str(screening[i]['con_patient_number_id'])]
             data["date"] =  str(datetime.now())
-            data["assessor"] =  { str(screening[i]['con_doctor_crm_id'])}
+            data["assessor"] =   [str(screening[i]['con_doctor_crm_id'])]
             data["summary"] =  ""
             data["prognosisCodeableConcept"] =  []
             data["prognosisReference"] =  []
             data["note"] =  []
             
-            list_screening.append(data)
+            list_screening.append(json.dumps(data))
             
     except Exception as e:
         print 'Ocorreu na geração do JSON - '+ str(e)
@@ -107,7 +107,7 @@ def sendMensage():
     try:
         producer = KafkaProducer(bootstrap_servers='34.204.88.242:9092')    
         for i in mensage:
-            producer.send('tri-medico', str(i))
+            producer.send('tri-medico', i)
         
         print 'Mensagens enviadas'
         
