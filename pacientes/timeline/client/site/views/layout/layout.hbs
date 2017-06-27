@@ -15,9 +15,31 @@
   <link rel="stylesheet" href="./css/site.css">
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="./bower_components/angular-timeline/dist/angular-timeline.css" />
+      <style type="text/css">
+      [scroll-glue-top],
+      [scroll-glue-bottom],
+      [scroll-glue]{
+        height: 100%;
+        overflow-y: scroll;
+        border: 0px solid gray;
+      }
+
+      [scroll-glue-left],
+      [scroll-glue-right]{
+        width: 100px;
+        overflow-x: scroll;
+        border: 0px solid gray;
+        padding: 1px;
+      }
+
+      [scroll-glue-left] span,
+      [scroll-glue-right] span{
+        border: 0px solid black;
+      }
+    </style>
 </head>
 
-<body ng-app="stampsacad" style="height:600px">
+<body ng-app="stampsacad">
   <script src="./bower_components/angular/angular.min.js"></script>
   <script src="./bower_components/ngtouch/build/ngTouch.min.js"></script>
   <script src="./bower_components/angular-timeline/dist/angular-timeline.js"></script>
@@ -31,10 +53,7 @@
   <script src="./js/components/timeline/timeline.controller.js"></script>
   <script src="./js/components/maps/maps.controller.js"></script>
   <script src="./js/components/main/main.controller.js"></script>
-  <div id="header"></div>
   {{{body}}}
-  <div id="bottom">
-  </div>
 </body>
 
 </html>
