@@ -1,6 +1,6 @@
 <div ng-controller="timelinectrl" style="width: 49%; height: 600px; position: absolute; left: 1%;" scroll-glue>
-    <timeline>
-        <timeline-event ng-repeat="event in events" side=''>
+    <timeline  scroll-glue>
+        <timeline-event ng-repeat="event in events" side='' scroll-glue force-glue> 
             <timeline-badge style="background-color: {[{event.backgroundcolor}]}">
                 <i> <img height="25px" width="25px" src="images/{[{event.icon}]}" /> </i>
             </timeline-badge>
